@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel='icon' href="img/favicon.ico" />
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<div id="pageLoader" class="container-fluid pageLoader">
+    <div id="loadLogo" class="loadLogo">
+        <img src="img/logo.png" />
+    </div>
+</div>
+
+<!-- Follow me, hire me, chat with me.  I'm cool, probably. -->
+<div class="watermark">
+    <p>Made by Joshua Kim @ <a href="http://feather-design.com/">feather-design</a></p>
+</div>
+
+<body>
+
+    <div class="container-fluid portNav">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" style="font-size: 14px;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse lnav">
+
+                    <a href="http://feather-design.com/"><img src="img/logo.png" style="width: 30px" /></a>
+
+                    <ul class="nav navbar-nav navbar-right" style="position: relative; top: 20px;">
+                        <li>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="webC" value="" checked>Websites</label>
+                        </li>
+                        <li>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="mobileC" value="" checked>Mobile Apps</label>
+                        </li>
+                        <li>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="printC" value="" checked>Design</label>
+                        </li>
+                        <li>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="uxC" value="" checked>UX</label>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+
+    </div>
+    <br/>
+    <div id="mainPort" class="container" style="margin-top: 60px;">
+
+        <div id="navInst" class="alert alert-info fade in" style="margin-top: 30px;">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>What's up?</strong> There's nothing here <i>yet</i>, but if you <b>check any of the above navigation items</b> the magic will begin!
+            <br/> Don't want to see my stuff? No problem, <a href="https://www.linkedin.com/in/joshk94">you can <b>connect with me</b> instead ^^</a>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#atpfinal2M">
+                <div class="pSquare">
+                    <h3>ATP Finals '16</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/atpfinal2.jpg" />
+                    </div>
+                </div>
+            </div>
+            <a href="orcaPort.html" style="text-decoration: none; color: inherit;">
+                <div class="col-sm-4 ux">
+                    <div class="pSquare">
+                        <h3>ORCA Prototype</h3>
+                        <hr/>
+                        <div class="zoomBlock">
+                            <img src="img/thumb/orcaPort.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="col-sm-4 ux" data-toggle="modal" data-target="#ICICM">
+                <div class="pSquare">
+                    <h3>ICIC Personas</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/ICIC.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#orcaLogo">
+                <div class="pSquare">
+                    <h3>Orchestra Logo</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/orca.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 web" data-toggle="modal" data-target="#dgbM">
+                <div class="pSquare">
+                    <h3>Doctor Good Back</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/dgb.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 web" data-toggle="modal" data-target="#hbcsM">
+                <div class="pSquare">
+                    <h3>Heaven Bound Cremation</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/hbcs.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 web" data-toggle="modal" data-target="#itzM">
+                <div class="pSquare">
+                    <h3>ITZ-LLC</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/itz.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mobile" data-toggle="modal" data-target="#vtkmappM">
+                <div class="pSquare">
+                    <h3>VTKM Android App</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/vtkmapp.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 web" data-toggle="modal" data-target="#cfontM">
+                <div class="pSquare">
+                    <h3>Client Font (CFont)</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/cfont.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mobile" data-toggle="modal" data-target="#thewordM">
+                <div class="pSquare">
+                    <h3>the Word</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/theword.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 ux" data-toggle="modal" data-target="#itmockupM">
+                <div class="pSquare">
+                    <h3>Service HF Prototype</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/itmockup.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 web" data-toggle="modal" data-target="#vtkmrankM">
+                <div class="pSquare">
+                    <h3>Kendo Ranking WebApp</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/vtkmrank.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 web" data-toggle="modal" data-target="#scaM">
+                <div class="pSquare">
+                    <h3>Save Cultural Athletics</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/sca.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#keiM">
+                <div class="pSquare">
+                    <h3>Kei Wallpaper</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/kei.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mobile" data-toggle="modal" data-target="#mystorageM">
+                <div class="pSquare">
+                    <h3>myStorage</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/mystorage.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#hevtM">
+                <div class="pSquare">
+                    <h3>HEVT at VT</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/hevt.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#murrayM">
+                <div class="pSquare">
+                    <h3>Murray Digital Poster</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/murray.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#elreyM">
+                <div class="pSquare">
+                    <h3>El Rey</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/elrey.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#expressionsM">
+                <div class="pSquare">
+                    <h3>Expressions Posters</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/expressions.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#NBGCCM">
+                <div class="pSquare">
+                    <h3>NBGCC Summer Camp</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/NBGCC.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 web" data-toggle="modal" data-target="#webhubM">
+                <div class="pSquare">
+                    <h3>Personal WebHub</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/webhub.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#atpfinalM">
+                <div class="pSquare">
+                    <h3>Group B</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/atpfinal.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 print" data-toggle="modal" data-target="#wellmedicaM">
+                <div class="pSquare">
+                    <h3>WellMedica</h3>
+                    <hr/>
+                    <div class="zoomBlock">
+                        <img src="img/thumb/wellmedica.jpg" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br/>
+        <br/>
+    </div>
+
+    <!-- Modals Here -->
+    <div id="dgbM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">DGB Review Boxes</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/dgb.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Working for Dr. Feier in reconstructing his website for Doctor Good Back was a fairly standard task; nothing in particular stuck out to me outside of a little nifty review box I decided to whip up to add to the charm of the website.</p>
+                    <p>Breaking the process down, I planned to build two classes which I ended up naming client and cHide with client holding the image and cHide containing the hidden text. To get the text to successfully show up above the filtered client class I had to relunctantly use absolute positioning as seen below. It works pretty well with square-based bios that can be listed as panels, so feel free to copy pasta this for your project no credit needed.</p>
+                    <p>You can play around with it <a href="http://joshk94.github.io/doctor/results.html">here</a></p>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home">html</a></li>
+                        <li><a data-toggle="tab" href="#menu1">css</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <h3>html</h3>
+                            <p>&lt;div class="col-sm-3 client"&gt;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cHide"&gt;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;insert bio here&lt;/p&gt;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/album/clients/c3.jpg" /&gt;
+                                <br /> &lt;/div&gt;
+                            </p>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <h3>css</h3>
+                            <p>.cHide {
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z-index: 2;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top: 50px;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 300px;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 30px;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transition: .2s;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transition-timing-function: ease;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition-timing-function: ease;
+                                <br /> }
+                                <br />
+                                <br /> .cHide:hover {
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top: 30px;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transition: .2s;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transition-timing-function: ease;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition-timing-function: ease;
+                                <br /> }
+                                <br/>
+                                <br/> .client {
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 20px;
+                                <br /> }
+                                <br />
+                                <br /> .client img {
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filter: brightness(100%);
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-filter: brightness(100%);
+                                <br /> }
+                                <br />
+                                <br /> .cHide:hover + img {
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filter: brightness(20%);
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-filter: brightness(20%);
+                                <br /> }
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="atpfinal2M" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">ATP World Tour Finals Poster</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/atpfinal2.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Poster designed for the 2016 ATP World Tour Finals in photoshop. This project was created using a mix of smoke overlays over country flags as a backdrop to the players.</p>
+                    <p>Like it? <a href="http://imgur.com/a/c66YF">Download it then for free (wallpapers + poster)!</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="thewordM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">the Word</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/theword.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Last semester a friend asked me for help on one of his IT projects which involved developing a mobile app from scratch. The idea for the project was similar to groupon, so I wasn&rsquo;t too sure of the reason why it would be different/useful. Regardless, I decided to complete this project in a sprint; rather than developing my own UI from scratch, I incorporated W3&prime;s cards stylesheet which was surprisingly intuitive and easy to use. It was built with a mobile focus, and it shows brilliantly when applied.</p>
+                    <p>More importantly than being able to complete this webapp within a couple of hours, I learned the value of the webapp for startups in a hurry. Often times it can take weeks to make two versions of the same app for Android and IOS, but webapps can amend those problems; obviously not as a permanent solution, but certainly as a way to get things kicking within literally a couple of hours.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="itmockupM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Service Provider High Fidelity Prototype</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/itmockup.jpg" style="width:100%;">
+                    <hr/>
+                    <p>I was requested to design two high fidelity prototypes for a service provider in Blacksburg. The design was fairly simple and aimed to give priority to a package purchase over an individual one. In the first design, all boxes are pre-checked while in the second it appears as though only package options are available; both implicitly guide the user into making the purchase the provider desired.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="vtkmappM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">VTKM Android App</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/vtkmapp.jpg" style="width:100%;">
+                    <hr/>
+                    <p>I was responsible for designing the user interface of the vtkm (Virginia Tech Kendo Management) application for the lead developer Austin Garrett. To maintain a core narrative with the existing webapp, I stuck with a blue palette and roboto as the font choice.</p>
+                    <p>You can check out the app on the play store <a href="https://play.google.com/store/apps/details?id=com.vtkendo.austin.kendoapp">here!</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ICICM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">ICIC Personas</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/ICIC.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Upon joining the NIS UX team at VT, my first assigned task was to shadow current employees using an outdated swing client called "ICIC"- basically, an outlook-like software that handles copyright cases on campus internet.</p>
+                    <p>After collecting qualitative (and some quantitative) user research, I was able to create user personas specific to this project which gave further insight to customer expectations and touch points. This helped our team in determining what pattern libraries to use and influenced the prototyping portion of the process significantly.</p>
+                    <p>I also made a quick website in bootstrap to house all of our personas for easy sharing with members outside of the UX team for developers and management to reference.</p>
+                    <p><a href="ICIC/index.html">You can view the personas here!</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="itzM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">ITZ-LLC</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/itz.jpg" style="width:100%;">
+                    <hr/>
+                    <p>I was tasked to redevelop a website I had previously created over four years ago which was, at the time, coded entirely via notepad as a means to challenge myself when I was younger. To avoid compromising the company&rsquo;s established design and premises, I opted to recycle many of the concepts previously used from the outdated stylesheets.</p>
+                    <p>The branding direction of the new website was to be &ldquo;modern and young&rdquo; yet &ldquo;professional.&rdquo; Before launching myself headfirst into development, I sketched out several possible low-fidelity prototypes to show the CEO and built a font-preview webapp (CFont) to determine a more concrete example of the concept at hand. We decided to settle on Lato and a version of the website that borrowed concepts from other IT-related firms such as IBM; while the presentation of the website is relatively traditional, the accented colors give it the subtle young appearance desired.</p>
+                    <p>This site was built off a bootstrap base with the occasional jquery script and edits to the existing stylesheet. A logo revision was also made during this process to convert it into a square icon as opposed to a elongated vertical format. </p>
+                    <p>You can visit the full website at <a href="http://itz-llc.com/index.html">itz-llc.com</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="scaM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Save Cultural Athletics</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/sca.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Due to the sudden risk of many organizations including the kendo club (in which I am an instructor), I planned, developed, and led the SCA Campaign with help from the Martial Artist Council at Virginia Tech. The website itself was made within two days due to a rushed schedule and required intensive prototyping development with many changes being made on the hour based on third-party recommendations. Before any major design decisions were made, I scheduled several meetings with many of the organizations at risk to determine a core narrative for the campaign which would run parallel to not only the main website but also marketing efforts through social media and physical prints. These discussions also took into account the important underlying politics beneath the campaign to ensure no repercussions from unintentionally antagonizing third parties would occur.</p>
+                    <p>Within several days after the release of the website, SCA garnered over five hundred likes as thanks to the support from the Virginia Tech community, three articles written by the Roanoke Times and the Collegiate Times, a featurette on Humans of Virginia Tech, a legislation in favor of the campaign through the Residence Hall Federation, and ultimately the overriding of the decision to charge organizations in the spring semester.</p>
+                    <p>You can learn more about this project at the website itself at <a href="http://www.saveculturalathletics.com/">saveculturalathletics.com</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mystorageM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">My Storage</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/mystorage.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Approaching this project I was tasked to make a user interface for a startup company called &ldquo;MyStorage&rdquo; which was an ambitious idea to create a rental space sharing website between college students.</p>
+                    <p>Working with the development team, I was cued in several times that the creators wanted something that made users feel secure in a friendly way. As a result, I recommended them to shape the project in a manner in which the users would feel a sense of ownership and community, hence the name &ldquo;MyStorage.&rdquo; I decided to go with a material design blue theme to make the user interface applicable via web and mobile (not to mention blue is a color that prompts the feeling of reliability/security i.e. IBM, BRINKS, etc). I opted to go with Roboto to match this theme, but looking back I feel as though I could have been a tad more bolder.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="keiM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Kei Wallpaper</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/kei.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Much of my inspiration for this project came from the street art I've grown up with in the metropolitan area. Respectively so, I designed this poster in response to Kei Nishikori's victory at the Citi Open in Washington DC. I focused on dot-based splatter art emphasizing the dynamic nature of the game.</p>
+                    <p>You can download this poster for free <a href="http://imgur.com/a/VqvJf">here.</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="webhubM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Personal Webhub</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/webhub.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Custom personal webhub I made to practice css transition effects. Feel free to download and edit to your tastes from my github <a href="https://github.com/joshk94/WebHub">here.</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="murrayM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Andy Murray Digital Poster</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/murray.jpg" style="width:100%;">
+                    <hr/>
+                    <p>A digital poster of Murray in celebration of his recent marriage to Kim Sears! I messed around with overlays and photo manipulation for practice. Best of luck to Andy in his 2015 campaign, it’s been a great start so far.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wellmedicaM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">WellMedica Digital Campaign</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/wellmedica.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Upon being hired by Dr. Dima at WellMedica, I was tasked to identify sources of web and social media inactivity. I first went about identifying Dr. Dima\'s target audience by mapping out persona groups through both qualitative and quantitative research in the form of client interviews and incentive testing. By doing so, I was able to re-orientate WellMedica\'s core narrative on all its online platforms by developing a consistent and recognizable color scheme paired with universally paralleled designs within an in-house pattern library. This improved activity by over 123% on its social media platforms and ultimately lured in more client engagement and interest.</p>
+                    <p>I was also accountable for web and server security which required me to work in both front and back end platforms on drupal and WellMedica\'s host server. By the end of my time at WellMedica I was able to successfully identify and nullify sources of malware within the server to protect valuable customer information.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hevtM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">HEVT at Virginia Tech</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/hevt.jpg" style="width:100%;">
+                    <hr/>
+                    <p>I was tasked to complete a series of vertical banners for the Hybrid Electric Vehicle Team at Virginia Tech for their upcoming expo within a period of two days. Design features simple geometric art according to the client&rsquo;s request for a clean mechanical themed motif. Successfully finished the assignment within the rushed time period while maintaining and improving the team&rsquo;s original vision. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="NBGCCM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">NBGCC Summer Camp Poster</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/NBGCC.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Designed a poster for a tennis/golf summer camp! Had alot of fun making this one as I&rsquo;m a big fan of tennis, and I&rsquo;m glad there&rsquo;s still camps out there that encourage kids to go outside more. I was requested to complete a rush job with a 24hr deadline of a &ldquo;summer camp-like&rdquo; poster so I opted to go for a earthy/clean refreshing design. Luckily, I managed to complete it after only 2-3 revisions according to the client&rsquo;s requests.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="elreyM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">El Rey (Rafa)</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/elrey.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Wallpaper of the king of clay, Rafa Nadal! This design was shared by the ATPWorldTour and went viral on r/tennis <a href="https://twitter.com/feather_design/status/544557002643746816">here!</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="atpfinalM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Group B</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/atpfinal.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Wallpaper of Group B in the ATP World Tour Finals! This design went viral on twitter <a href="https://twitter.com/feather_design/status/529762315538018304">here!</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cfontM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Client Font</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/cfont.jpg" style="width:100%;">
+                    <hr/>
+                    <p>During my many run ins with clients who were unable to easily identify what their favorite font was, I came up with Client Font or CFont for short. Rather than complicating things by sending them links to google fonts or typecast where they would have to pick on their own, I wanted a webapp that could simply display fonts I would recommend to them as a designer. The fonts can be changed relatively easily for my purposes depending on who I'm working for.</p>
+                    <p>Give it a try <a href="http://joshk94.github.io/cfont.html">here.</a> Or if you're interested check out the details on github <a href="https://github.com/joshk94/CFont">here.</a></p>
+                    <p>EDIT: Welp, looks like a trillion other people had this same idea! On the flip side the transitioning css I used to build the effect was pretty nifty. Feel free to shoot me an email if you want to use it.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="vtkmrankM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Kendo Club Ranking WebApp (vtkm.rank)</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/vtkmrank.jpg" style="width:100%;">
+                    <hr/>
+                    <p>The Kendo Club at Virginia Tech recently experienced a significant growth in intermediate members from 3 in 2012 to well over 30 in 2016. In response to this, as the head instructor of the club, I decided to develop a webapp that could dynamically keep track of all of the members.</p>
+                    <p>vtkm.rank was based and inspired off of many official sports websites, particularly atpworldtour.com. However, unlike many of the websites I based my designs off of, the limitations of my back-end server's capabilities was nearly crippling. Since Virginia Tech's servers provided to organizations disallow the use of SQL, I was forced to reimagine a solution to the problem at hand. I decided to continue using XML documents to store player and match data, which combined with an off-server C++ application designed by Austin Garrett, could be semi-manually updated on a weekly basis.</p>
+                    <p>The webapp now is currently in full use and provides insightful data publicy to all the members of the club including rankings, h2h, matches (with video search), and more.</p>
+                    <p>Give it a look <a href="http://www.kendo.org.vt.edu/webapp/index">here!</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="expressionsM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Expressions Posters</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/expressions.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Made a series of fliers for the organization “Expressions.” Worked and engaged with a team to ensure the designs clearly communicated what the organization had in mind for events and performances.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hbcsM" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Heaven Bound Cremation Services</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/hbcs.jpg" style="width:100%;">
+                    <hr/>
+                    <p>When it comes to completing fast jobs as a web developer that offers expedited services, it&rsquo;s alot easier to be able to reference old work to stitch something new rather than starting from scratch.
+                        <p/>
+                        <p> My client, Ms. Turner, was looking for a website to be completed and uploaded within a day as their previous host removed the old website from his/her server. We went over the details fairly quickly over phone and email, and were able to determine a color scheme/core narrative, tone, and so forth to move forwards with. After sending a few low fidelity prototypes, I was able to start working on building the website within the hour + setting it up on a godaddy server for her to manage. I used an old template I had made for common static websites (she didn&rsquo;t require a CMS based one) that was built off of bootstrap and simply plugged and chugged.
+                            <p/>
+                            <p> In reflection moving forward, I think it&rsquo;ll be easier to have more template sites on standby that I created on my own to save both my client&rsquo;s and my own time/money. There&rsquo;s so many website builders/templates/etc out there at the moment so it really makes you think what hiring a web developer is actually worth and it becomes a challenge to convince clients <i>why</i> your services are worth the price. As of now I differentiate myself mostly through my speed of service, but that too can be difficult to prove beyond the occasional online reviews I get for my work. Just some food for thought!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="orcaLogo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
+                    <h1 class="modal-title" id="myModalLabel">Orchestra Logo</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="img/full/orcaLogo.jpg" style="width:100%;">
+                    <hr/>
+                    <p>Orchestra or "Orca" is a project I am currently working on as an intern in the NIS department at Virginia Tech. Basically, ORCA is an attempt to automate many network provisioning tasks at Virginia Tech- this means making software that simplifies work between many different departments as it globally encompasses all of NIS services.</p>
+                    <p>Working with the UX intern team, we first researched colors that would be appropriate; in fact, we actually started by looking into commonly used palettes in actual orchestras for inspiration. From this, we made the decision to use <b>redberry</b> as our color of choice.</p>
+                    <br/>
+                    <img src="img/full/orcaLogo2.jpg" style="width: 100%;" />
+                    <br/>
+                    <p>The actual design of the logo itself was proposed by my fellow intern Zoey Ryu who made a rough prototype inspired by the 4-beat pattern seen in orchestration. After a couple of iterations with the rest of the department, I made a vectorized high fidelity version with a gradient overlay as seen above!</p>
+                    <p>If you're looking for a talented UXer, <a href="http://zoeyryu.wixsite.com/uxport">give Zoey's portfolio a look here!</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86277127-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+.navToggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 5000;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #f44336;
+}
+
+.hSlider {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.hSlider img {
+    max-width: 100%;
+}
+
+.bgc {
+    background: url(../img/bgc.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.lnav img {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari */
+    transform: rotate(0deg);
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.lnav img:hover {
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari */
+    transform: rotate(90deg);
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.rnav {
+    position: relative;
+    font-size: 15px;
+    bottom: 0px;
+    color: #333;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.rnav:hover {
+    bottom: 5px;
+    color: #D76262;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main > header video {
+    width: 100%;
+    height: auto;
+}
+
+main > header {
+    position: relative;
+}
+
+main > header h1 {
+    position: absolute;
+    color: white;
+    bottom: 30%;
+    left: 10rem;
+    font-size: 20rem;
+    text-transform: uppercase;
+    mix-blend-mode: overlay;
+}
+
+main > header a {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    opacity: .5;
+    position: absolute;
+    bottom: 10rem;
+    width: 100%;
+    text-align: center;
+    transition: .3s;
+    animation: downwardprompt 2s 1s;
+}
+
+main > header a:hover {
+    opacity: 1;
+}
+
+@keyframes downwardprompt {
+    to {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+}
+
+.services {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    font-size: 18px;
+    opacity: .8;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.services:hover {
+    background-color: #f44336;
+    color: white;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.services:hover img {
+    transform: rotateY(360deg);
+    -webkit-transition: .5s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.services p {
+    text-align: left;
+}
+
+.services img {
+    max-width: 70%;
+}
+
+.padup {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.html {
+    font-family: 'Open Sans';
+}
+
+.hTeam {
+    -webkit-filter: grayscale(100%);
+    bottom: 0px;
+    filter: grayscale(100%);
+    position: relative;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.hTeam:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+#hInfo {
+    font-size: 16px;
+}
+
+.ihover:hover .ichover {
+    bottom: 10px;
+    opacity: 1;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.ichover {
+    bottom: 0px;
+    opacity: 1;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.smedia {
+    position: relative;
+    bottom: 0px;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.smedia:hover {
+    bottom: 10px;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}

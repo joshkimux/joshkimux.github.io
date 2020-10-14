@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>WINER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- This link is IMPORTANT, allows this to function properly -->
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<!-- Where we will pull our free icons from! -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Our personal stylesheet if we want to add on stuff -->
+<link rel="stylesheet" href="css/winer.css">
+
+<body>
+
+    <!--navigation-->
+    <ul class="w3-navbar w3-large w3-deep-purple w3-left-align w3-top">
+        <li class="w3-hide-medium w3-hide-large w3-deep-purple w3-opennav w3-right">
+            <a href="javascript:void(0);" onclick="myFunction()">W</a>
+        </li>
+        <li><a href="info.html">Info</a></li>
+        <li class="w3-hide-small"><a href="login.html">Login</a></li>
+        <li class="w3-hide-small"><a href="index.html">Index</a></li>
+    </ul>
+
+    <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large w3-deep-purple">
+            <br/>
+            <br/>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Index</a></li>
+        </ul>
+    </div>
+
+    <!-- buffers for mobile spacing -->
+    <br/>
+    <br/>
+
+    <!-- main content / body -->
+
+    <div class="w3-container">
+        <br/>
+
+        <!-- Picture of the Product -->
+        <div class="w3-card-4 w3-animate-bottom">
+            <img src="img/wine/gwine.jpg" style="width: 100%">
+            <div class="w3-container">
+                <h1>Generic Wine</h1>
+                <hr/>
+                <p>Raised in generic yard for generic amount of time.</p>
+            </div>
+        </div>
+
+        <!-- Quote of What to Expect -->
+        <div class="w3-card-4 w3-animate-bottom">
+            <div class="w3-panel w3-deep-purple">
+                <span style="font-size:150px;line-height:0.6em;opacity:0.2">&#10077;</span>
+                <p class="w3-xlarge" style="margin-top:-40px"><i>A fine wine for the generic person who enjoys a fine time on a moonlit porch.</i></p>
+            </div>
+        </div>
+
+        <!-- What the product has (list) -->
+        <div class="w3-card-4 w3-animate-bottom">
+            <ul class="w3-ul w3-border">
+                <li>
+                    <h2>Ingredients</h2></li>
+                <li>Mystery juice A</li>
+                <li>Mystery juice B</li>
+                <li>Mystery juice C</li>
+            </ul>
+
+        </div>
+
+        <!-- Where to find this product -->
+        <br/>
+        <div class="w3-card-4 w3-animate-bottom">
+            <iframe width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyClyuIz827_W8xrMdbj1NztCwUmEqgklFk
+    &q=Space+Needle,Seattle+WA" allowfullscreen>
+            </iframe>
+            <div class="w3-container">
+                <h3>Find Me!</h3>
+                <p>You can purchase me at this location.</p>
+            </div>
+        </div>
+
+        <br/>
+
+    </div>
+    
+    <!-- buffers for mobile spacing -->
+    <br/>
+    <br/>
+
+
+    <footer class="w3-container w3-deep-purple w3-bottom">
+        <p>WHINER</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").classList.toggle("w3-show");
+        }
+    </script>
+
+</body>
+
+</html>

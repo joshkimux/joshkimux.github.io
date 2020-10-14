@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<!-- StyleSheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/fd.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/icons/favicon.ico">
+    
+<!-- Important for resize -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- Fonts Here -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<title>Feather Design</title>
+
+
+<body>
+    <!-- contact modal -->
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title">Let's talk about anything!</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Want to purchase a product, need a commission, have an interest in hiring me, or want consulting? Feel free to do so here, I'm open to any and all questions even if you just want to say hello!
+                    </p>
+                    
+                    <a href="mailto:joshua@feather-design.com?Subject=Business%20Inquiry" target="_top" class="btn btn-info" role="button">Business Inquiry</a>
+                    <a href="mailto:joshk@vt.edu?Subject=Hello%20Josh!" target="_top" class="btn btn-info" role="button">Personal Hires</a>
+                    <br/>
+                    <br/>
+                    <div class="alert alert-warning">
+  <strong>Links not working?</strong> Looks like the mail to link isn't working, that's fine though!  Go ahead and email me at joshua@feather-design.com or joshk@vt.edu with whatever you have in mind!
+</div>
+                    
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- facebook thing -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- on to the real stuff -->
+    
+
+
+    <div class="statHeader" style="position: fixed; top: 0px; z-index: 2; background-color: rgba(255, 255, 255, 0.9); width: 100%;">
+        <div class="container">
+            <div class="row vertical-align" style="padding: 20px;">
+                <div class="col-sm-1 lnav">
+                    <a href="#home"><img src="img/icons/logo.png" style="width:100%" /></a>
+                </div>
+                <div class="col-sm-2 col-md-offset-1 rnav vertical-align">
+                    <a href="#services"><i class="fa fa-2x fa-suitcase fa-fw" aria-hidden="true"></i>&nbsp; Services</a>
+                </div>
+                <div class="col-sm-2 rnav vertical-align">
+                    <a href="http://joshk94.github.io/"><i class="fa fa-2x fa-book fa-fw" aria-hidden="true"></i>&nbsp; Portfolio</a>
+                </div>
+                <div class="col-sm-2 rnav vertical-align">
+                    <a href="#about"><i class="fa fa-2x fa-user fa-fw" aria-hidden="true"></i>&nbsp; About</a>
+                </div>
+                <div class="col-sm-2 rnav vertical-align">
+                    <a href="#connect"><i class="fa fa-2x fa-rocket fa-fw" aria-hidden="true"></i>&nbsp; Connect</a>
+                </div>
+                <div class="col-sm-2 rnav vertical-align">
+                    <a href="#contact" data-toggle="modal" data-target="#myModal"><i class="fa fa-2x fa-phone fa-fw" aria-hidden="true"></i>&nbsp; Contact</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <a name = "home"></a>
+    <div class="container-fluid hSlider">
+        <div id="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <center><img src="img/slider/1.jpg"></center>
+                    </div>
+
+                    <div class="item">
+                        <center><img src="img/slider/2.jpg"></center>
+                    </div>
+
+                    <div class="item">
+                        <center><img src="img/slider/3.jpg"></center>
+                    </div>
+
+                    <div class="item">
+                        <center><img src="img/slider/4.jpg"></center>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- second part services -->
+    <a name="services"></a>
+    <div class="container-fluid ihover" style="background-color:#f44336; color: #ffffff;">
+        <div class="container padup">
+            <div class="row">
+                <div class="col-sm-12">
+                    <center>
+                        <h1>Services</h1></center>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <center>
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <img src="img/icons/website.png" />
+                            <h3><b>Websites</b></h3>
+                            <div class="pinfo">
+                                <hr/>
+                                <p>Start from the ground up or redesign your own with Feather Design's web development services. Let your imagination take charge and we'll make it come true.</p>
+                                <p>
+                                    Custom Website: 20/hr $250-$1000+
+                                    <br/> Website Redesign: Contact me for free consulting
+                                </p>
+                            </div>
+
+                        </div>
+                        <br/>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <img src="img/icons/logos.png" />
+                            <h3><b>Logos</b></h3>
+                            <div class="pinfo">
+                                <hr/>
+                                <p>Let's create a logo, we'll make you 3 drafts, you'll get 3 revisions. No hassle, cheap, and crazy fast, all for just $30 dollars in color, black/white, and transparent versions. We call it the 3 for 3 deal.</p>
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <img src="img/icons/socialmedia.png" />
+                            <h3><b>Social Media</b></h3>
+                            <div class="pinfo">
+                                <hr/>
+                                <p>Go global, we'll build a professional core narrative for the platforms you want: twitter, fb, linkedin, etc.</p>
+                                <p>Social Media Campaign: $100+
+                                    <br/> Includes 3 platforms, 4 posts each. Each additional platform is $25.</p>
+
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+
+                </center>
+            </div>
+            <div class="row">
+                <center>
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <img src="img/icons/advertising.png" />
+                            <h3><b>Advertising</b></h3>
+                            <div class="pinfo">
+                                <hr/>
+                                <p>Become known through our intelligent advertising! We'll provide the materials and the brains to get yourself out there in the world.</p>
+                                <p>Print ad: $15/hr (usually $25-50)
+                                    <br/> Digital ad: $10/hr (usually $15-30)
+                                    <br/> Includes consulting and advice, prices listed per ad.
+                                </p>
+
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <img src="img/icons/it.png" />
+                            <h3><b>IT Support</b></h3>
+                            <div class="pinfo">
+                                <hr/>
+                                <p>Get dependable and 24/7 support through our partner ITZ-LLC in the DC/NoVA/Southern Maryland area. Visit us at itz-llc.com</p>
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <img src="img/icons/art.png" />
+                            <h3><b>Art Comissions</b></h3>
+                            <div class="pinfo">
+                                <hr/>
+                                <p>Like our art? Feather Design is available for design services on whatever you can imagine! Contact us and we'll give you a free quote or redirect you to the right person should we be unable to complete the task.</p>
+                                <p>Here are some of our services:
+                                    <br/> Personalized Website Hub: $30
+                                    <br/> Custom Tennis Poster: $25 (our posters have been shared by the ATPWorldTour and many pro players)
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+<!-- first part of content -->
+    <a name="about"></a>
+    <div class="container-fluid padup" style="background-color:#FFFFFF;">
+        <div class="container">
+            <div class="row ihover">
+                <div class="col-sm-6">
+                    <h1>About Feather Design</h1>
+                    <hr/>
+                    <p>We are a multi-operational contracting agency under ITZ-LLC which specializes in <b>web development, social media consulting, and graphic design</b>. From our very first day in operation we have always focused on being customer-orientated. Client satisfaction and unparalleled attention to detail remain the core to our company's mission to help identify and perfect our customer's vision.
+                    </p>
+                    <p>
+                        When you hire our services from Feather Design, you are choosing a partner to help realize your creative pursuits and goals. Through option-based, step-by-step communication, we hope to guide you to a simple solution as we have with many others including MITRE, the City of Alexandria (ACVA), WellMedica, local organizations, Northern Virginia bands, and more. Contact us today and let us help elevate your business to greater heights.
+
+                    </p>
+
+                </div>
+                <div class="col-sm-6 ichover">
+                    <img src="img/review.gif" style="max-width:100%">
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="row ihover">
+                <div class="col-sm-4 ichover">
+                    <a href="http://lnked.in/jmkim" target="_blank"><img src="img/portrait.png" style="max-width:100%"></a>
+                    <div class="alert alert-info">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Let's Connect!</strong> Click on me to check out my linkedin
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h1>About the Owner</h1>
+                    <hr/>
+                    <p>My name is Joshua Kim and I'm an elbow greased worker, an out-of-the-boxer, a notepad enthusiast, and a senior BIT major at Virginia Tech with a minor in Business Leadership. Beyond simple titles, I am an energetic Web Development and IT Contractor with over eight years of experience in a variety of fields including graphic and UX design, digital and print marketing, server/website management and construction, and business information technology.
+                    </p>
+                    <p>Despite juggling work and academics, I am also very involved in my community! I am an ukulele street performer and have been featured on FM 90.7 and local restaurants. Furthermore I have managed a multitude of organizations including:</p>
+                    <ul>
+                        <li>President - Martial Artist Council (2013-Present)</li>
+                        <li>President- Kendo Club (2012-2016)</li>
+                        <li>Director- Save Cultural Athletics (2015-2016)</li>
+                        <li>Marketing Chair- VT Expressions (2013-2015)</li>
+                        <li>President- VTSPJP Students for Peace and Justice in Palestine (2013-2014)</li>
+                        <li>President- Friends for Peace and Justice in Palestine (2013-2014)</li>
+                    </ul>
+                    <p>Feel free to talk to me about design, work, or anything in general at joshua@feather-design.com</p>
+                    <b><a href = "http://lnked.in/jmkim" target="_blank"><p>PS. You can connect with me on linkedin too!</p></a></b>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Third part, team -->
+    <a name="connect"></a>
+    <div class="container-fluid bgc padup">
+        <div class="container" style="color: #333; font-weight: bold;">
+            <div class="row">
+                <center>
+                    <div class="col-xs-4 smedia">
+                        <a href="https://www.facebook.com/Feather-Design-193410867376758/?fref=ts&ref=br_tf"><img src="img/icons/fb.png" style="max-width: 70%"></a>
+                    </div>
+                    <div class="col-xs-4 smedia">
+                        <a class="twitter-timeline" href="https://twitter.com/feather_design" data-widget-id="511950788675915776">Tweets by @feather_design</a>
+                        <script>
+                            ! function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0],
+                                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                        </script>
+                    </div>
+                    <div class="col-xs-4 smedia">
+                        <a href="https://www.linkedin.com/in/joshua-kim-9a812355"><img src="img/icons/ln.png" style="max-width: 70%"></a>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<footer>
+    <div class="container-fluid" style="background-color:#333; color: #ffffff;">
+        <div class="container">
+            <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                <div class="col-sm-6">
+                    <p>Copyright @Feather-Design 2016</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- javascripts -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

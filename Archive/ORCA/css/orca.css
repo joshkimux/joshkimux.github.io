@@ -1,0 +1,25 @@
+.mainpage {
+    margin-top: 100px;
+}
+
+.successpage {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.pButton {
+    font-size: 1.2em;
+}
+
+.trSelect {
+    cursor: pointer;
+}
+
+.trActive {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#msgQueue {
+    display: none;
+}

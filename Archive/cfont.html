@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Custom styles -->
+<link href="css/cfont.css" rel="stylesheet">
+
+<!-- Add the google fonts you need here -->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+
+<head>
+<title>Client Font</title>
+</head>
+
+<!-- Follow me, hire me, chat with me I'm cool -->
+<div class = "watermark">
+	<p>Made by Joshua Kim @ <a href="http://feather-design.com/">feather-design</a></p>
+</div>
+
+<body>
+
+<!-- Feel free to change any of the descriptions here to your taste -->
+<div class = "introbox">
+<div class = "intro">
+
+	<h1>Hover over the font you like best!</h1>
+	
+	<p>Don't like the title?  <i><b>Change it then!</b></i></p>
+	<textarea name="message" onclick = "cleartitle()" id="title" rows="2" cols="40">Insert your new title!
+	</textarea>
+	
+	<p>Don't like the description?  <i><b>Change it then!</b></i></p>
+	<textarea name="message" onclick = "cleardescription()" id="description" rows="4" cols="60">Insert your new description!
+	</textarea>
+	
+	<br/>
+	<br/>
+
+	<button type="button" onclick="change()">Change!</button>
+	
+	<br/>
+	<br/>
+
+</div>
+
+<div class = "intro">
+
+	<h1>Preview font combinations!</h1>
+	<p>Heading</p>
+		<select id = "pTitleFont">
+			<option value="Lato">Lato</option>
+			<option value="Open Sans">Open Sans</option>
+			<option value="Source Sans">Source Sans</option>
+			<option value="Roboto">Roboto</option>
+			<option value="Ubuntu">Ubuntu</option>
+			<option value="Work Sans">Work Sans</option>
+			<option value="Alegreya">Alegreya</option>
+		</select>
+		
+	<p>Text</p>
+		<select id = "pTextFont">
+			<option value="Lato">Lato</option>
+			<option value="Open Sans">Open Sans</option>
+			<option value="Source Sans">Source Sans</option>
+			<option value="Roboto">Roboto</option>
+			<option value="Ubuntu">Ubuntu</option>
+			<option value="Work Sans">Work Sans</option>
+			<option value="Alegreya">Alegreya</option>
+		</select>
+	
+	<br/>
+	<br/>
+
+	<button type="button" onclick="preview()">Preview!</button>
+	
+	<br/>
+	<br/>
+	<br/>
+	
+	<div class = "preview">
+		<div class = "previewtitle">
+			<h1>Dummy Header Example</h1>
+		</div>
+		<hr/>
+		<div class = "previewtext">
+			<p>Description of the title.  This will be your content text.  Use it wisely!  You can <b>bold it</b>, <i>italicize it</i>, or anything else really!</p>
+		</div>
+	</div>
+	
+	<br/>
+	<br/>
+
+</div>
+</div>
+
+	<hr/>
+
+<br/>
+
+<!-- Copy/paste and change the descriptions inside to match your client's tastes -->
+<div class="bigbox" style = "font-family: 'Lato', sans-serif;">
+	<div class = "smallboxleft">
+		<h2>Lato Font</h2>
+		</hr>
+		<p>Stylistic corporate font, warm but strong.  Serious but friendly.</p>
+		<h1>Example H1</h1><h2>Example H2</h2><h3>Example H3</h3>
+		<p><b>Example</b> <i>Example</i> <u>Example</u></p>
+	</div>
+	<div class = "smallboxright">
+		<h2>Generic TITLE</h2>
+		<hr/>
+		<p>Some description text to show as an example</p>
+	</div>
+</div>
+
+
+<div class="bigbox" style = "font-family: 'Open Sans', sans-serif;">
+	<div class = "smallboxleft">
+		<h2>Open Sans Font</h2>
+		</hr>
+		<p>Upright and neutral, yet friendly.  Easy to read.</p>
+		<h1>Example H1</h1><h2>Example H2</h2><h3>Example H3</h3>
+		<p><b>Example</b> <i>Example</i> <u>Example</u></p>
+	</div>
+	<div class = "smallboxright">
+		<h2>Generic TITLE</h2>
+		<hr/>
+		<p>Some description text to show as an example</p>
+	</div>
+</div>
+
+<div class="bigbox" style = "font-family: 'Source Sans Pro', sans-serif;">
+	<div class = "smallboxleft">
+		<h2>Source Sans Font</h2>
+		</hr>
+		<p>Works well with most user interfaces.</p>
+		<h1>Example H1</h1><h2>Example H2</h2><h3>Example H3</h3>
+		<p><b>Example</b> <i>Example</i> <u>Example</u></p>
+	</div>
+	<div class = "smallboxright">
+		<h2>Generic TITLE</h2>
+		<hr/>
+		<p>Some description text to show as an example</p>
+	</div>
+</div>
+
+
+<div class="bigbox" style = "font-family: 'Roboto', sans-serif;">
+	<div class = "smallboxleft">
+		<h2>Roboto Font</h2>
+		<p>Dual sided being largely geometric, but also open and friendly.  Feels natural.</p>
+		<h1>Example H1</h1><h2>Example H2</h2><h3>Example H3</h3>
+		<p><b>Example</b> <i>Example</i> <u>Example</u></p>
+	</div>
+	<div class = "smallboxright">
+		<h2>Generic TITLE</h2>
+		<hr/>
+		<p>Some description text to show as an example</p>
+	</div>
+</div>
+
+<div class="bigbox" style = "font-family: 'Ubuntu', sans-serif;">
+	<div class = "smallboxleft">
+		<h2>Ubuntu Font</h2>
+		</hr>
+		<p>Clear with a unique personality.</p>
+		<h1>Example H1</h1><h2>Example H2</h2><h3>Example H3</h3>
+		<p><b>Example</b> <i>Example</i> <u>Example</u></p>
+	</div>
+	<div class = "smallboxright">
+		<h2>Generic TITLE</h2>
+		<hr/>
+		<p>Some description text to show as an example</p>
+	</div>
+</div>
+
+<div class="bigbox" style = "font-family: 'Work Sans', sans-serif;">
+	<div class = "smallboxleft">
+		<h2>Work Sans Font</h2>
+		</hr>
+		<p>Useful for both print and web.</p>
+		<h1>Example H1</h1><h2>Example H2</h2><h3>Example H3</h3>
+		<p><b>Example</b> <i>Example</i> <u>Example</u></p>
+	</div>
+	<div class = "smallboxright">
+		<h2>Generic TITLE</h2>
+		<hr/>
+		<p>Some description text to show as an example</p>
+	</div>
+</div>
+
+<div class="bigbox" style = "font-family: 'Alegreya', sans-serif;">
+	<div class = "smallboxleft">
+		<h2>Alegreya Font</h2>
+		</hr>
+		<p>Fresh and dynamic.</p>
+		<h1>Example H1</h1><h2>Example H2</h2><h3>Example H3</h3>
+		<p><b>Example</b> <i>Example</i> <u>Example</u></p>
+	</div>
+	<div class = "smallboxright">
+		<h2>Generic TITLE</h2>
+		<hr/>
+		<p>Some description text to show as an example</p>
+	</div>
+</div>
+
+</body>
+
+<!-- I hope this can be useful to you, peace out yo -->
+
+
+<!-- javascripts -->
+<script src="js/jquery.js"></script>
+<script src="js/cfont.js"></script>
+
+</html>

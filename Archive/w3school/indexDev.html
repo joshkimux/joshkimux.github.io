@@ -1,0 +1,132 @@
+<!-- ORCA HiFi Prototype Port Assignments -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to use W3 for dummies</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/tutorial.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">How to W3.CSS</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Intro</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">The Narrative
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="colors.html">Pick a Theme</a></li>
+                        <li><a href="logos.html">The Logo</a></li>
+                    </ul>
+                </li>
+                <li><a href="download.html">Download</a></li>
+                <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Development
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="indexDev.html">Index</a></li>
+                        <li><a href="infoDev.html">Info</a></li>
+                        <li><a href="loginDev.html">Login</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid padup">
+        <div class="container mainpage">
+            <div class="container">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="jumbotron">
+                    <h1>Building our Index</h1>
+                    <p>We'll be making a card-based index which lists WINER's wines all out in an attractive format.</p>
+                </div>
+                <br/>
+
+                <h1>Familiarizing with W3.CSS</h1>
+                <hr/>
+                <p>If I really wanted to I could throw down a full tutorial on using W3.CSS, but that's not in the scope of making this project work. If you're curious of all the tiny details, <a href="http://www.w3schools.com/w3css/w3css_intro.asp"> you can check out the legit tutorial at w3school's website here.</a></p>
+
+                <p>Anyways here's a quick summary. W3.CSS is like a cascading structure conceptually. Since it's a stylesheet, you'll define divs by giving them classes. These classes will determine what your div will become.</p>
+                <p>Go ahead and copy generic.html and paste/rename it as index.html!  Open it up and scroll down to the main content/body section I've commented out for you.  You'll start with your containers by attaching the <code>w3-container</code> class. Then, you'll add on your cards which you can see as your mini-containers of information through <code>w3-card</code>. To give these basic structures a personality you can further add on classes such as <code>w3-deep-purple</code> or add depth to your original card by adding a number i.e. <code>w3-card-4</code>.</p><br/>
+                <img class="img-responsive" src="img/indev1.png" /><br/>
+                
+                <h1>Buffing Up Your Card</h1><hr/>
+                <p>Great! Now we've made a basic card, but nothing will show until we add some content onto it. Since we're building our wine index, let's add a generic wine summary onto this.</p><br/>
+                <img class="img-responsive" src="img/indev2.png" /><br/>
+                <blockquote>
+                    <p>Hold on, I just opened up my index.html and it looks all stretched and weird!</p>
+                    <footer>You again, probably</footer>
+                </blockquote><br/>
+                <p>Good catch!  Remember, we're building this with the intent of making a mobile app, so we shouldn't open this on a desktop- or at least in a desktop environment.  Go ahead and try and open up index.html in your browser again (I recommend Chrome). <b>If you're running chrome, right click and select "inspect"</b>.  Then press the button below and you'll be able to see the document as a phone!  God bless Chrome's console.</p><br/>
+                <img class = "img-responsive" src = "img/indev4.png" /><br/>
+                <p>Your card should now look like what I have below.</p><br/>
+                <img class = "img-responsive" src = "img/indev5.png" /><br/>
+                <p>As you can see, the <i>padding</i> or spacing seems really off.  Generic Wine is super close to the edges and that looks awful!  So there's two ways we can fix this problem.  We can either A) create a padding rule for a new class in our own stylesheet OR B) use what W3.CSS gives us already.  For sake of simplicity let's do the latter.  If we pop our content into a <code>w3-container</code>, it will be auto-padded thanks to the rules that already exist for that class.  As you can see I've also included an image as well!  For organization, let's put our wine image under img->wine->yourwine.jpg.  To make it responsive (basically make it fit nicely), go ahead and slap on style = "width: 100%" as well.</p><br/>
+                <img class = "img-responsive" src = "img/indev6.png" /><br/>
+                <p>Don't like the way that looks?  We can also use a horizontal image that's not bound under the <code>w3-container</code>.</p><br/>
+                <img class = "img-responsive" src = "img/indev7.png" /><br/>
+                
+                <h1>Finishing Touches</h1><hr/>
+                <p>Time to wrap up!  First in business, let's make it so that when the user clicks on the product they will be taken to an info page.  This is easily done simply by wrapping the entire container in an a href tag as seen below.  I've also added some extra animation properties with <code>w3-animate-bottom</code> but that's not necessary; <a href = "http://www.w3schools.com/w3css/w3css_animate.asp">you can read more about it here</a></p><br/>
+                <img class = "img-responsive" src = "img/indev8.png" /><br/>
+                <p>You're gonna also want to create a new stylesheet to get rid of the pesky a tag stuff under your css folder.  Let's name it winer.css!  Here add <code>text-decoration: none;</code> and that'll do the trick.  <a href = "http://joshk94.github.io/w3school/demo/css/winer.css" download/>Download or compare yours to mine here!</a></p>
+                <p>Finally, copy and paste a bunch of these so we can finish up our high fidelity prototype.  The final product should look similar to what I have below.</p><br/>
+                <img class = "img-responsive" src = "img/indev9.png" /><br/>
+                <h3><a href = "http://joshk94.github.io/w3school/demo/index.html">Or you can just view the live demo here (don't forget to view element as mobile).</a></h3>
+
+                <br/>
+                <h1>Next steps</h1>
+                <hr/>
+                <h3><a href = "infoDev.html">Let's build the information page now for our generic wines!</a></h3>
+                <br/>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!--jquery-->
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/tutorial.js"></script>
+
+
+</body>
+
+</html>

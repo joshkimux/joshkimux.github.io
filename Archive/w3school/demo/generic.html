@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>WINER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- This link is IMPORTANT, allows this to function properly -->
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<!-- Where we will pull our free icons from! -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- Our personal stylesheet if we want to add on stuff -->
+<link rel="stylesheet" href="css/winer.css">
+
+<body>
+
+    <!--navigation for large screens-->
+    <ul class="w3-navbar w3-large w3-deep-purple w3-left-align w3-top">
+        <li class="w3-hide-medium w3-hide-large w3-deep-purple w3-opennav w3-right">
+            <a href="javascript:void(0);" onclick="myFunction()">W</a>
+        </li>
+        <li><a href="index.html">Index</a></li>
+        <li class="w3-hide-small"><a href="login.html">Login</a></li>
+    </ul>
+
+
+    <!--navigation for small screens-->
+    <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large w3-deep-purple">
+            <br/>
+            <br/>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+
+    <!-- buffers for mobile spacing -->
+    <br/>
+    <br/>
+
+    <!-- main content / body -->
+
+    <div class="w3-container">
+        <br/>
+
+
+        <br/>
+    </div>
+
+    <!-- buffers for mobile spacing -->
+    <br/>
+    <br/>
+
+    <!-- footer -->
+    <footer class="w3-container w3-deep-purple w3-bottom">
+        <p>WINER</p>
+    </footer>
+
+    <!-- script for nav -->
+    <script>
+        function myFunction() {
+            document.getElementById("demo").classList.toggle("w3-show");
+        }
+    </script>
+
+</body>
+
+</html>

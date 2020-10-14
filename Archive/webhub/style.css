@@ -1,0 +1,110 @@
+body {
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sup {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    z-index: 200;
+    transition: all .2s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+.suphidden {
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+    z-index: 200;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px black;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all .2s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+.sup:hover + .suphidden {
+    opacity: 100;
+    bottom: 70px;
+}
+
+.sup:hover {
+    transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    bottom: 30px;
+}
+
+.container {
+    position: relative;
+    top: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: #666365;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.webbox {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 20%;
+    height: 60%;
+    border: solid 2px #666365;
+    padding: 20px;
+    transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+.webbox:hover {
+    height: 430px;
+    border: solid 2px #e97072;
+    border-radius: 0px;
+}
+
+.websub {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+}
+
+.websub a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #666365;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    border-radius: 10px;
+}
+
+.websub a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 0px;
+}

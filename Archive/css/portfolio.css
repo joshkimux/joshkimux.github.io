@@ -1,0 +1,233 @@
+#navInst {
+    line-height: 1.8;
+    margin-top: 11%;
+    font-size: 20px;
+}
+
+.about {
+    font-size: 60px;
+}
+
+.navToggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 5000;
+}
+
+.lnav img {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari */
+    transform: rotate(0deg);
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.lnav img:hover {
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari */
+    transform: rotate(90deg);
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.sNav {
+    transform: scale(1, 1);
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.sNav:hover {
+    transform: scale(1.01, 1.01);
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.pageLoader {
+    background-color: #f44336;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.loadLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.watermark {
+    position: fixed;
+    padding: 10px;
+    bottom: 10px;
+    right: 10px;
+    color: #424242;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.portNav {
+    background-color: #f44336;
+    padding: 12px;
+    color: white;
+    font-weight: 300;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.pASquare {
+    margin-top: 40px;
+    opacity: 1;
+    width: 100%;
+    padding: 20px;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.pATitle {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.2;
+}
+
+.pASub {
+    font-weight: 300;
+    font-size: 40px;
+    opacity: 1;
+}
+
+.pADes {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* screen change to mobile */
+@media only screen and (max-width: 500px) {
+    .pATitle {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .pASub {
+        font-weight: 100;
+        font-size: 30px;
+    }
+    .pADes {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+
+.pSquare {
+    margin-top: 40px;
+    width: 100%;
+    cursor: pointer;
+    padding: 30px;
+    text-align: center;
+    color: #555;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.pSquare h3 {
+    font-weight: 700;
+}
+
+.pSquare:hover h3 {
+    color: #f44336;
+}
+
+.pSquare:hover {}
+
+.fdHide {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    width: 70%;
+    height: 70%;
+    text-align: right;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.zoomBlock {
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoomBlock img {
+    width: 100%;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    width: 100%;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+.zoomBlock:hover img {
+    transform: scale(1.2, 1.2);
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+}
+
+.zoomBlock:hover .fdHide {
+    opacity: 1;
+    -webkit-transition: .2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+
+.website {}
+
+.mobile {}
+
+.print {}
+
+.campaign {}
+
+@media (min-width: 768px) {
+  .content {
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+}
+
+.highlighter {
+    padding: 50px 100px 50px 100px;
+    width: 100%;
+}
+
+.fdIcon {
+    font-size: 25px;
+}

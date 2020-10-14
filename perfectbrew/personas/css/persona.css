@@ -1,0 +1,17 @@
+body {
+	margin: 40px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.introduction {
+	font-size: 4em;
+	padding: 10px 40px 10px 40px;
+	color: white;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: 1px solid;
+}
+
+#id {
+	font-size: 18px;
+}

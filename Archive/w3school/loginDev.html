@@ -1,0 +1,125 @@
+<!-- ORCA HiFi Prototype Port Assignments -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to use W3 for dummies</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/tutorial.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">How to W3.CSS</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Intro</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">The Narrative
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="colors.html">Pick a Theme</a></li>
+                        <li><a href="logos.html">The Logo</a></li>
+                    </ul>
+                </li>
+                <li><a href="download.html">Download</a></li>
+                <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Development
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="indexDev.html">Index</a></li>
+                        <li><a href="infoDev.html">Info</a></li>
+                        <li><a href="loginDev.html">Login</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid padup">
+        <div class="container mainpage">
+            <div class="container">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="jumbotron">
+                    <h1>Building our Login Page</h1>
+                    <p>Chances are, your users will need to login; let's build an easy one using the template that we have!</p>
+                </div>
+                <br/>
+                
+                <h1>Updating the Nav</h1><hr/>
+                <p>As we did in the last section, we'll need to update our navigation first.  Hopefully you'll know how to handle this by now!  I've attached a screenshot of what it should look like below just in case you forgot.</p><br/>
+                <img class = "img-responsive" src = "img/logdev1.png"/><br/>
+                
+                <h1>Inserting Our Logo</h1><hr/>
+                <p>Hopefully you remember the beautiful logo you made earlier in this tutorial!  If you already have one, great, otherwise <a href = "logos.html">please backtrack here!</a></p>
+                <p>To get us kicked off, pop your logo into your image folder (should be img -> logo.png/jpg/etc).</p>
+                <p>Here's the easy part, since we're building a login page we won't need cards for the styling.  All you have to do is pop in your logo with a standard <code>img</code> tag.  Don't forget to make sure it's responsive too by inputting <code>style: "width: 100%"</code>.  I also went ahead and animated it too for some extra flair by appending on <code>class = "w3-animate-top"</code> on top.  <a href = "http://www.w3schools.com/w3css/w3css_animate.asp">Psst, if you still need help with what animation to use, check this W3 tutorial out.</a></p><br/>
+                <img class = "img-responsive" src = "img/logdev2.png"/><br/>
+                
+                <h1>Making a Login Form</h1><hr/>
+                <p>W3.CSS provides a plethora of options to choose from when it comes to building a login page or any form in general.  <a href = "http://www.w3schools.com/w3css/w3css_input.asp">You can check it out here!</a></p>
+                <p>We'll start by building the structure of the form itself with <code>form class = "w3-container"></code>.  Depending on what you're using to pull/push data to/from the back end you may want to include a form action as well.  Since this tutorial is front-end based though, we won't go into that stuff.</p><br/>
+                <img class = "img-responsive" src = "img/logdev3.png"/><br/>
+                
+                <p>For this project, we'll have a login comprised of two basic inputs: a username and a password.  The user will need to input both in order to get through, so let's make these validated!  Luckily, W3.CSS offers a nifty solution to that using their input class styling.  We're going to copy and paste their validation form into our own code like so.  <a href = "http://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_input_validating">I used the one from here.</a></p><br/>
+                <img class = "img-responsive" src = "img/logdev4.png"/><br/>
+                
+                <p>Let's wrap things up with some nice looking buttons!  We'll need two for this: a LOGIN and a New User option.  To start, since we don't want our buttons to collide with one another, and they aren't necessarily a completely a different card/entity from the form we will break them up with the <code>w3-section</code> class.</p>
+                
+                <p>Within these sections we'll need to make our actual buttons.  <a href = "http://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_buttons_fullwidth">These full width buttons should do the trick.</a>  In order to differentiate them, we can adjust their sizing with the sizing classes inherently included in w3.  For our LOGIN let's pop on the <code>w3-xlarge</code> class and for our New User let's use the <code>w3-medium</code> class.  I also hope you remember the accent color you chose way back, as we'll be using that to give our buttons life on the screen.  I've added a <code>w3-light-green</code> class to both buttons to do so.</p><br/>
+                <img class = "img-responsive" src = "img/logdev5.png"/><br/>
+                
+                <h3><a href = "demo/login.html">Double check your site with my demo one if you need to!</a></h3>
+
+                <br/>
+                <h1>Wrapping Up</h1>
+                <hr/>
+                <h3><a href = "thanks.html">Wow, you made it!  I've got just a little bit left to say.</a></h3>
+                <br/>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!--jquery-->
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/tutorial.js"></script>
+
+
+</body>
+
+</html>
