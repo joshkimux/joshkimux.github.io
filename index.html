@@ -44,41 +44,43 @@
     <a class="skip-main" href="#main">Skip to main content</a>
 
     <!--Navigation -->
-    <nav class="nav-border" aria-label="Main">
-        <div class="container">
-            <!--Desktop nav-->
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="nav-logo">
-                    <a href="index.html"><img src="img/logo/logo_human_2.svg" / alt="Logo of Josh Kim UX"></a>
+        <header class="nav-border">
+            <div class="container">
+                <!--Desktop nav-->
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="nav-logo">
+                        <a href="index.html"><img src="img/logo/logo_human_2.svg" / alt="Logo of Josh Kim UX"></a>
+                    </div>
+                    <nav aria-label="main">
+                        <ul role="list" class="d-flex justify-content-end align-items-center">
+                            <li class="cust-nav-item"><a class="subnav subnav-selected" href="index.html">Home</a></li>
+                            <li class="cust-nav-item"><a class="subnav" href="portfolio.html">Portfolio</a></li>
+                            <li class="cust-nav-item"><a class="subnav" href="reads.html">My Reads</a></li>
+                            <li class="cust-nav-item"><a class="subnav" href="about.html">About Me</a></li>
+                            <li class="talk"><a class="subnav" href="contact.html">Let's Talk</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <ul class="d-flex justify-content-end align-items-center">
-                    <li class="cust-nav-item"><a class="subnav subnav-selected" href="index.html">Home</a></li>
-                    <li class="cust-nav-item"><a class="subnav" href="portfolio.html">Portfolio</a></li>
-                    <li class="cust-nav-item"><a class="subnav" href="reads.html">My Reads</a></li>
-                    <li class="cust-nav-item"><a class="subnav" href="about.html">About Me</a></li>
-                    <li class="talk"><a class="subnav" href="contact.html">Let's Talk</a></li>
-                </ul>
-            </div>
-            <!--End of desktop nav-->
+                <!--End of desktop nav-->
 
-            <!--Mobile nav-->
-            <div class="nav-scroller">
-                <div class="nav d-flex">
-                    <a class="subnav subnav-selected" href="index.html">Home</a>
-                    <a class="subnav" href="portfolio.html">Portfolio</a>
-                    <a class="subnav" href="reads.html">My Reads</a>
-                    <a class="subnav" href="about.html">About Me</a>
-                </div>
+                <!--Mobile nav-->
+                <nav class="nav-scroller" aria-label="main">
+                    <div class="nav d-flex">
+                        <a class="subnav subnav-selected" href="index.html">Home</a>
+                        <a class="subnav" href="portfolio.html">Portfolio</a>
+                        <a class="subnav" href="reads.html">My Reads</a>
+                        <a class="subnav" href="about.html">About Me</a>
+                    </div>
+                </nav>
+                <!--End of mobile nav -->
             </div>
-            <!--End of mobile nav -->
-        </div>
-        <!--end of container -->
-    </nav>
+            <!--end of container -->
+        </header>
     <!--end of navigation -->
 
     <!-- Main content -->
     <main role="main" id="main">
-        <header class="l-padding index-bg">
+        <div class="l-padding index-bg">
             <div class="overlay">
             </div>
             <div class="container index-headline">
@@ -89,19 +91,19 @@
                     </div>
                     <div class="col-lg-4 col-xl-3">
                         <p class="off-screen">Here's a list of where I'm doing work now:</p>
-                        <ul>
+                        <ul role="list">
                             <li>Ad Hoc <br aria-hidden="true" /><span class="index-headline-details"> Senior Designer, Accessibility Specialist</span></li>
                             <li>US Digital Response <br aria-hidden="true" /><span class="index-headline-details">UX and Accessibility Designer</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
         <!--end of header -->
 
-        <section class="l-padding">
+        <section class="l-padding" role="region" aria-labelledby="service">
             <div class="container">
-                <h2 class="off-screen">How can I best serve you?</h2>
+                <h2 id="service" class="off-screen">How can I best serve you?</h2>
                 <div class="row">
                     <!--Card List-->
                     <div class="col-lg-4">
@@ -150,16 +152,16 @@
         
         <hr aria-hidden="true"/>
         
-        <section id="job-pitch" class="l-padding">
+        <section id="job-pitch" class="l-padding" role="region" aria-labelledby="pitch">
             <div class="container">
                 <div class="row">
                     <header class="col-lg-4 card-mobile-margin">
-                        <h2>5-Minute Design Job Pitch</h2>
+                        <h2 id="pitch">5-Minute Design Job Pitch</h2>
                         <p>Here's 5 reasons in 5 minutes to help you decide if you should bring me on as your next product or UX designer.</p>
 
                     </header>
                     <div class="offset-lg-1 col-lg-7">
-                        <ul class="about-list">
+                        <ul class="about-list" role="list">
                         
                             <li><h3>I'm a flexible designer with consulting chops.</h3>
                         <p>I've led discovery teams, facilitated participatory design workshops, prototyped high-fidelity flows, tested for WCAG 2.1 compliance, and presented at major client meetings.</p>
@@ -186,11 +188,6 @@
 
             </div>
         </section>
-
-        
-
-
-
     </main>
 
     <!-- Footer -->
