@@ -190,7 +190,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
 }
 
 .reads-bg {
-    background: url(../img/thumb/books.jpg) rgb(238 238 238);
+    background: url(../img/thumb/books.jpg) rgb(232 232 232);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
@@ -513,7 +513,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
 
 .card:hover {
     transform: scale(1.05);
-    border: solid .5px #171717;
     box-shadow:
         0 1.2px 6.7px -16px rgba(0, 0, 0, 0.03),
         0 2.8px 16.2px -16px rgba(0, 0, 0, 0.038),
@@ -1124,18 +1123,36 @@ h4 {
     padding-bottom: 30px;
 }
 
+/*! new breadcrumbs */
 
-/*! breadcrumbs */
-
-.breadcrumbs {
-    padding: 15px;
-    border-bottom: solid .5px #33333314;
-    font-size: 1rem;
-    line-height: 1.7rem;
+nav.breadcrumbs {
+  padding: 1rem;
+  font-size: 1rem;
+font-family: 'space mono', monospace;
+  line-height: 1.7rem;
+  border-bottom: solid .5px #33333314;
 }
 
-.breadcrumbs a {
-    border-bottom: solid 1px #162430;
+nav.breadcrumbs ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+nav.breadcrumbs li {
+  display: inline;
+}
+
+nav.breadcrumbs li + li::before {
+  content: '/\00a0';
+}
+
+nav.breadcrumbs a {
+  border-bottom: solid 1px #162430;
+}
+
+nav.breadcrumbs [aria-current="page"] {
+  border-bottom: none;
 }
 
 
@@ -1435,13 +1452,21 @@ strong {
     color: #162330;
 }
 
-.footer-subtext {
+footer ul {
+    padding-inline-start: 0px;
+}
+
+footer li {
+    display: inline-block;
     font-size: 1rem;
     font-weight: 400;
     line-height: 2.5rem;
     font-family: 'Space Mono', monospace;
     color: #474f54;
+    margin-right: 1.5rem;
 }
+
+
 
 .footer-subtext a {
     margin-right: 1.5rem;

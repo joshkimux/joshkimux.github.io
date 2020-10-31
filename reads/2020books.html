@@ -43,42 +43,51 @@
 
 <body>
     <!--Navigation -->
-    <nav class="nav-border" aria-label="Main">
+        <header class="nav-border">
+            <div class="container">
+                <!--Desktop nav-->
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="nav-logo">
+                        <a href="../index.html"><img src="../img/logo/logo_human_2.svg" / alt="Logo of Josh Kim UX"></a>
+                    </div>
+                    <nav aria-label="main">
+                        <ul role="list" class="d-flex justify-content-end align-items-center">
+                            <li class="cust-nav-item"><a class="subnav" href="../index.html">Home</a></li>
+                            <li class="cust-nav-item"><a class="subnav" href="../portfolio.html">Portfolio</a></li>
+                            <li class="cust-nav-item"><a class="subnav subnav-selected" href="../reads.html">My Reads</a></li>
+                            <li class="cust-nav-item"><a class="subnav" href="../about.html">About Me</a></li>
+                            <li class="talk"><a class="subnav" href="../contact.html">Let's Talk</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--End of desktop nav-->
 
-        <div class="container">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="nav-logo">
-                    <a href="../index.html"><img src="../img/logo/logo_human_2.svg" / alt="Logo of Josh Kim UX"></a>
-                </div>
-                <div>
-                    <ul class="d-flex justify-content-end align-items-center">
-                        <li class="cust-nav-item"><a class="subnav" href="../index.html">Home</a></li>
-                        <li class="cust-nav-item"><a class="subnav" href="../portfolio.html">Portfolio</a></li>
-                        <li class="cust-nav-item"><a class="subnav subnav-selected" href="../reads.html">My Reads</a></li>
-                        <li class="cust-nav-item"><a class="subnav" href="../about.html">About Me</a></li>
-                        <li class="talk"><a class="subnav" href="../contact.html">Let's Talk</a></li>
-                    </ul>
-                </div>
+                <!--Mobile nav-->
+                <nav class="nav-scroller" aria-label="main">
+                    <div class="nav d-flex">
+                        <a class="subnav" href="../index.html">Home</a>
+                        <a class="subnav" href="../portfolio.html">Portfolio</a>
+                        <a class="subnav subnav-selected" href="../reads.html">My Reads</a>
+                        <a class="subnav" href="../about.html">About Me</a>
+                    </div>
+                </nav>
+                <!--End of mobile nav -->
             </div>
-
-            <!--Mobile nav-->
-            <div class="nav-scroller">
-                <div class="nav d-flex">
-                    <a class="subnav" href="../index.html">Home</a>
-                    <a class="subnav" href="../portfolio.html">Portfolio</a>
-                    <a class="subnav subnav-selected" href="../reads.html">My Reads</a>
-                    <a class="subnav" href="../about.html">About Me</a>
-                </div>
-            </div>
-            <!--Mobile nav-->
-
-        </div>
-    </nav>
+            <!--end of container -->
+        </header>
     <!--end of navigation -->
+    
     <!--Breadcrumbs-->
-    <nav class="breadcrumbs" alt="Breadcrumb Navigation">
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
         <div class="container">
-            <a href="../reads.html">My Reads</a> > 2020 Bookmark
+          <ol>
+            <li>
+              <a href="../reads.html">My Reads</a>
+            </li>
+            <li>
+              <a aria-current="page" href="2020books.html">2020 Bookmark</a>
+            </li>
+          </ol>
         </div>
     </nav>
 
@@ -560,7 +569,7 @@
             <section>
                 <div class="row">
                     <div class="col-md-0 col-lg-1 book-date">
-                        <h3><span class="book-subtext">2&nbsp;BOOKS</span><br />October</h3>
+                        <h3><span class="book-subtext">3&nbsp;BOOKS</span><br />October</h3>
                     </div>
                     <div class="col-lg-8">
                         <div class="booknote">
@@ -582,6 +591,17 @@
                                 <hr aria-hidden="true" />
                                 <span>
                                     <a href="https://researchportal.bath.ac.uk/en/publications/cultural-heritage-ageing-disability-and-identity-practice-and-the">Buy from University of BATH</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="booknote">
+                            <div class="booknote-textbox">
+                                <h3 class="book-title">Structured Negotiation <i class="fas fa-smile"></i></h3>
+                                <p>Structured negotiation, which Lainey champions, is the polar opposite of everything popular culture portrays a litigation to be. Instead of a war room, there’s a round table. Instead of cynicism, there is grounded positivity. Instead of doubt, there is trust. Instead of hasty assumption making, there is patience. This book has made me wiser and more hopeful for the future.</p>
+                                <p>That being said, in application it's still tough. As a designer who advocates for inclusive design in consulting, my mindset can get framed within a war where I need to choose the right hills to die on. Deadlines can make the active patience Lainey advocates for even more difficult. Yet, it’s also hard to think of any other way to create real and lasting institutional change. Maybe we just need more leaders and lawyers that can practice what Lainey preaches. That being said, I’ll be recommending this book upwards whenever I find the opportunity to do so.</p>
+                                <hr aria-hidden="true" />
+                                <span>
+                                    <a href="https://www.lflegal.com/">Buy from Lainey's website</a>
                                 </span>
                             </div>
                         </div>
@@ -648,14 +668,24 @@
                 <div class="col-md-6">
                     <p><a href="thissucks/include.html">Read more about my commitment to improve accessibility</a> or <a href="https://trello.com/b/03Yn4vXM">see what changes I'm making to my portfolio right now on trello</a>.</p>
                     <div class="signature">
-                        <p class="heading-subtext">- Josh 김영순 <time datetime="2020-08-15">[08.15.2020]</time></p>
+                        <p class="heading-subtext">- Josh <span lang="ko">김영순</span> <time datetime="2020-08-15">[08.15.2020]</time></p>
                     </div>
                 </div>
             </div>
             <hr aria-hidden="true" />
             <nav class="row" aria-label="footer">
                 <div class="col-lg-12">
-                    <p class="footer-subtext"><a href="../index.html">Home</a> <a href="../about.html">About&nbsp;Me</a> <a href="../portfolio.html">Portfolio</a> <a href="../reads.html">My&nbsp;Reads</a> <a href="mailto:joshkimux@gmail.com">Email</a> <a href="https://www.linkedin.com/in/joshkimux/">LinkedIn</a><a href="https://medium.com/@joshkimux">Medium</a><a href="../resume.html">Resume</a></p>
+                    <ul role="list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About&nbsp;Me</a></li> 
+                        <li><a href="../portfolio.html">Portfolio</a></li> 
+                        <li><a href="../reads.html">My&nbsp;Reads</a></li> 
+                        <li><a href="mailto:joshkimux@gmail.com">Email</a></li>
+                        <li><a href="https://calendly.com/joshkimux/mentoring">Calendly</a></li> 
+                        <li><a href="https://www.linkedin.com/in/joshkimux/">LinkedIn</a></li>
+                        <li><a href="https://medium.com/@joshkimux">Medium</a></li>
+                        <li><a href="../resume.html">Resume</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>

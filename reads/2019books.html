@@ -43,43 +43,51 @@
 
 <body>
     <!--Navigation -->
-    <nav class="nav-border" aria-label="Main">
-        
-        <div class="container">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="nav-logo">
-                    <a href="../index.html"><img src="../img/logo/logo_human_2.svg" / alt="Logo of Josh Kim UX"></a>
+        <header class="nav-border">
+            <div class="container">
+                <!--Desktop nav-->
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="nav-logo">
+                        <a href="../index.html"><img src="../img/logo/logo_human_2.svg" / alt="Logo of Josh Kim UX"></a>
+                    </div>
+                    <nav aria-label="main">
+                        <ul role="list" class="d-flex justify-content-end align-items-center">
+                            <li class="cust-nav-item"><a class="subnav" href="../index.html">Home</a></li>
+                            <li class="cust-nav-item"><a class="subnav" href="../portfolio.html">Portfolio</a></li>
+                            <li class="cust-nav-item"><a class="subnav subnav-selected" href="../reads.html">My Reads</a></li>
+                            <li class="cust-nav-item"><a class="subnav" href="../about.html">About Me</a></li>
+                            <li class="talk"><a class="subnav" href="../contact.html">Let's Talk</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div>
-                    <ul class="d-flex justify-content-end align-items-center">
-                        <li class="cust-nav-item"><a class="subnav" href="../index.html">Home</a></li>
-                        <li class="cust-nav-item"><a class="subnav" href="../portfolio.html">Portfolio</a></li>
-                        <li class="cust-nav-item"><a class="subnav subnav-selected" href="../reads.html">My Reads</a></li>
-                        <li class="cust-nav-item"><a class="subnav" href="../about.html">About Me</a></li>
-                        <li class="talk"><a class="subnav" href="../contact.html">Let's Talk</a></li>
-                    </ul>
-                </div>
-            </div>
+                <!--End of desktop nav-->
 
-            <!--Mobile nav-->
-            <div class="nav-scroller">
-                <div class="nav d-flex">
-                    <a class="subnav" href="../index.html">Home</a>
-                    <a class="subnav" href="../portfolio.html">Portfolio</a>
-                    <a class="subnav subnav-selected" href="../reads.html">My Reads</a>
-                    <a class="subnav" href="../about.html">About Me</a>
-                </div>
+                <!--Mobile nav-->
+                <nav class="nav-scroller" aria-label="main">
+                    <div class="nav d-flex">
+                        <a class="subnav" href="../index.html">Home</a>
+                        <a class="subnav" href="../portfolio.html">Portfolio</a>
+                        <a class="subnav subnav-selected" href="../reads.html">My Reads</a>
+                        <a class="subnav" href="../about.html">About Me</a>
+                    </div>
+                </nav>
+                <!--End of mobile nav -->
             </div>
-            <!--Mobile nav-->
-
-        </div>
-    </nav>
+            <!--end of container -->
+        </header>
     <!--end of navigation -->
 
     <!--Breadcrumbs-->
-    <nav class="breadcrumbs" alt="Breadcrumb Navigation">
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
         <div class="container">
-            <a href="../reads.html">My Reads</a> > 2019 Bookmark
+          <ol>
+            <li>
+              <a href="../reads.html">My Reads</a>
+            </li>
+            <li>
+              <a aria-current="page" href="2019books.html">2019 Bookmark</a>
+            </li>
+          </ol>
         </div>
     </nav>
 
@@ -770,14 +778,24 @@
                 <div class="col-md-6">
                     <p><a href="thissucks/include.html">Read more about my commitment to improve accessibility</a> or <a href="https://trello.com/b/03Yn4vXM">see what changes I'm making to my portfolio right now on trello</a>.</p>
                     <div class="signature">
-                        <p class="heading-subtext">- Josh 김영순 <time datetime="2020-08-15">[08.15.2020]</time></p>
+                        <p class="heading-subtext">- Josh <span lang="ko">김영순</span> <time datetime="2020-08-15">[08.15.2020]</time></p>
                     </div>
                 </div>
             </div>
-            <hr aria-hidden="true"/>
+            <hr aria-hidden="true" />
             <nav class="row" aria-label="footer">
                 <div class="col-lg-12">
-                <p class="footer-subtext"><a href="../index.html">Home</a>  <a href="../about.html">About&nbsp;Me</a>  <a href="../portfolio.html">Portfolio</a>  <a href="../reads.html">My&nbsp;Reads</a>  <a href="mailto:joshkimux@gmail.com">Email</a> <a href="https://www.linkedin.com/in/joshkimux/">LinkedIn</a><a href="https://medium.com/@joshkimux">Medium</a><a href="../resume.html">Resume</a></p>
+                    <ul role="list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About&nbsp;Me</a></li> 
+                        <li><a href="../portfolio.html">Portfolio</a></li> 
+                        <li><a href="../reads.html">My&nbsp;Reads</a></li> 
+                        <li><a href="mailto:joshkimux@gmail.com">Email</a></li>
+                        <li><a href="https://calendly.com/joshkimux/mentoring">Calendly</a></li> 
+                        <li><a href="https://www.linkedin.com/in/joshkimux/">LinkedIn</a></li>
+                        <li><a href="https://medium.com/@joshkimux">Medium</a></li>
+                        <li><a href="../resume.html">Resume</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
