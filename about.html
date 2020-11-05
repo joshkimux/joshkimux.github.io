@@ -44,38 +44,38 @@
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
     <!--Navigation -->
-        <header class="nav-border">
-            <div class="container">
-                <!--Desktop nav-->
-                <div class="row flex-nowrap justify-content-between align-items-center">
-                    <div class="nav-logo">
-                        <a href="index.html"><img src="img/logo/logo_human_2.svg" alt="Logo of Josh Kim UX"></a>
-                    </div>
-                    <nav aria-label="main">
-                        <ul role="list" class="d-flex justify-content-end align-items-center">
-                            <li class="cust-nav-item"><a class="subnav" href="index.html">Home</a></li>
-                            <li class="cust-nav-item"><a class="subnav" href="portfolio.html">Portfolio</a></li>
-                            <li class="cust-nav-item"><a class="subnav" href="reads.html">My Reads</a></li>
-                            <li aria-current="page" class="cust-nav-item"><a class="subnav subnav-selected" href="about.html">About Me</a></li>
-                            <li class="talk"><a class="subnav" href="contact.html">Let's Talk</a></li>
-                        </ul>
-                    </nav>
+    <header class="nav-border">
+        <div class="container">
+            <!--Desktop nav-->
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="nav-logo">
+                    <a href="index.html"><img src="img/logo/logo_human_2.svg" alt="Logo of Josh Kim UX"></a>
                 </div>
-                <!--End of desktop nav-->
-
-                <!--Mobile nav-->
-                <nav class="nav-scroller" aria-label="main">
-                    <div class="nav d-flex">
-                        <a class="subnav" href="index.html">Home</a>
-                        <a class="subnav" href="portfolio.html">Portfolio</a>
-                        <a class="subnav" href="reads.html">My Reads</a>
-                        <a aria-current="page" class="subnav subnav-selected" href="about.html">About Me</a>
-                    </div>
+                <nav aria-label="main">
+                    <ul role="list" class="d-flex justify-content-end align-items-center">
+                        <li class="cust-nav-item"><a class="subnav" href="index.html">Home</a></li>
+                        <li class="cust-nav-item"><a class="subnav" href="portfolio.html">Portfolio</a></li>
+                        <li class="cust-nav-item"><a class="subnav" href="reads.html">My Reads</a></li>
+                        <li aria-current="page" class="cust-nav-item"><a class="subnav subnav-selected" href="about.html">About Me</a></li>
+                        <li class="talk"><a class="subnav" href="contact.html">Let's Talk</a></li>
+                    </ul>
                 </nav>
-                <!--End of mobile nav -->
             </div>
-            <!--end of container -->
-        </header>
+            <!--End of desktop nav-->
+
+            <!--Mobile nav-->
+            <nav class="nav-scroller" aria-label="main">
+                <div class="nav d-flex">
+                    <a class="subnav" href="index.html">Home</a>
+                    <a class="subnav" href="portfolio.html">Portfolio</a>
+                    <a class="subnav" href="reads.html">My Reads</a>
+                    <a aria-current="page" class="subnav subnav-selected" href="about.html">About Me</a>
+                </div>
+            </nav>
+            <!--End of mobile nav -->
+        </div>
+        <!--end of container -->
+    </header>
     <!--end of navigation -->
 
     <!-- Page Content -->
@@ -151,8 +151,10 @@
             <div class="l-padding">
                 <div class="container">
                     <div class="row">
+                        <div class="col-md-4">
                             <h2 class="mb2">Speaking</h2>
                             <p>I enjoy sharing what I've labored hours over so others don't have to think as much.</p>
+                        </div>
                         <dl class="dl-speaking offset-lg-1 col-lg-7">
                             <div class="row">
                                 <div class="col-md-6">
@@ -193,30 +195,39 @@
                     </div>
                     <div class="offset-lg-1 col-lg-7">
                         <ul role="list" class="about-list">
-                            <li><blockquote>
-                            <p>"Exclusion and inclusion are a series of choices designers make every day. Period."</p>
-                            <footer>
-                                <p class="notetext">Kat Holmes</p>
-                            </footer>
-                        </blockquote></li>
-                        <li><blockquote>
-                            <p>"Be present for the whole journey, learners that you are. Be present for the whole journey."</p>
-                            <footer>
-                                <p class="notetext">Halcolm (Michael Patton)</p>
-                            </footer>
-                        </blockquote></li>
-                        <li><blockquote>
-                            <p>"Stop blaming everybody else for the problem or pretending that it is too hard for us to solve. Let’s put that spirit of innovation and embrace of radical change to good use."</p>
-                            <footer>
-                                <p class="notetext">Emily Chang</p>
-                            </footer>
-                        </blockquote></li>
-                        <li><blockquote style="border-bottom: none;">
-                            <p>"We need to fear the consequences of our work more than we love the cleverness of our ideas."</p>
-                            <footer>
-                                <p class="notetext">Mike Monteiro</p>
-                            </footer>
-                        </blockquote></li></ul>
+                            <li>
+                                <blockquote>
+                                    <p>"Exclusion and inclusion are a series of choices designers make every day. Period."</p>
+                                    <footer>
+                                        <p class="notetext">Kat Holmes</p>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li>
+                                <blockquote>
+                                    <p>"Be present for the whole journey, learners that you are. Be present for the whole journey."</p>
+                                    <footer>
+                                        <p class="notetext">Halcolm (Michael Patton)</p>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li>
+                                <blockquote>
+                                    <p>"Stop blaming everybody else for the problem or pretending that it is too hard for us to solve. Let’s put that spirit of innovation and embrace of radical change to good use."</p>
+                                    <footer>
+                                        <p class="notetext">Emily Chang</p>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li>
+                                <blockquote style="border-bottom: none;">
+                                    <p>"We need to fear the consequences of our work more than we love the cleverness of our ideas."</p>
+                                    <footer>
+                                        <p class="notetext">Mike Monteiro</p>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -233,7 +244,8 @@
                         </div>
                         <div class="col-lg-6">
                             <figure class="polaroid"><img class="stickybox-nm" src="img/about.jpg" style="width:100%;" alt="8 volunteers from Community Art for Everyone posing for a picture in front of a chalk art wall." />
-                            <figcaption><time datetime="2019-07">[07.2019]</time> I helped organize a local community art day full of chalk, paint, and smiles.</figcaption></figure>
+                                <figcaption><time datetime="2019-07">[07.2019]</time> I helped organize a local community art day full of chalk, paint, and smiles.</figcaption>
+                            </figure>
                         </div>
                     </article>
                 </div>
@@ -257,16 +269,16 @@
                     </div>
                 </div>
             </div>
-            <hr aria-hidden="true"/>
+            <hr aria-hidden="true" />
             <nav class="row" aria-label="footer">
                 <div class="col-lg-12">
                     <ul role="list">
                         <li><a href="index.html">Home</a></li>
-                        <li aria-current="page"><a href="about.html">About&nbsp;Me</a></li> 
-                        <li><a href="portfolio.html">Portfolio</a></li> 
-                        <li><a href="reads.html">My&nbsp;Reads</a></li> 
+                        <li aria-current="page"><a href="about.html">About&nbsp;Me</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="reads.html">My&nbsp;Reads</a></li>
                         <li><a href="mailto:joshkimux@gmail.com">Email</a></li>
-                        <li><a href="https://calendly.com/joshkimux/mentoring">Calendly</a></li> 
+                        <li><a href="https://calendly.com/joshkimux/mentoring">Calendly</a></li>
                         <li><a href="https://www.linkedin.com/in/joshkimux/">LinkedIn</a></li>
                         <li><a href="https://medium.com/@joshkimux">Medium</a></li>
                         <li><a href="resume.html">Resume</a></li>
