@@ -953,6 +953,10 @@ html {
     color: #474f54;
 }
 
+figcaption a {
+    border-bottom:solid 1px #162430 !important;
+}
+
 .picture-caption img {
     border-radius: 3px !important;
     width: 100%;
