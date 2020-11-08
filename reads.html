@@ -205,6 +205,20 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/jk.js"></script>
+    
+    <script>
+        var motionQuery = matchMedia('(prefers-reduced-motion)');
+        var v = document.querySelector('video');
+        function reducedMotionCheck() {
+            if (motionQuery.matches) {
+                v.pause();
+            } else {
+                v.play();
+            }
+        }
+        reducedMotionCheck(); 
+        motionQuery.addListener(reducedMotionCheck); 
+    </script>
 
 </body>
 

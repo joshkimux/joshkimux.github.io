@@ -112,7 +112,7 @@
                             </p>
                         </div>
                         <figure class="col-lg-7">
-                            <img class="stickybox-nm" src="img/thumb/smbloans.gif" style="width:100%;" alt="The results page of the loan eligibility checker features specific recommendations for PPP loans, directions on applying to EIDL, and even loans specific to states like Hawaii." />
+                            <img class="stickybox-nm" src="img/thumb/smbloans.png" style="width:100%;" alt="The results page of the loan eligibility checker features specific recommendations for PPP loans, directions on applying to EIDL, and even loans specific to states like Hawaii." />
                         </figure>
                     </article>
                 </div>
@@ -135,7 +135,7 @@
                             </p>
                         </div>
                         <figure class="col-lg-7">
-                            <video controls autoplay loop class="stickybox-nm" width="100%" height="auto" muted role="img" aria-label="The CAFE website featuring a colorful brick motif.">
+                            <video controls autoplay class="stickybox-nm" width="100%" height="auto" muted aria-label="The CAFE website featuring a colorful brick motif.">
                                 <source src="img/thumb/cafe-th.mov" type="video/mp4">
                             </video>
                         </figure>
@@ -160,7 +160,7 @@
                             </p>
                         </div>
                         <figure class="col-lg-7">
-                            <video controls autoplay class="stickybox-nm" width="100%" height="auto" muted role="img" aria-label="Interacting with my trello board. I open up the first card in my accessibility list labelled cry because there's too much to fix.">
+                            <video controls autoplay class="stickybox-nm" width="100%" height="auto" muted aria-label="Interacting with my trello board. I open up the first card in my accessibility list labelled cry because there's too much to fix.">
                                 <source src="img/thumb/tears.mov" type="video/mp4">
                             </video>
                         </figure>
@@ -244,9 +244,21 @@
     <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/jk.js"></script>
-
-    <!-- Slick -->
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <!--Turn off motion if user prefers it -->
+    <script>
+        var motionQuery = matchMedia('(prefers-reduced-motion)');
+        var v = document.querySelector('video');
+        function reducedMotionCheck() {
+            if (motionQuery.matches) {
+                v.pause();
+            } else {
+                v.play();
+            }
+        }
+        reducedMotionCheck(); 
+        motionQuery.addListener(reducedMotionCheck); 
+    </script>
 
 </body>
 
