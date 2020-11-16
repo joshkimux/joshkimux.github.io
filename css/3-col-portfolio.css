@@ -986,6 +986,16 @@ figcaption a {
     border-bottom: solid 1px #162430;
 }
 
+code {
+    font-size: 87.5%;
+    color: #aa00bd;
+    word-break: break-word;
+    background-color: #ececec;
+    border-radius: 2px;
+    padding: .2rem;
+    margin: .1rem;
+}
+
 
 li {
     margin-top: 1rem;
