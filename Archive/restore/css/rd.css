@@ -26,6 +26,31 @@ a.skip-main:focus, a.skip-main:active {
     z-index:999;
 }
 
+/*! utility */
+.sr-only {
+    left: -100vw;
+    position: absolute;
+}
+
+p a, li a {
+    color: #212529;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #212529;
+}
+
+.logo-p {
+    background-image: url(../img/logo/sm-logo.png);
+    width: 12rem;
+    height: 12rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    opacity: .3;
+}
+
 /*! navigation */
 
 .nav-logo {
@@ -41,30 +66,52 @@ a.skip-main:focus, a.skip-main:active {
     padding: 2rem 0rem;
 }
 
+.desktop-nav {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .desktop-nav li {
     list-style: none;  
     margin-left: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: .5rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
     font-family: 'Castoro', serif;
-    border-bottom: #fff solid 3px;
     transition: all .2s ease;
 }
+
+.desktop-nav li:not(:last-child) {
+        border-bottom: #fff solid 3px;
+        
+    }
+
+.desktop-nav li:not(:last-child):hover {
+        border-bottom: #dab238 solid 3px;
+        
+    }
 
 .desktop-nav li a {
     text-decoration: none;
     color: #333;
 }
 
-.desktop-nav li:hover {
-    border-bottom: #dab238 solid 3px;
-}
 
 [aria-current] {
     border-bottom: 3px solid #dab238 !important;
     font-weight: 700;
     color: #333;
   }
+
+.donate {
+    border-bottom: 0px;
+    border-color: black;
+    transition: all .2s ease;
+    margin-bottom: 3px;
+}
+
+.donate:hover {
+    border-color: black;
+}
 
 .nav-scroller {
     display: none;
@@ -93,6 +140,42 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 
+/*! button styles */
+
+.btn-primary {
+    background-color: #ffe000;
+    border: solid 1px #f5d807;
+    background-size: cover;
+    border-radius: 54px;
+    padding: 1.5rem;
+    font-weight: 700;
+    font-size: inherit;
+    transition: all 0.15s ease;
+}
+
+.btn-primary:hover {
+    background-color: #212529;
+    font-weight: 700;
+    transition: all 0.15s ease;
+}
+
+.btn-primary:hover a {
+    color: white !important;
+}
+
+.btn-primary:disabled {
+    background-color: transparent;
+    border-radius: 1em 0 1em 0;
+    background-image: linear-gradient(-100deg, rgba(255, 224, 0, 0.56), rgba(255, 224, 0, 0.84) 95%, rgba(255, 224, 0, 0.28));
+    padding: .5rem 1rem;
+    color: #000 !important;
+    font-size: inherit;
+    font-weight: 700;
+    border: 0px;
+}
+
+
+
 /*! section styles */
 
 .container {
@@ -109,11 +192,34 @@ body {
 }
 
 .heading h1 {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 .heading p {
     font-size: 2rem;
+}
+
+footer {
+    border-top: solid #f1f1f1 2px;
+    padding: 3rem;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
+
+footer p, footer li {
+    font-size: .8rem;
+}
+
+footer li {
+    margin-bottom: .5rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-inline-start: 1rem;
+    border-left: solid #f1f1f1 2px;
 }
 
 
@@ -150,16 +256,12 @@ img {
 
 .bg-line {
     padding: 4rem;
-    border-left: solid #dab238 2px;
-    margin: 2rem 0rem;
+    border-left: solid #f1f1f1 2px;
+    margin: 2rem 0rem 0rem 0rem;
 }
 
-.bg-line .row {
+.bg-line .row:not(:last-child) {
     margin-bottom: 3rem;
-}
-
-.bg-line .row:last-child {
-    margin-bottom: 0rem;
 }
 
 
@@ -195,13 +297,14 @@ h2 {
         display: inline;
     }
 
-    .desktop-nav li {
+    .desktop-nav li:not(:last-child) {
         display:none;
     }
     
     .mobile-nav {
         padding-inline-start: 0px;
     }
+    
     .mobile-nav li {
         list-style: none;  
         margin-left: 1rem;
@@ -221,13 +324,18 @@ h2 {
         color: #333;
         font-size: 1.2rem;
     }
+    
+    .donate {
+        margin-bottom: 0rem;
+        margin-right: 15px;
+    }
 
     .mobile-nav li:hover {
         border-bottom: #dab238 solid 3px;
     }
     
     .heading h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .heading p {
@@ -248,6 +356,20 @@ h2 {
         max-width: 60%;
     }
     
+    footer .col-lg-4:not(:first-child) {
+        margin-top: 2rem;
+    }
+    
+}
+
+/*! breakpoint tablet 2 */
+@media only screen and (max-width: 767px) {
+    
+    .pd-l {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
 }
 
 /*! breakpoint mobile */
@@ -261,10 +383,18 @@ h2 {
         max-width: 10rem;
     }
     
+    .nav-border {
+        padding: 1rem 0rem;
+    }
+    
+    .donate {
+        font-size: 1.2rem;
+    }
+    
     /*! section styles */
 
     .heading h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .heading p {
