@@ -25,16 +25,13 @@
 
     <title>About Me | Josh Kim, inclusive UX researcher and designer</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jk.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&family=Merriweather:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Public+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Space+Mono&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -42,47 +39,40 @@
 </head>
 
 <body>
+
+    <!-- Skip link for keyboard users -->
     <a class="skip-main" href="#main">Skip to main content</a>
+
     <!--Navigation -->
-    <header class="nav-border">
+    <header class="header">
         <div class="container">
-            <!--Desktop nav-->
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="nav-logo">
-                    <a href="index.html"><img src="img/logo/logo_human_2.svg" alt="Logo of Josh Kim UX"></a>
-                </div>
-                <nav aria-label="main">
-                    <ul role="list" class="d-flex justify-content-end align-items-center">
-                        <li class="cust-nav-item"><a class="subnav" href="index.html">Home</a></li>
-                        <li class="cust-nav-item"><a class="subnav" href="portfolio.html">Portfolio</a></li>
-                        <li class="cust-nav-item"><a class="subnav" href="reads.html">My Reads</a></li>
-                        <li aria-current="page" class="cust-nav-item"><a class="subnav subnav-selected" href="about.html">About Me</a></li>
-                        <li class="talk"><a class="subnav" href="contact.html">Let's Talk</a></li>
+            <div class="header-logo">
+                <a class="" href="index.html"><span class="logo"></span>Josh Kim</a>
+                <a href="contact.html">Let's Talk</a>
+            </div>
+            <div class="header-nav">
+                <nav class="jnav" aria-label="main">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="writing.html">Writing/Speaking</a></li>
+                        
+                        <li><a aria-current="true" href="about.html">About</a></li>
+                        <li class="contact"><a href="contact.html">Let's Talk</a></li>
                     </ul>
                 </nav>
             </div>
-            <!--End of desktop nav-->
-
-            <!--Mobile nav-->
-            <nav class="nav-scroller" aria-label="main">
-                <div class="nav d-flex">
-                    <a class="subnav" href="index.html">Home</a>
-                    <a class="subnav" href="portfolio.html">Portfolio</a>
-                    <a class="subnav" href="reads.html">My Reads</a>
-                    <a aria-current="page" class="subnav subnav-selected" href="about.html">About Me</a>
-                </div>
-            </nav>
-            <!--End of mobile nav -->
         </div>
         <!--end of container -->
     </header>
-    <!--end of navigation -->
 
-    <!-- Page Content -->
+    <!-- Random shit that's invisible -->
+    <div class="d2-font xxl-only" aria-hidden="true">a11y = accessibility</div>
+    <div class="d-font xxl-only" aria-hidden="true">Nihil de nobis, sine nobis</div>
 
     <main role="main" id="main">
-        <div class="l-padding about-bg">
-            <div class="container">
+        <div class="container">
+            <div class="content">
                 <div class="row">
                     <div class="col-lg-6 stickybox-padding card-mobile-margin">
                         <h1 class="heading-title">I'm an anti-racist feminist Korean-American bookworm</h1>
@@ -97,156 +87,158 @@
             </div>
         </div>
 
-
-
-        <section id="reviews" class="l-padding">
+        <!-- Adjectives -->
+        <div class="content ht">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 card-mobile-margin">
-                        <h2>How Colleagues Describe Me</h2>
-                        <p>I've built a reputation as a hard working, empathetic, and ethically-mindful designer.</p>
+                    <div class="col-lg-4">
+                        <h2 id="reviews"><a class="h-anchor" href="#reviews"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> How Colleagues Describe Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Hard working, empathetic, and ethically-grounded are the most commonly used adjectives used to describe me.</p>
                     </div>
                     <div class="offset-lg-1 col-lg-7">
-                        <ul role="list" class="about-list">
+                        <ul role="list" class="big-list">
                             <li>
                                 <blockquote>
-                                    <p>"Josh is a world-class UX designer, and a consummate ethicist. I was always impressed with his commitment to his guiding values and morals."</p>
-                                    <footer>
-                                        <p class="notetext">Cameron H., Senior Consultant</p>
-                                    </footer>
+                                    <p><mark>Josh is a world-class UX designer, and a consummate ethicist.</mark> I was always impressed with his commitment to his guiding values and morals. I'll be following Josh's career trajectory closely because I have no doubt that he will continue to meaningfully change the world around him for the better.</p>
+                                    <figcaption>Cameron Harris, Senior Consultant at Deloitte</figcaption>
                                 </blockquote>
                             </li>
                             <li>
                                 <blockquote>
-                                    <p>"Thank you so much for a wonderful lecture with the CMU IS students yesterday. Your remarks and suggestions were extremely helpful and timely."</p>
-                                    <footer>
-                                        <p class="notetext">Jeria Q, Ph.D., Professor at CMU</p>
-                                    </footer>
+                                    <p>Josh is not only a brilliant UX designer, but also an inspiring leader. He serves as a mentor to 20+ designers, and <mark>he always makes time for creating and fostering authentic connections</mark> with his teams, users, and clients. I highly recommend Josh!</p>
+                                    <figcaption>Desislava Dancheva, UX Designer at Apple</figcaption>
                                 </blockquote>
                             </li>
                             <li>
                                 <blockquote>
-                                    <p>"Josh is not only a brilliant UX designer, but also an inspiring leader."</p>
-                                    <footer>
-                                        <p class="notetext">Desislava D., Product Designer</p>
-                                    </footer>
-                                </blockquote>
-                            </li>
-                            <li>
-                                <blockquote style="border-bottom: none;">
-                                    <p>"Josh is an excellent public speaker, dependable, and exceptional in his passion for designing better user experiences."</p>
-                                    <footer>
-                                        <p class="notetext">K.M., Assistant Creative Director</p>
-                                    </footer>
+                                    <p>I had the utmost pleasure in working with Josh. I was impressed by <mark>his vigor in advocating for inclusive design</mark> and his ability to deliver the story behind our designs to clients. Josh would be a tremendous asset to any team.</p>
+                                    <figcaption>Shing Zhang, Senior UX Consultant at Salesforce</figcaption>
                                 </blockquote>
                             </li>
                         </ul>
+
                     </div>
-                </div>
-            </div>
-        </section>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- content -->
 
-        <hr aria-hidden="true" />
-
-        <section id="quotes" class="l-padding">
+        <!-- Philosophy -->
+        <div class="content ht">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 card-mobile-margin">
-                        <h2>Design Philosophy</h2>
+                    <div class="col-lg-4">
+                        <h2 id="philosophy"><a class="h-anchor" href="#philosophy"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> My Design Philosophy</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
                         <p>I found my purpose and direction in design through the words of my heroes.</p>
                     </div>
                     <div class="offset-lg-1 col-lg-7">
-                        <ul role="list" class="about-list">
+                        <ul role="list" class="big-list">
                             <li>
                                 <blockquote>
-                                    <p>"Exclusion and inclusion are a series of choices designers make every day. Period."</p>
-                                    <footer>
-                                        <p class="notetext">Kat Holmes</p>
-                                    </footer>
+                                    <p>Exclusion and inclusion are a series of choices designers make every day. Period.</p>
+                                    <figcaption>Kat Holmes</figcaption>
                                 </blockquote>
                             </li>
                             <li>
                                 <blockquote>
-                                    <p>"Be present for the whole journey, learners that you are. Be present for the whole journey."</p>
-                                    <footer>
-                                        <p class="notetext">Halcolm (Michael Patton)</p>
-                                    </footer>
+                                    <p>Be present for the whole journey, learners that you are. Be present for the whole journey.</p>
+                                    <figcaption>Halcolm (Michael Patton)</figcaption>
                                 </blockquote>
                             </li>
                             <li>
                                 <blockquote>
-                                    <p>"Stop blaming everybody else for the problem or pretending that it is too hard for us to solve. Let’s put that spirit of innovation and embrace of radical change to good use."</p>
-                                    <footer>
-                                        <p class="notetext">Emily Chang</p>
-                                    </footer>
+                                    <p>Stop blaming everybody else for the problem or pretending that it is too hard for us to solve. Let’s put that spirit of innovation and embrace of radical change to good use.</p>
+                                    <figcaption>Emily Chang</figcaption>
                                 </blockquote>
                             </li>
                             <li>
-                                <blockquote style="border-bottom: none;">
-                                    <p>"We need to fear the consequences of our work more than we love the cleverness of our ideas."</p>
-                                    <footer>
-                                        <p class="notetext">Mike Monteiro</p>
-                                    </footer>
+                                <blockquote>
+                                    <p>We need to fear the consequences of our work more than we love the cleverness of our ideas.</p>
+                                    <figcaption>Mike Monteiro</figcaption>
                                 </blockquote>
                             </li>
                         </ul>
+
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- content -->
+
+        <!-- The Human -->
+        <div class="content ht">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 id="the-human"><a class="h-anchor" href="#the-human"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> Josh, the Human</h2>
                     </div>
                 </div>
-            </div>
-        </section>
-        <hr aria-hidden="true" />
-        <section>
-            <div class="l-padding">
-                <div class="container">
-                    <article class="row">
-                        <div class="col-lg-6 stickybox-padding card-mobile-margin">
-                            <h2>Josh, the Human</h2>
-                            <p>Beyond my working hours, I try to be a helper when I can from <a href="http://www.cafedmv.org/">volunteering at local community art days</a> to <a href="https://dcdesignweek.org/about/#dcdw-2020-committee">making design conferences more accessible.</a></p>
-                            <p>Otherwise, you can usually find me with a tennis racket or drinking with friends at the <a href="https://www.instagram.com/shamrocknrollirishpub/?igshid=bvpnxhncaqry">Shamrock Pub</a> in <span lang="ko">홍대</span>.</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="polaroid"><img src="img/about.jpg" style="width:100%;" alt="8 volunteers from Community Art for Everyone posing for a picture in front of a chalk art wall." />
-                                <figcaption><time datetime="2019-07">[07.2019]</time> I helped organize a local community art day full of chalk, paint, and smiles.</figcaption>
-                            </figure>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <p>Beyond my working hours, I try to be a helper when I can from <a href="http://www.cafedmv.org/">volunteering at local community art days</a> to <a href="https://dcdesignweek.org/about/#dcdw-2020-committee">making design conferences more accessible.</a></p>
+                        <p>Otherwise, you can usually find me with a tennis racket or drinking with friends at the <a href="https://www.instagram.com/shamrocknrollirishpub/?igshid=bvpnxhncaqry">Shamrock Pub</a> in <span lang="ko">홍대</span>.</p>
+                    </div>
+                    <div class="offset-lg-1 col-lg-6 m-mt">
+                        <figure class="polaroid"><img src="img/about.jpg" style="width:100%;" alt="8 volunteers from Community Art for Everyone posing for a picture in front of a chalk art wall." />
+                            <figcaption><time datetime="2019-07">[07.2019]</time> I helped organize a local community art day full of chalk, paint, and smiles.</figcaption>
+                        </figure>
+
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- content -->
 
     </main>
 
 
     <!-- Footer -->
-    <footer class="footing bg-nav">
+    <footer class="footer">
         <div class="container">
-            <div class="row l-margin card-mobile-margin">
-                <div class="col-md-6">
-                    <p>This isn't a generic squarespace portfolio. It's a living work-in-progress that I redesign annually to better represent my growing values and skills as a designer. That being said, it still needs alot of work.</p>
+            <h2 class="sr-only">Footer</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h3>Portfolio Notes</h3>
+                    <p>I update this trash portfolio every year to match my growing values as a designer.</p>
+                    <p><a href="https://trello.com/b/03Yn4vXM/josh-kim-ux-portfolio">Check out my portfolio updates or make a suggestion on my trello board.</a></p>
                 </div>
-                <div class="col-md-6">
-                    <p><a href="thissucks/include.html">Read more about my commitment to improve accessibility</a> or <a href="https://trello.com/b/03Yn4vXM">see what changes I'm making to my portfolio right now on trello</a>.</p>
-                    <div class="signature">
-                        <p class="heading-subtext">- Josh <span lang="ko">김영순</span> <time datetime="2020-08-15">[08.15.2020]</time></p>
-                    </div>
-                </div>
-            </div>
-            <hr aria-hidden="true" />
-            <nav class="row" aria-label="footer">
-                <div class="col-lg-12">
+                <div class="col-md-6 offset-lg-1 col-lg-4">
+                    <h3>Let's Connect</h3>
                     <ul role="list">
-                        <li><a href="index.html">Home</a></li>
-                        <li aria-current="page"><a href="about.html">About&nbsp;Me</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="reads.html">My&nbsp;Reads</a></li>
-                        <li><a href="mailto:joshkimux@gmail.com">Email</a></li>
-                        <li><a href="https://calendly.com/joshkimux/mentoring">Calendly</a></li>
-                        <li><a href="https://www.linkedin.com/in/joshkimux/">LinkedIn</a></li>
-                        <li><a href="https://medium.com/@joshkimux">Medium</a></li>
-                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="mailto:joshkimux@gmail.com">Email me</a> at joshkimux@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/joshkimux/">Connect with me on LinkedIn</a></li>
+                        <li><a href="https://calendly.com/joshkimux/mentoring">Schedule a call with Calendly</a></li>
+                        <li><a href="https://medium.com/@joshkimux">Follow my thoughts on Medium</a></li>
                     </ul>
                 </div>
-            </nav>
+                <div class="d-logo xl-only">
+                    <img aria-hidden="true" src="img/icons/logo.svg" style="width:100%;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="footer">
+                        <h3>Quick Links</h3>
+                        <ul role="list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="writing.html">Writing/Speaking</a></li>
+                            
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Let's Talk</a></li>
+                            <div class="footer-right">
+                                <li><a href="resume.html">Resume</a></li>
+                                <li><a href="#main">Back to Top <i aria-hidden="true" class="top-link"></i></a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </footer>
 

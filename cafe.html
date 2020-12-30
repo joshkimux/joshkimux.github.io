@@ -24,14 +24,13 @@
 
     <title>Co-designing a nonprofit website | Josh Kim, inclusive UX researcher and designer</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jk.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&family=Merriweather:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Public+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Space+Mono&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -40,146 +39,124 @@
 </head>
 
 <body>
+
+    <!-- Skip link for keyboard users -->
     <a class="skip-main" href="#main">Skip to main content</a>
+
     <!--Navigation -->
-    <header class="nav-border">
+    <header class="header">
         <div class="container">
-            <!--Desktop nav-->
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="nav-logo">
-                    <a href="index.html"><img src="img/logo/logo_human_2.svg" alt="Logo of Josh Kim UX"></a>
-                </div>
-                <nav aria-label="main">
-                    <ul role="list" class="d-flex justify-content-end align-items-center">
-                        <li class="cust-nav-item"><a class="subnav" href="index.html">Home</a></li>
-                        <li class="cust-nav-item"><a class="subnav subnav-selected" href="portfolio.html">Portfolio</a></li>
-                        <li class="cust-nav-item"><a class="subnav" href="reads.html">My Reads</a></li>
-                        <li class="cust-nav-item"><a class="subnav" href="about.html">About Me</a></li>
-                        <li class="talk"><a class="subnav" href="contact.html">Let's Talk</a></li>
+            <div class="header-logo">
+                <a class="" href="index.html"><span class="logo"></span>Josh Kim</a>
+                <a href="contact.html">Let's Talk</a>
+            </div>
+            <div class="header-nav">
+                <nav class="jnav" aria-label="main">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a aria-current="true" href="projects.html">Projects</a></li>
+                        <li><a href="writing.html">Writing/Speaking</a></li>
+                        
+                        <li><a href="about.html">About</a></li>
+                        <li class="contact"><a href="contact.html">Let's Talk</a></li>
                     </ul>
                 </nav>
             </div>
-            <!--End of desktop nav-->
-
-            <!--Mobile nav-->
-            <nav class="nav-scroller" aria-label="main">
-                <div class="nav d-flex">
-                    <a class="subnav" href="index.html">Home</a>
-                    <a class="subnav subnav-selected" href="portfolio.html">Portfolio</a>
-                    <a class="subnav" href="reads.html">My Reads</a>
-                    <a class="subnav" href="about.html">About Me</a>
-                </div>
-            </nav>
-            <!--End of mobile nav -->
         </div>
-        <!--end of container -->
     </header>
-    <!--end of navigation -->
 
     <!-- Banner -->
     <main role="main" id="main">
-        <article class="l-padding">
+        <article class="content">
             <div class="container">
+
+                <!-- Intro -->
                 <div class="row justify-content-center">
-                    <div class="col-lg-9 col-xl-7">
-                        <p class="heading-subtext">COMMUNITY ART FOR EVERYONE</p>
-                        <h1 class="heading-title">Co-designing a nonprofit website</h1>
+                    <div class="col-lg-8">
+                        <p>Community Art for Everyone</p>
+                        <h1>Co-designing a nonprofit website</h1>
                         <p>I used participatory design methods to co-design a website and brand for a new local community arts nonprofit. As the organization grew, so did my efforts to scale up the website with the help of AIGA D.C. and my increased proficiency as a full stack designer.</p>
-                        <hr aria-hidden="true" />
-                        <p class="heading-subtext">7 minutes to read, but feel free to skim.</p>
+                        <aside role="note">
+                            <strong>Tags:</strong> UX Research, Front-End, Design Ethics
+                        </aside>
                     </div>
-                    <div class="ft-margin col-lg-9">
-                        <video controls loop class="stickybox" width="100%" height="auto" muted aria-label="The CAFE website featuring a colorful brick motif.">
-                            <source src="img/thumb/cafe-th.mov" type="video/mp4">
-                        </video>
+                    <div class="col-lg-10">
+                        <figure><video controls loop class="stickybox" width="100%" height="auto" muted aria-label="The CAFE website featuring a colorful brick motif.">
+                                <source src="img/thumb/cafe-th.mov" type="video/mp4">
+                            </video></figure>
                     </div>
                 </div>
-            </div>
-
-            <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-9 col-xl-7">
-                        <div class="content">
-                            <h2>Designing for Good</h2>
-                            <p>“Can I really say I’m designing for good at work?” I asked myself that alot two years into my job at Deloitte Digital. I joined the D.C. branch in hopes I could work on meaningful projects that could help people in need— but, two years in, I realized that the whole bottom line dilemma of big consulting wouldn’t make that so simple. <strike>Who wouldn’t feel ethically queasy over working for <a href="https://www.nytimes.com/2018/07/12/business/deloitte-ice-contract-uproar.html">a company that does work with ICE?</a></strike></p>
+                    <div class="col-lg-9 col-xl-8">
+                        <h2 id="designing-for-good"><a class="h-anchor" href="#designing-for-good"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> Designing for Good</h2>
+                        <p>“Can I really say I’m designing for good at work?” I asked myself that alot two years into my job at Deloitte Digital. I joined the D.C. branch in hopes I could work on meaningful projects that could help people in need— but, two years in, I realized that the whole bottom line dilemma of big consulting wouldn’t make that so simple. <strike>Who wouldn’t feel ethically queasy over working for <a href="https://www.nytimes.com/2018/07/12/business/deloitte-ice-contract-uproar.html">a company that does work with ICE?</a></strike></p>
 
-                            <p>To ease my cognitive dissonance, I decided to do a probonothon for a local nonprofit in need of a website. (I'll cover the ethical grey area of "for good" hackathon projects later in this article). I had the confidence I needed to operate solo thanks to lessons learned from <a href="perfectbrew.html">a failed attempt at redesigning a cafe's website with a team</a>, so I was eager to get started.</p>
+                        <p>To ease my cognitive dissonance, I decided to do a probonothon for a local nonprofit in need of a website. (I'll cover the ethical grey area of "for good" hackathon projects later in this article). I had the confidence I needed to operate solo thanks to lessons learned from <a href="perfectbrew.html">a failed attempt at redesigning a cafe's website with a team</a>, so I was eager to get started.</p>
 
-                            <figure class="picture-caption">
-                                <iframe title="Perfect Brew WAAD" width="100%" height="350" src="https://www.youtube.com/embed/DbODcd-EGN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <figcaption>I made the rookie mistake of going all out over a simple cafe website redesign. My ragtag team of volunteers burned out real fast in our overbaked affinity mapping activity. This time, I would do it solo from research to dev.</figcaption>
-                            </figure>
+                        <figure class="picture-caption">
+                            <iframe title="Perfect Brew WAAD" width="100%" height="350" src="https://www.youtube.com/embed/DbODcd-EGN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <figcaption>I made the rookie mistake of going all out over a simple cafe website redesign. My ragtag team of volunteers burned out real fast in our overbaked affinity mapping activity. This time, I would do it solo from research to dev.</figcaption>
+                        </figure>
 
-                            <p>Community Art for Everyone, or CAFE, immediately caught my eye as the perfect place to start. CAFE is a local nonprofit organization that provides free community art events to disadvantaged communities. I had known the owner for a while, loved the work that was being done, and knew she was interested in creating a website and brand in hopes of expanding her efforts even more.</p>
+                        <p>Community Art for Everyone, or CAFE, immediately caught my eye as the perfect place to start. CAFE is a local nonprofit organization that provides free community art events to disadvantaged communities. I had known the owner for a while, loved the work that was being done, and knew she was interested in creating a website and brand in hopes of expanding her efforts even more.</p>
 
-                        </div>
-                    </div> <!-- end of column -->
-                </div> <!-- end of row -->
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 col-xl-7 content">
-                        <h2>Planning a Probonothon</h2>
+                        <h2 id="planning"><a class="h-anchor" href="#planning"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> Planning a Probonothon</h2>
                         <p>If it wasn't obvious already, a probonothon is basically the same concept of a hackathon: create something in under 24 hours-- but specifically for the purpose of helping someone else.</p>
                         <h3>But first, is this ethical?</h3>
                         <p>Before starting, I spent some time thinking of the ethical implications. As I mentioned earlier, <a href="https://design-justice.pubpub.org/pub/yvwnnz7b/release/1">there’s a big grey area when it comes to hackathons</a>. They’re usually hosted in privileged design sites with environments <a href="https://www.pbs.org/newshour/arts/what-its-like-to-be-a-young-girl-in-the-male-dominated-field-of-tech">that cater specifically to white and east-Asian men without disabilities</a>.</p>
                         <p>That being said, when these hackathons are organized for the sake of designing for good, they usually produce <a href="https://nextcity.org/daily/entry/to-truly-be-just-design-challenges-need-to-listen-to-communities">technically brilliant design interventions that are mismatched</a> for their intended (and often uninvolved) users and clients. </p>
-                        
+
                         <figure class="picture-caption">
                             <img src="img/cafe/hackathon.jpg" style="width:100%;" alt="A group of white men working on a bright red table with black laptops and sticky notes." />
                             <figcaption>Google up "hackathon" and you'll find spaces full of male white and east-Asian developers.</figcaption>
                         </figure>
-                        
+
                         <h3>Preparing Together</h3>
                         <p>To avoid the trap of creating a mismatched solution, I met with CAFE’s director ahead of time and facilitated a participatory design workshop. We worked together to map out her vision for the organization and thought about how that might manifest through a brand and website (if it was needed at all).</p>
-                        
+
                         <figure class="picture-caption">
                             <img src="img/cafe/planning.png" style="width:100%;" alt="An oak table in a cafe layered with sticky notes." />
                             <figcaption>I facilitated several "mini" affinity mapping sessions to better understand the director's vision and expectations. This set the stage for a collaborative relationship.</figcaption>
-                        </figure> 
-                        
+                        </figure>
+
                         <p>Once the workshop came to a close, we mutually set a date to meet again to kick off the probonothon. The goal? Create CAFE's website in a day. Why just a day?</p>
-                        
+
                         <ul>
                             <li>Post preparation, we agreed that CAFE's needs would not require a dynamic or domain-complex website.</li>
                             <li>The director had an upcoming proposal that could be significantly enhanced with a brand and website.</li>
                             <li>I knew I would risk either procrastination or an overbaked process if I gave myself too much time.</li>
                         </ul>
-                        
-                    
-                    </div> <!-- end of column -->
-                </div> <!-- end of row -->
-                
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 col-xl-7 content content-end">
-                        <h2>Creating a Website in 12 Hours</h2>
-                        <p>I wanted this probonothon to be a collaborative process, but I also didn’t want it to be a nightmare for the director. For obvious reasons, it’s unreasonable to ask anyone to work on anything for more than 8 hours.
-                        <p>Luckily, collaboration in this case wouldn’t have to extend out to development. I knew I could conduct the dev work alone at night provided we could co-design a decent prototype during the day.</p>
-                        <p>We started with lean research. I called several designers I knew who worked in the nonprofit industry while the director conducted competitive research based on nonprofits similar to CAFE. I also asked her to save the ones she liked aesthetically as a makeshift mood board.</p>
 
-                        <figure class="picture-caption">
-                            <img src="img/cafe/research.jpg" style="width:100%;" alt="A loose leaf sheet of notebook paper with short highlighted anecdotal phrases." />
-                            <figcaption>I took notes using pen/paper and highlighted any key points that came up throughout my interviews with nonprofit experts.</figcaption>
-                        </figure>
-                        
-                        <p>Based off of our research, we sketched out paper components and stitched them together to form a working information architecture and low-fidelity prototype. We used customers at the coffee shop (with permission from the owner) to conduct informal usability tests which guided our iterations.</p>
-                        
-                        <figure class="picture-caption">
-                            <img src="img/cafe/prototype-1.jpg" style="width:100%;" alt="Several sheets of loose leaf paper strewn across a table. A torn sheet has a website drawn on it with a marker." />
-                            <figcaption>Our sketched up design system was wonderful for rapid prototyping.</figcaption>
-                        </figure>
-                        
-                        <figure class="picture-caption">
-                            <img src="img/cafe/working.jpg" style="width:100%;" alt="A picture of me drawing a paper prototype with my finger pointing at referenced research." />
-                            <figcaption>We were lucky to grab a big table.</figcaption>
-                        </figure>
-                        
-                        <p>With our drawn out wireframes, I began to create a working prototype using a bootstrap template I found online that best matched the websites the director had picked earlier in the day. While I put together the landing page together, the director wrote content.</p>
-                        
-                        <figure class="picture-caption">
-                            <img class="stickybox-nm" src="img/cafe/original.png" style="width:100%;" alt="A newspaper blog template with lightly styled cards." />
-                            <figcaption>The template we chose to work off of.</figcaption>
-                        </figure>
-                        
-                        <p>Upon completion of the landing page, we were mutually satisfied with the progress made within our daytime working session. I would handle the rest of the pages at night on my own with the content the director had written. Several hours later, the website was live.</p>
+                        <h2 id="12-hours"><a class="h-anchor" href="#12-hours"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> Creating a Website in 12 Hours</h2>
+                        <p>I wanted this probonothon to be a collaborative process, but I also didn’t want it to be a nightmare for the director. For obvious reasons, it’s unreasonable to ask anyone to work on anything for more than 8 hours.
+                            <p>Luckily, collaboration in this case wouldn’t have to extend out to development. I knew I could conduct the dev work alone at night provided we could co-design a decent prototype during the day.</p>
+                            <p>We started with lean research. I called several designers I knew who worked in the nonprofit industry while the director conducted competitive research based on nonprofits similar to CAFE. I also asked her to save the ones she liked aesthetically as a makeshift mood board.</p>
+
+                            <figure class="picture-caption">
+                                <img src="img/cafe/research.jpg" style="width:100%;" alt="A loose leaf sheet of notebook paper with short highlighted anecdotal phrases." />
+                                <figcaption>I took notes using pen/paper and highlighted any key points that came up throughout my interviews with nonprofit experts.</figcaption>
+                            </figure>
+
+                            <p>Based off of our research, we sketched out paper components and stitched them together to form a working information architecture and low-fidelity prototype. We used customers at the coffee shop (with permission from the owner) to conduct informal usability tests which guided our iterations.</p>
+
+                            <figure class="picture-caption">
+                                <img src="img/cafe/prototype-1.jpg" style="width:100%;" alt="Several sheets of loose leaf paper strewn across a table. A torn sheet has a website drawn on it with a marker." />
+                                <figcaption>Our sketched up design system was wonderful for rapid prototyping.</figcaption>
+                            </figure>
+
+                            <figure class="picture-caption">
+                                <img src="img/cafe/working.jpg" style="width:100%;" alt="A picture of me drawing a paper prototype with my finger pointing at referenced research." />
+                                <figcaption>We were lucky to grab a big table.</figcaption>
+                            </figure>
+
+                            <p>With our drawn out wireframes, I began to create a working prototype using a bootstrap template I found online that best matched the websites the director had picked earlier in the day. While I put together the landing page together, the director wrote content.</p>
+
+                            <figure class="picture-caption">
+                                <img class="stickybox-nm" src="img/cafe/original.png" style="width:100%;" alt="A newspaper blog template with lightly styled cards." />
+                                <figcaption>The template we chose to work off of.</figcaption>
+                            </figure>
+
+                            <p>Upon completion of the landing page, we were mutually satisfied with the progress made within our daytime working session. I would handle the rest of the pages at night on my own with the content the director had written. Several hours later, the website was live.</p>
 
                     </div>
                 </div>
@@ -192,15 +169,15 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-9 col-xl-7 content content-end">
-                        <h2>Branding Up with AIGA D.C. </h2>
+                    <div class="col-lg-9 col-xl-8">
+                        <h2 id="branding"><a class="h-anchor" href="#branding"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> Branding Up with AIGA D.C. </h2>
                         <p>Over the course of a year, CAFE had made significant strides as a nonprofit organization with two major collaborations with the Fairfax County Parks Authority. I also made strides as a human being and found myself volunteering at more events with CAFE until I ended up joining the board.</p>
-                        
+
                         <figure class="picture-caption">
                             <img src="img/cafe/volunteer.jpg" style="width:100%;" alt="A group of people holding hands in a Korean ring dance" />
                             <figcaption>There's nothing more rewarding than giving back to your community.</figcaption>
                         </figure>
-                        
+
                         <p>In anticipation of bigger things in 2020 (pre-pandemic), I registered CAFE for <a href="https://dc.aiga.org/event-internal/createathon-dc-2020/">AIGA D.C.’s annual Createathon</a> in hopes of giving our brand a much needed refresh (no thanks to my mediocre visual design skills). We were partnered up with a team of fantastic designers led by the incredible <a href="https://meganlearn.com/">Megan Learn</a> and the rest was history. I’ll let their godly work do the talking.</p>
 
                         <figure class="picture-caption">
@@ -222,25 +199,26 @@
                             <img class="stickybox-nm" src="img/cafe/new-website.png" style="width:100%;" alt="The new CAFE website which used the new colorful brick motifs." />
                         </figure>
                     </div>
-                    <div class="col-lg-9 col-xl-7 content">
+                    <div class="col-lg-9 col-xl-8">
                         <p>Thanks to their incredible brand guidelines, I was able to give the website a much needed update as well. I created new iconography, designed a new animated jumbotron, and jazzed up the style.</p>
                     </div>
-                    
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-9 col-xl-7 content content-end">
-                        <h2>Accessibility Remediation</h2>
+                    <div class="col-lg-9 col-xl-8">
+                        <h2 id="accessibility"><a class="h-anchor" href="#accessibility"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> Accessibility Remediation</h2>
                         <p>Some time later in 2020 I read an article from Smashing Magazine titled <a href="https://www.smashingmagazine.com/2020/09/design-reduced-motion-sensitivities/">Designing With Reduced Motion For Motion Sensitivities</a>. Around this time, I was studying up on my front-end skills to improve my capabilities as an inclusive designer. Needless to say, my heart dropped when I realized I had seriously fucked up with CAFE’s website (and my portfolio too).</p>
-                        
+
                         <p>If you’re not familiar with why this is a problem, Facundo Corradini wrote an article on his <a href="https://alistapart.com/article/accessibility-for-vestibular/">experience with animations while having a temporary vestibular disorder</a>.</p>
-                        
-                        <blockquote class="caption">
-                            <p>"I would put the bucket beside me to good use and be forced to lie in bed for hours as I felt the room spinning around me, and no meds could get me out of it. It was THAT bad."</p>
-                            <p>Facundo Corradini</p>
-                        </blockquote>
-                        
+
+                        <figure>
+                            <blockquote cite="https://alistapart.com/article/accessibility-for-vestibular/">
+                                <p>I would put the bucket beside me to good use and be forced to lie in bed for hours as I felt the room spinning around me, and no meds could get me out of it. It was THAT bad.</p>
+                            </blockquote>
+                            <figcaption>Facundo Corradini</figcaption>
+                        </figure>
+
                         <p>Beyond having triggering animations on CAFE’s website, there were a host of other accessibility defects as well due to my thoughtless decision to use an online bootstrap template. I decided to quickly remediate the more critical issues ASAP.</p>
-                        
+
                         <h3>Scanning for Issues</h3>
                         <p>I started by running an axe scan on all the pages of the website. As anticipated, there were a ton of issues including:</p>
                         <ul>
@@ -256,19 +234,21 @@
                         </figure>
 
                         <p>I also knew that my code looked like a whole bucket of div soup. It was in desperate need of landmarks and proper HTML5 semantics.</p>
-                        
+
                         <h3>Prioritizing Fixes</h3>
                         <p>Given my limited time, I decided to prioritize the issues I would tackle. I started with reducing motion to mitigate potential harm. This was relatively straightforward thanks to Scott O’Hara’s awesome article <a href="https://www.scottohara.me/note/2019/07/12/reduced-motion-video.html">Reduced Motion Auto-Play Video</a>.</p>
                     </div>
+
                     <div class="col-lg-12">
                         <figure class="picture-caption">
                             <video aria-describedby="reduce" controls class="stickybox-nm" width="100%" height="auto" muted role="img">
-                            <source src="img/cafe/reduce-motion.mov" type="video/mp4">
+                                <source src="img/cafe/reduce-motion.mov" type="video/mp4">
                             </video>
+                            <figcaption id="reduce">If a user has reduced motion selected on their OS, the background animation will now stop. Nifty!</figcaption>
                         </figure>
                     </div>
-                    <div class="col-lg-9 col-xl-7 content content-end">
-                        <p id="reduce">If a user has reduced motion selected on their OS, the background animation will now stop. Nifty!</p>
+
+                    <div class="col-lg-9 col-xl-8">
                         <p>I then began work on improving keyboard and screen reader navigation by fixing heading levels and adding assistive technology shortcuts.</p>
                         <figure class="picture-caption">
                             <img class="stickybox-nm" src="img/cafe/headings.jpg" style="width:100%;" alt="A decorative OUR TEAM heading was flagged by an axe scan for low color contrast." />
@@ -290,11 +270,11 @@
                         <p>This small effort, while meaningful, is still far from OK. In the future I'll still need to make more improvements to reduce the div soup (like using more lists).
                     </div>
                 </div>
-                
+
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-9 col-xl-7 content content-end">
-                        <h2>Conclusion</h2>
+                    <div class="col-lg-9 col-xl-8">
+                        <h2 id="conclusion"><a class="h-anchor" href="#conclusion"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> Conclusion</h2>
                         <p>Reflecting back on this pro bono work, I’ve learned a number of things which I can easily list out for anyone else interested in doing something similar:</p>
                         <ol>
                             <li>Think carefully about the domain of work and your own availability before you pick up a pro bono initiative. If it’s relatively simple, like CAFE, you might want to consider operating solo. Trying to recruit a team of volunteers who have real life obligations can become a nightmare deep into a project. Alternatively, consider recruiting short term volunteers for a sprint of specialty work (like branding).</li>
@@ -310,97 +290,86 @@
                         </figure>
                     </div>
                 </div>
-
-
-
             </div>
             <!--Container-->
         </article>
     </main>
-
-    <hr aria-hidden="true" />
-
-    <aside>
-        <div class="l-padding">
-            <div class="container">
-                <article class="row">
-                    <div class="col-lg-5 stickybox-padding card-mobile-margin">
-                        <header>
-                            <a href="whythissucks.html">
-                                <h2>Why my portfolio website <nobr>sucks <span role="presentation" aria-hidden="true" class="unicode">→</span></nobr>
-                                </h2>
+    
+    <aside class="content ht">
+        <div class="container">
+            <div class="project">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Up next...</p>
+                            <a href="whythissucks.html" class="project-heading">
+                                <h2>Why my portfolio website sucks</h2>
+                                <i aria-hidden="true" class="project-link"></i>
                             </a>
-                        </header>
-                        <p>On an annual basis, I write about how I trash and renew this website to better represent my growing values as a designer.</p>
-                        <p class="heading-subtext">My Design Diary, <time datetime="2016/2019">2016&ndash;2019</time>, <nobr>4 articles</nobr>
-                        </p>
+                        </div>
                     </div>
-                    <figure class="col-lg-7">
-                        <video controls class="stickybox-nm" width="100%" height="auto" muted role="img" aria-label="Interacting with my trello board. I open up the first card in my accessibility list labelled cry because there's too much to fix.">
-                            <source src="img/thumb/tears.mov" type="video/mp4">
-                        </video>
-                    </figure>
-                </article>
-            </div>
-        </div>
-    </aside>
-
-    <hr aria-hidden="true" />
-
-    <aside>
-        <div class="l-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 stickybox-padding card-mobile-margin">
-                        <h2>How can I serve you?</h2>
-                        <p> Regardless if you're a student looking for directions, my future boss, or a complete stranger that got lost on this portfolio-- I'm here for it all. No hidden fees apply.</p>
-                        <p>Send me an email at <a href="mailto:joshkimux@gmail.com">joshkimux@gmail.com</a> and expect a response in 2 days. Or else I owe you a donut.</p>
-                        <p>We can be <a href="https://www.linkedin.com/in/joshkimux/"> LinkedIn</a> friends too, whatever that means?</p>
-
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p class="project-client">My S*** Portfolio</p>
+                            <aside role="note"><span class="sr-only">Tags:</span> Design Diary, Front-End</aside>
+                        </div>
+                        <div class="col-lg-8">
+                            <p>On an annual basis, I trash and renew this website to better represent my growing values as a designer.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <figure class="polaroid">
-                            <img style="width:100%;" src="img/thumb/contact-2.jpg" alt="My arms are spread wide at the corner of a wall of plastic donuts basking in their beautiful glory." />
-                            <figcaption><time datetime="2019-12">[12.2019]</time> Me, awkwardly standing in front of a wall of donuts at Lotte World in Seoul, Korea.</figcaption>
-                        </figure>
-
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <img src="img/thumb/sucks-t-1.jpg" alt="A trello board of my WIP items. It never ends.">
+                        </div>
+                        <div class="col-lg-4 xl-only">
+                            <img src="img/thumb/sucks-t-2.jpg" alt="This is fine dog.">
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
-
     </aside>
 
     <!-- Footer -->
-    <footer class="footing bg-nav">
+    <footer class="footer">
         <div class="container">
-            <div class="row l-margin card-mobile-margin">
-                <div class="col-md-6">
-                    <p>This isn't a generic squarespace portfolio. It's a living work-in-progress that I redesign annually to better represent my growing values and skills as a designer. That being said, it still needs alot of work.</p>
+            <h2 class="sr-only">Footer</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h3>Portfolio Notes</h3>
+                    <p>I update this trash portfolio every year to match my growing values as a designer.</p>
+                    <p><a href="https://trello.com/b/03Yn4vXM/josh-kim-ux-portfolio">Check out my portfolio updates or make a suggestion on my trello board.</a></p>
                 </div>
-                <div class="col-md-6">
-                    <p><a href="thissucks/include.html">Read more about my commitment to improve accessibility</a> or <a href="https://trello.com/b/03Yn4vXM">see what changes I'm making to my portfolio right now on trello</a>.</p>
-                    <div class="signature">
-                        <p class="heading-subtext">- Josh <span lang="ko">김영순</span> <time datetime="2020-08-15">[08.15.2020]</time></p>
-                    </div>
-                </div>
-            </div>
-            <hr aria-hidden="true" />
-            <nav class="row" aria-label="footer">
-                <div class="col-lg-12">
+                <div class="col-md-6 offset-lg-1 col-lg-4">
+                    <h3>Let's Connect</h3>
                     <ul role="list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About&nbsp;Me</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="reads.html">My&nbsp;Reads</a></li>
-                        <li><a href="mailto:joshkimux@gmail.com">Email</a></li>
-                        <li><a href="https://calendly.com/joshkimux/mentoring">Calendly</a></li>
-                        <li><a href="https://www.linkedin.com/in/joshkimux/">LinkedIn</a></li>
-                        <li><a href="https://medium.com/@joshkimux">Medium</a></li>
-                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="mailto:joshkimux@gmail.com">Email me</a> at joshkimux@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/joshkimux/">Connect with me on LinkedIn</a></li>
+                        <li><a href="https://calendly.com/joshkimux/mentoring">Schedule a call with Calendly</a></li>
+                        <li><a href="https://medium.com/@joshkimux">Follow my thoughts on Medium</a></li>
                     </ul>
                 </div>
-            </nav>
+                <div class="d-logo xl-only">
+                    <img aria-hidden="true" src="img/icons/logo.svg" style="width:100%;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="footer">
+                        <h3>Quick Links</h3>
+                        <ul role="list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="writing.html">Writing/Speaking</a></li>
+                            
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Let's Talk</a></li>
+                            <div class="footer-right">
+                                <li><a href="resume.html">Resume</a></li>
+                                <li><a href="#main">Back to Top <i aria-hidden="true" class="top-link"></i></a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </footer>
 

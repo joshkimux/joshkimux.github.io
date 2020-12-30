@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125978706-1"></script>
     <script>
@@ -15,6 +16,7 @@
         gtag('config', 'UA-125978706-1');
     </script>
 
+    <!-- SEO Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Hey, I'm Josh! I'm a UX designer and researcher focused on inclusive design. This is the homepage of my portfolio.">
@@ -24,204 +26,184 @@
     <meta property="og:url" content="joshkimux.com" />
     <meta name="keywords" content="Josh Kim, ux, design, research, inclusive, product, service, user experience">
 
+    <!-- Title -->
     <title>Home | Josh Kim, inclusive UX researcher and designer</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jk.css" rel="stylesheet">
 
-    <!-- Custom style for this template, it barely has any traces of the original stylesheet... I really should remake this website from scratch again soon. -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&family=Merriweather:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Public+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Space+Mono&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
+
     <!-- Skip link for keyboard users -->
     <a class="skip-main" href="#main">Skip to main content</a>
 
     <!--Navigation -->
-        <header class="nav-border">
-            <div class="container">
-                <!--Desktop nav-->
-                <div class="row flex-nowrap justify-content-between align-items-center">
-                    <div class="nav-logo">
-                        <a href="index.html"><img src="img/logo/logo_human_2.svg" alt="Logo of Josh Kim UX"></a>
-                    </div>
-                    <nav aria-label="main">
-                        <ul role="list" class="d-flex justify-content-end align-items-center">
-                            <li aria-current="page" class="cust-nav-item"><a class="subnav subnav-selected" href="index.html">Home</a></li>
-                            <li class="cust-nav-item"><a class="subnav" href="portfolio.html">Portfolio</a></li>
-                            <li class="cust-nav-item"><a class="subnav" href="reads.html">My Reads</a></li>
-                            <li class="cust-nav-item"><a class="subnav" href="about.html">About Me</a></li>
-                            <li class="talk"><a class="subnav" href="contact.html">Let's Talk</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!--End of desktop nav-->
-
-                <!--Mobile nav-->
-                <nav class="nav-scroller" aria-label="main">
-                    <div class="nav d-flex">
-                        <a class="subnav subnav-selected" href="index.html" aria-current="page">Home</a>
-                        <a class="subnav" href="portfolio.html">Portfolio</a>
-                        <a class="subnav" href="reads.html">My Reads</a>
-                        <a class="subnav" href="about.html">About Me</a>
-                    </div>
-                </nav>
-                <!--End of mobile nav -->
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a class="" href="index.html"><span class="logo"></span>Josh Kim</a>
+                <a href="contact.html">Let's Talk</a>
             </div>
-            <!--end of container -->
-        </header>
-    <!--end of navigation -->
+            <div class="header-nav">
+                <nav class="jnav" aria-label="main">
+                    <ul>
+                        <li><a aria-current="true" href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="writing.html">Writing/Speaking</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="contact"><a href="contact.html">Let's Talk</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--end of container -->
+    </header>
+    
+    <!-- Random shit that's invisible -->
+    <div class="d2-font xxl-only" aria-hidden="true">a11y = accessibility</div>
+    <div class="d-font xxl-only" aria-hidden="true">Nihil de nobis, sine nobis</div>
 
     <!-- Main content -->
     <main role="main" id="main">
-        <div class="l-padding index-bg">
-            <div class="overlay">
-            </div>
-            <div class="container index-headline">
+
+        <!-- Heading-->
+        <div class="container">
+            <div class="heading">
                 <div class="row">
-                    <div class="col-lg-8 col-xl-9">
-                        <h1>UX Researcher and Designer focused on inclusive design</h1>
-                        <p class="index-headline-p"><a href="resume.html">View my resume</a>, <a href="contact.html">contact me</a>, or <strong><a href="portfolio.html">check out my portfolio</a></strong>.</p>
+                    <div class="col-sm-12 col-xl-12">
+                        <h1>Inclusive researcher and designer focused on design ethics and accessibility.</h1>
+                        <p>Currently a <a href="https://adhocteam.us/about/our-team/#design">Senior Designer and Accessibility Specialist at Ad Hoc</a> improving accessibility at Veterans Affairs.</p>
                     </div>
-                    <div class="col-lg-4 col-xl-3">
-                        <p class="off-screen">Here's a list of where I'm doing work now:</p>
-                        <dl>
-                            <dt>Ad Hoc</dt>
-                            <dd class="index-headline-details"> Senior Designer, Accessibility Specialist</dd>
-                            <dt>US Digital Response</dt>
-                            <dd class="index-headline-details">UX and Accessibility Designer</dd>
-                        </dl>
+                </div><!-- Row -->
+            <div class="row mt">
+                <h2 id="service" class="sr-only">How can I best serve you?</h2>
+                <!--Card List-->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h3 aria-describedby="p-hire"><a href="#pitch">Hire me <i aria-hidden="true" class="pg-link"></i></a></h3>
+                        <p id="p-hire">5 reasons to help you decide if you should hire me.</p>
+                        <aside role="note"><span class="sr-only">This is for</span> Recruiters &#38; Design Leads</aside>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--end of header -->
-
-        <section class="l-padding" role="region" aria-labelledby="service">
-            <div class="container">
-                <h2 id="service" class="off-screen">How can I best serve you?</h2>
-                <div class="row">
-                    <!--Card List-->
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-home">
-                                <span role="presentation" aria-hidden="true" class="unicode">🕔 💼</span>
-                                <h3>
-                                    <a href="#job-pitch">Read my 5 minute job pitch  </a>
-                                </h3>
-                                <p>See if I'm the right person for your mission. </p>
-                                
-                                <span class="notetext">Recruiters, Design Leads</span>
-                            </div>
-                        </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h3 aria-describedby="p-mentor"><a href="https://calendly.com/joshkimux/mentoring">Mentorship <i aria-hidden="true" class="external-link"></i></a></h3>
+                        <p id="p-mentor">Schedule a call with me on calendly and let’s chat.</p>
+                        <aside role="note"><span class="sr-only">This is for</span> Students</aside>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-home">
-                                <span role="presentation" aria-hidden="true" class="unicode">🎓 📅</span>
-                                <h3>
-                                    <a href="https://calendly.com/joshkimux/mentoring">Schedule a mentorship call </a>
-                                </h3>
-                                <p>I'll help you with your design career questions.</p>
-                              
-                                <span class="notetext">Students</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-home">
-                                <span role="presentation" aria-hidden="true" class="unicode">🏥 ✌️</span>
-                                <h3>
-                                    <a href="contact.html#students">Request pro bono work </a>
-                                </h3>
-                                <p>I offer free design services to non-profit organizations.</p>
-                             
-                                <span class="notetext">Non-profits</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of cards-->
                 </div>
-            </div>
-        </section>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h3 aria-describedby="p-probono"><a href="contact.html#nonprofit">Pro bono <i aria-hidden="true" class="internal-link"></i></a>
+                        </h3>
+                        <p id="p-probono">Learn about how I can design for your cause at no cost.</p>
+                        <aside role="note"><span class="sr-only">This is for</span> Non-profits &#38; Charities</aside>
+                    </div>
+                </div>
+                <!--end of cards-->
+            </div><!-- Row -->
+                </div><!-- Heading -->
+        </div><!-- Container -->
         
-        <hr aria-hidden="true"/>
-        
-        <section id="job-pitch" class="l-padding" role="region" aria-labelledby="pitch">
+        <!-- 5 minute pitch -->
+        <div class="content ht">
             <div class="container">
                 <div class="row">
-                    <header class="col-lg-4 card-mobile-margin">
-                        <h2 id="pitch">5-Minute Design Job Pitch</h2>
-                        <p>Here's 5 reasons in 5 minutes to help you decide if you should bring me on as your senior designer.</p>
-
-                    </header>
+                    <div class="col-lg-4">
+                        <h2 id="pitch"><a class="h-anchor" href="#pitch"><span aria-hidden>#</span><span class="sr-only">anchor</span></a> Hire Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>5 reasons, 5 minutes. Let’s see if we can build a fruitful partnership.</p>
+                        <p>You can also <a href="resume.html">check out my online resume</a> or <a href="about.html#reviews">read what others have said about me</a>.</p>
+                    </div>
                     <div class="offset-lg-1 col-lg-7">
-                        <ul class="about-list" role="list">
-                        
-                            <li><h3>I'm a flexible designer with consulting chops.</h3>
-                        <p>I've led discovery teams, facilitated participatory design workshops, prototyped high-fidelity flows, tested for WCAG 2.1 compliance, and presented at major client meetings.</p>
-                        <p>For a laundry list of my skills and tools, <a class="mark" href="resume.html">check out my resume.</a></p></li>
-
-                        <li><h3>My past experience can speak for itself.</h3>
-                        <p>Don't take my word for it: <a class="mark" href="portfolio.html">check out my portfolio</a>. I've worked with large government agencies, state healthcare, the US Digital Response, SNHU, Amtrak, and more.</p></li>
-
-                        <li><h3>I regularly teach and speak on design.</h3>
-                        <p>I've been invited to speak on design at the National Intelligence University, Carnegie Mellon, Virginia Tech, and UVA. I also mentor students globally through Springboard.</p></li>
-
-                        <li><h3>Design is my calling, not just a career.</h3>
-                        <p><a href="reads.html">I've read more than 100 design books</a>, I stay engaged with the global design community, and I'm always looking for the next pro bono project to give back to the world.</p></li>
-
-                        <li><h3>I am praised for both the quality and humanity of my work.</h3>
-                        <p>I've built a reputation as a hard working, empathetic, ethically-minded, and culture-building designer. Need proof? <a href="about.html#reviews">Read what others have said about me.</a></p></li>
-
-                        <li><h3>Interested or need more info? <a class="mark" href="contact.html">Let's talk.</a></h3></li>
-                        
-                        </ul>
+                        <ol role="list" class="big-list">
+                            <li>
+                                <h3>1. Flexible and multi-disciplinary</h3>
+                                <p>Researcher, designer, developer— my titles have always been in flux to serve my end users. I've led discovery teams, prototyped high-fidelity flows, tested for accessibility compliance, and presented at major client meetings.</p>
+                            </li>
+                            <li>
+                                <h3>2. 5+ years of design consulting experience</h3>
+                                <p>From serving government agencies like the CIA, USDA, and Veterans Affairs to providing consulting guidance to Southern New Hampshire University and Amtrak—  I'm a pro at adapting to new design contexts.</p>
+                                <p>I can't share client work due to NDAs, but you can <a href="projects.html">check out my pro bono projects</a> instead.</p>
+                            </li>
+                            <li>
+                                <h3>3. I regularly teach and speak on design</h3>
+                                <p>I've been invited to speak at the National Intelligence University, Carnegie Mellon, and Virginia Tech. I’ve also helped architect design ethics course material at the University of Virginia.</p><p><a href="writing.html">Check out my writing and speaking materials.</a></p>
+                            </li>
+                            <li>
+                                <h3>4. Design is my calling, not just a career</h3>
+                                <p>Design is in my blood. <a href="https://trello.com/b/8tIqrVsB/joshs-reading-notes">I’ve read over 100+ books on design</a> and regularly give back to the community from <a href="https://dcdesignweek.org/about/#dcdw-2020-committee">improving accessibility at DC Design Week</a> to sourcing diverse speakers for the Dot Gov Design Conference.</p>
+                            </li>
+                            <li>
+                                <h3>5. Inclusion first</h3>
+                                <p>Ethically grounded, inclusive, empathetic— are the <a href="about.html#reviews">adjectives most frequently ascribed to me by my peers</a>. It’s because I believe in serving and centering marginalized people first. I design with, I don’t design for.</p>
+                            </li>
+                        </ol>
+                        <h3>Interested now? Let's get to talking.</h3>
+                        <p><mark><a href="mailto:joshkimux@gmail.com">Send me an email</a></mark> at joshkimux@gmail.com or <a href="https://www.linkedin.com/in/joshkimux/"><abbr title="direct message">dm</abbr> me on LinkedIn</a>. If I don't get back to you in 2 days, I owe you a donut.<sup>*</sup></p>
+                         <aside role="note"><sup>*</sup>If I'm on vacation, free donut redemption is null.</aside>
 
                     </div>
-                </div>
-
-            </div>
-        </section>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- content -->
     </main>
 
+
     <!-- Footer -->
-    <footer class="footing bg-nav">
+    <footer class="footer">
         <div class="container">
-            <div class="row l-margin card-mobile-margin">
-                <div class="col-md-6">
-                    <p>This isn't a generic squarespace portfolio. It's a living work-in-progress that I redesign annually to better represent my growing values and skills as a designer. That being said, it still needs alot of work.</p>
+            <h2 class="sr-only">Footer</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h3>Portfolio Notes</h3>
+                    <p>I update this trash portfolio every year to match my growing values as a designer.</p>
+                    <p><a href="https://trello.com/b/03Yn4vXM/josh-kim-ux-portfolio">Check out my portfolio updates or make a suggestion on my trello board.</a></p>
                 </div>
-                <div class="col-md-6">
-                    <p><a href="thissucks/include.html">Read more about my commitment to improve accessibility</a> or <a href="https://trello.com/b/03Yn4vXM">see what changes I'm making to my portfolio right now on trello</a>.</p>
-                    <div class="signature">
-                        <p class="heading-subtext">- Josh <span lang="ko">김영순</span> <time datetime="2020-08-15">[08.15.2020]</time></p>
-                    </div>
-                </div>
-            </div>
-            <hr aria-hidden="true"/>
-            <nav class="row" aria-label="footer">
-                <div class="col-lg-12">
+                <div class="col-md-6 offset-lg-1 col-lg-4">
+                    <h3>Let's Connect</h3>
                     <ul role="list">
-                        <li aria-current="page"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About&nbsp;Me</a></li> 
-                        <li><a href="portfolio.html">Portfolio</a></li> 
-                        <li><a href="reads.html">My&nbsp;Reads</a></li> 
-                        <li><a href="mailto:joshkimux@gmail.com">Email</a></li>
-                        <li><a href="https://calendly.com/joshkimux/mentoring">Calendly</a></li> 
-                        <li><a href="https://www.linkedin.com/in/joshkimux/">LinkedIn</a></li>
-                        <li><a href="https://medium.com/@joshkimux">Medium</a></li>
-                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="mailto:joshkimux@gmail.com">Email me</a> at joshkimux@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/joshkimux/">Connect with me on LinkedIn</a></li>
+                        <li><a href="https://calendly.com/joshkimux/mentoring">Schedule a call with Calendly</a></li>
+                        <li><a href="https://medium.com/@joshkimux">Follow my thoughts on Medium</a></li>
                     </ul>
                 </div>
-            </nav>
+                <div class="d-logo xl-only">
+                    <img aria-hidden="true" src="img/icons/logo.svg" style="width:100%;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="footer"><h3>Quick Links</h3>
+                        <ul role="list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="writing.html">Writing/Speaking</a></li>
+                            
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Let's Talk</a></li>
+                            <div class="footer-right">
+                                <li><a href="resume.html">Resume</a></li>
+                                <li><a href="#main">Back to Top <i aria-hidden="true" class="top-link"></i></a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </footer>
 
