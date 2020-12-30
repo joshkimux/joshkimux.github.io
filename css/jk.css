@@ -183,17 +183,21 @@ aside[role="note"] p {
 }
 
 .writing li {
-    padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-top: 2rem;
     border-bottom: 2px solid #eaeaea;
     display: flex;
     margin-bottom: 0rem !important;
+    flex-wrap: wrap;
 }
 
 .writing img {
-    margin-right: 3rem;
-    max-width: 310px;
+    width: 100%;
     border-radius: 4px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: solid 1px #eaeaea;
 }
 
 .writing li:last-child {
@@ -235,7 +239,7 @@ aside[role="note"] p {
 .resume h3 {
     margin-top: 3rem;
     margin-bottom: .5rem;
-    font-family:'Merriweather', serif;
+    font-family: 'Merriweather', serif;
 }
 
 .resume h3:first-of-type {
@@ -244,13 +248,13 @@ aside[role="note"] p {
 
 .r-role {
     font-family: 'Merriweather', serif;
-    
+
 }
 
 span[role="note"] {
     font-size: 1rem;
     margin-left: .5rem;
-    font-family:'Space mono', monospace;
+    font-family: 'Space mono', monospace;
 }
 
 .writing a span[role="note"] {
@@ -266,12 +270,12 @@ span[role="note"] {
 }
 
 .r-sum {
-    padding-left:1.5rem;
-    border-left: 1px solid rgba(0,0,0,.1);
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(0, 0, 0, .1);
 }
 
 .r-side ul {
-    list-style:none;
+    list-style: none;
     padding-left: none;
     margin-left: none;
     padding-inline-start: 0px;
@@ -330,7 +334,8 @@ article figure {
     margin: 3rem 0rem;
 }
 
-article figure img, article figure video {
+article figure img,
+article figure video {
     border-radius: 3px;
     margin-bottom: 1rem;
     width: 100%;
@@ -600,19 +605,20 @@ mark {
     background-image: linear-gradient(-100deg, rgba(255, 224, 0, 0.1), rgba(255, 224, 0, 0.3) 95%, rgba(255, 224, 0, 0.08));
 }
 
-mark::before, mark::after {
-  content:" [highlight start] ";
-  clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
+mark::before,
+mark::after {
+    content: " [highlight start] ";
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
 }
 
 mark::after {
-  content:" [highlight end] ";
+    content: " [highlight end] ";
 }
 
 .sr-only {
@@ -800,6 +806,12 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
+}
+
+.heading-subtext {
+    font-family: 'Space mono', monospace;
+    font-size: 1rem !important;
+    line-height: 1.7rem !important;
 }
 
 .card i {
@@ -1111,11 +1123,11 @@ i {
         white-space: normal;
         overflow-x: initial;
     }
-    
+
     nav.breadcrumbs {
-    border-top: 1px solid #eaeaea;
+        border-top: 1px solid #eaeaea;
         border-bottom: 1px solid #eaeaea;
-}
+    }
 
     .contact {
         display: inline-block !important;
@@ -1133,6 +1145,23 @@ i {
 
     .xl-only {
         display: block;
+    }
+
+    .writing li {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 0rem !important;
+    }
+
+    .writing img {
+        margin-right: 3rem;
+    width: 320px;
+    height: auto;
+
+    border-radius: 4px;
+
+    object-fit: unset;
+
     }
 
 
