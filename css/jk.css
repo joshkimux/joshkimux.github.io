@@ -976,7 +976,7 @@ i {
         font-size: .9rem;
     }
     .polaroid {
-        transform: rotate(-1deg);
+        transform: rotate(2deg);
     }
 
 
