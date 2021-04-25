@@ -486,7 +486,7 @@ blockquote p::after {
 }
 
 .jnav li {
-    padding: 0rem .5rem;
+    padding: 0rem .3rem;
 }
 
 .jnav li:first-of-type {
