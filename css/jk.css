@@ -51,6 +51,10 @@ h1 {
     line-height: 2.4rem;
 }
 
+.co {
+    color: #909090;
+}
+
 .footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -218,6 +222,7 @@ aside[role="note"] p {
 .writing-heading a h2 {
     margin-left: 0rem;
     transition: .2s ease;
+    margin-bottom: 1rem;
 }
 
 .writing i {
