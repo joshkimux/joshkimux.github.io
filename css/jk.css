@@ -752,6 +752,11 @@ a {
     display: none;
 }
 
+.sublist li {
+    margin-bottom: 0rem !important;
+    border-bottom: none !important;
+}
+
 .big-list {
     list-style: none;
     padding-left: none;
