@@ -802,6 +802,13 @@ a {
     display: inline-block;
 }
 
+.was {
+    background-image: url(../img/icons/was.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
 .calendar-link {
     background-image: url(../img/icons/calendar.svg);
     background-size: contain;
