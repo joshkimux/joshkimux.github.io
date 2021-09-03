@@ -40,6 +40,10 @@ h1 {
     margin-bottom: 2rem;
 }
 
+h2 {
+    font-family: 'Merriweather', serif;
+}
+
 .heading {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -223,6 +227,16 @@ aside[role="note"] p {
     margin-left: 0rem;
     transition: .2s ease;
     margin-bottom: 1rem;
+}
+
+.writing-feature {
+    width:100%;
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.writing-feature iframe {
+    height: 180px;
+    border-radius: 4px;
 }
 
 .writing i {
@@ -938,6 +952,16 @@ i {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
+    
+    .writing img {
+        height: 360px;
+    }
+    
+    .writing-feature iframe {
+    height: 360px;
+    border-radius: 4px;
+}
+
 
     aside[role="note"],
     aside[role="note"] p {
@@ -1201,6 +1225,10 @@ i {
         object-fit: unset;
 
     }
+        .writing-feature iframe {
+    height: 480px;
+    border-radius: 4px;
+}
     
     /*! resume */
     .r-side {
