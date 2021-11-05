@@ -203,10 +203,9 @@ aside[role="note"] p {
 .writing img {
     width: 100%;
     border-radius: 4px;
-    height: 180px;
     object-fit: cover;
-    margin-bottom: 1.5rem;
     border: solid 1px #eaeaea;
+    margin-top: 1.5rem;
 }
 
 .writing li:last-child {
@@ -231,7 +230,7 @@ aside[role="note"] p {
 
 .writing-feature {
     width:100%;
-    margin: 2rem 0rem 1rem 0rem;
+    margin: 2rem 0rem 0rem 0rem;
 }
 
 .writing-feature iframe {
@@ -1216,19 +1215,30 @@ i {
     }
 
     .writing img {
-        margin-right: 3rem;
+        margin-left: 3rem;
         width: 320px;
         height: auto;
-
         border-radius: 4px;
-
         object-fit: unset;
-
+        margin-top: 0rem;
+        transition: .3s;
+        opacity: .6;
+        filter: grayscale(100%);
     }
-        .writing-feature iframe {
-    height: 480px;
-    border-radius: 4px;
-}
+    
+    
+    .writing li:hover img{
+        transition: .2s;
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+    
+    .writing-feature iframe {
+        height: 480px;
+        border-radius: 4px;
+    }
+    
+    
     
     /*! resume */
     .r-side {
@@ -1285,5 +1295,9 @@ i {
 
     .card {
         padding-left: 2rem;
+    }
+    
+    .writing img {
+        filter: grayscale(0%);
     }
 }
