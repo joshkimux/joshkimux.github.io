@@ -56,7 +56,7 @@ h2 {
 }
 
 .co {
-    color: #909090;
+    color: #707070;
 }
 
 .footer {
@@ -217,6 +217,10 @@ aside[role="note"] p {
     padding-top: 0px;
 }
 
+.writing time {
+    font-weight: bolder;
+}
+
 .writing-heading a:hover {
     transition: .2s ease;
     text-decoration-color: #ffe66b !important;
@@ -258,6 +262,7 @@ aside[role="note"] p {
 .resume h3 {
     margin-top: 3rem;
     margin-bottom: .5rem !important;
+    font-family: 'Merriweather', serif;
 }
 
 .resume h3:first-of-type {
@@ -265,8 +270,7 @@ aside[role="note"] p {
 }
 
 .r-role {
-    font-family: 'Merriweather', serif;
-
+    font-weight:bolder;
 }
 
 span[role="note"] {
@@ -1222,7 +1226,7 @@ i {
         object-fit: unset;
         margin-top: 0rem;
         transition: .3s;
-        opacity: .6;
+        opacity: .8;
         filter: grayscale(100%);
     }
     
@@ -1231,6 +1235,7 @@ i {
         transition: .2s;
         opacity: 1;
         filter: grayscale(0%);
+        transform: rotate(2deg) translatex(5px);
     }
     
     .writing-feature iframe {
