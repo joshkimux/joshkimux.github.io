@@ -286,7 +286,7 @@ span[role="note"] {
     padding-left: 0rem;
 }
 
-.r-side section:not(:first-child) {
+.r-side section:not(:first-child), .r-main section:not(:first-child) {
     margin-top: 3rem;
 }
 
