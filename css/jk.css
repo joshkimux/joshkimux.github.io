@@ -114,6 +114,8 @@ footer li {
 
 .project img {
     width: 100%;
+    border-radius: 6px;
+    border: 1px solid #e9e9e9;
     box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0.02), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0.028), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0.035), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0.042), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0.05), 0 42px 243px -32px rgba(0, 0, 0, 0.07);
 }
 
@@ -714,7 +716,8 @@ a {
 
 .ft-img {
     box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0.02), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0.028), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0.035), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0.042), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0.05), 0 42px 243px -32px rgba(0, 0, 0, 0.07);
-    border: solid 1px #dfdfdf;
+    border: solid 1px #e9e9e9;
+    border-radius: 6px;
 }
 
 .polaroid {
