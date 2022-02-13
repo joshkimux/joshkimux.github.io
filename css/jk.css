@@ -787,6 +787,7 @@ a {
 
 .big-list li:last-child {
     border-bottom: none;
+    padding-bottom: 0rem;
 }
 
 .big-list li {
