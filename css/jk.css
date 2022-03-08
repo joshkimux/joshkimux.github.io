@@ -3,8 +3,8 @@
  */
 
 /*!
- * font-family: 'PT Serif', serif;
- * font-family: 'Public Sans', sans-serif;
+ * font-family: 'Georgia', serif;
+ * font-family: 'Verdana', sans-serif;
  * font-family: 'Space Grotesk', sans-serif;
  */
 
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: #122611;
@@ -33,7 +33,7 @@ a:hover {
 /*! Heading */
 
 h1 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Georgia', serif;
     font-weight: 700;
     font-size: 2.2rem;
     line-height: 2.7rem;
@@ -41,7 +41,11 @@ h1 {
 }
 
 h2 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Georgia', serif;
+}
+
+h4 {
+    font-weight: bold;
 }
 
 .heading {
@@ -232,66 +236,6 @@ aside[role="note"] p {
     opacity: .6;
 }
 
-
-/*! resume css */
-
-.resume h2 {
-    font-family: 'Space Mono', monospace;
-    font-size: 1rem !important;
-    margin-bottom: .5rem !important;
-    color: #474f54;
-    font-weight: 400;
-}
-
-.resume h3 {
-    margin-top: 3rem;
-    margin-bottom: .5rem !important;
-    font-family: 'PT Serif', serif;
-}
-
-.resume h3:first-of-type {
-    margin-top: 0rem;
-}
-
-.r-role {
-    font-weight:bolder;
-}
-
-span[role="note"] {
-    font-size: 1rem;
-    font-family: 'Space mono', monospace;
-}
-
-.writing a span[role="note"] {
-    text-decoration: none !important;
-}
-
-.r-side {
-    padding-left: 0rem;
-}
-
-.r-side section:not(:first-child), .r-main section:not(:first-child) {
-    margin-top: 3rem;
-}
-
-.r-sum {
-    padding-left: 1.5rem;
-    border-left: 1px solid rgba(0, 0, 0, .1);
-}
-
-.r-side ul {
-    list-style: none;
-    padding-left: none;
-    margin-left: none;
-    padding-inline-start: 0px;
-}
-
-.r-sum li {
-    margin-bottom: 2rem;
-}
-
-
-
 /*! Content */
 
 .content {
@@ -319,21 +263,18 @@ article h2 {
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    line-height: 2rem;
+    line-height: 2.4rem;
 }
 
 .content p,
-.content li {
+.content li,
+.content h4 {
     font-size: 1.1rem;
     line-height: 2rem;
 }
 
 .content li {
     margin-bottom: 1rem;
-}
-
-.resume h3 {
-    font-size: 1.4rem;
 }
 
 article h3 {
@@ -418,6 +359,58 @@ blockquote p::after {
     font-size: 1em;
     margin-right: .5rem;
 
+}
+
+/*! resume css */
+
+.resume h3 {
+    margin-top: 3rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+}
+
+.resume h3:first-of-type {
+    margin-top: 0rem;
+}
+
+.resume h4 {
+    margin-bottom: 0rem;
+}
+
+.r-role {
+    font-weight: bolder;
+}
+
+p[role="note"] {
+    font-size: 1rem;
+    font-family: 'Space mono', monospace;
+    font-weight: bolder;
+    color: #545454;
+}
+
+.writing a span[role="note"] {
+    text-decoration: none !important;
+}
+
+.r-side {
+    padding-left: 0rem;
+}
+
+.r-side section:not(:first-child), .r-main section:not(:first-child) {
+    margin-top: 3rem;
+}
+
+.r-sum {
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.r-side ul {
+    list-style: none;
+    padding-left: none;
+    margin-left: none;
+    padding-inline-start: 0px;
 }
 
 /*! Navigation */
@@ -917,11 +910,13 @@ i {
     }
 
     .content h3 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
 
     .content p,
-    .content li {
+    .content li,
+    .content h4 {
         font-size: 1.3rem;
         line-height: 2.5rem;
     }
@@ -1089,11 +1084,6 @@ i {
         line-height: 3.6rem;
     }
 
-    .content h3 {
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-    }
-
     .h-anchor:link,
     .h-anchor:visited {
         position: absolute;
@@ -1200,6 +1190,11 @@ i {
     /*! resume */
     .r-side {
         padding-left: 2rem;
+    }
+
+    .resume h3 {
+        font-size: 2rem;
+        line-height: 3rem;
     }
 
 
