@@ -1160,7 +1160,7 @@ h4 {
 
 .appendix-date {
     font-weight: 900;
-    font-size: .9rem;
+    font-size:1rem;
     border-bottom: 1px dotted;
     padding-bottom: 30px;
 }
@@ -1579,8 +1579,8 @@ footer li {
     background: repeating-radial-gradient(circle,
             #333,
             #333 10px,
-            #3c3c3c 10px,
-            #3c3c3c 20px);
+            #545454 10px,
+            #545454 20px);
     padding: 60px 0px 60px 0px;
     color: white;
 }
@@ -1994,7 +1994,7 @@ footer li {
     }
 
     .polaroid p {
-        font-size: .9rem;
+        font-size:1rem;
         line-height: 1.3rem;
     }
     

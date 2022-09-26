@@ -3,9 +3,8 @@
  */
 
 /*!
- * font-family: 'Georgia', serif;
- * font-family: 'Verdana', sans-serif;
- * font-family: 'Space Grotesk', sans-serif;
+ * font-family: 'Atkinson Hyperlegible', sans-serif;
+ * font-family: 'Libre Baskerville', serif;
  */
 
 /*!
@@ -13,11 +12,11 @@
  */
 
 html {
-    font-size: 100%;
+    font-size: 110%;
 }
 
 body {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Atkinson Hyperlegible',  sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: #122611;
@@ -29,19 +28,39 @@ a:hover {
     text-decoration: none;
 }
 
+a:focus {
+    background-color: #ffe66b;
+    border-top: 3px #000 solid;
+    border-bottom: 3px #000 solid;
+    color: #000 !important;
+    text-decoration: none !important;
+    outline: 3px solid transparent;
+    outline-offset: 3px;
+}
+
+a:focus mark {
+    background-color: #ffe66b;
+    border-top: 3px #000 solid;
+    border-bottom: 3px #000 solid;
+    color: #000 !important;
+    text-decoration: none !important;
+    outline: 3px solid transparent;
+    outline-offset: 3px;
+}
 
 /*! Heading */
 
 h1 {
-    font-family: 'Georgia', serif;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     font-size: 2.2rem;
-    line-height: 2.7rem;
+    line-height: 3rem;
     margin-bottom: 2rem;
 }
 
 h2 {
-    font-family: 'Georgia', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
 }
 
 h4 {
@@ -56,11 +75,11 @@ h4 {
 .heading p {
     font-size: 1.4rem;
     font-weight: 300;
-    line-height: 2.4rem;
+    line-height: 2.3rem;
 }
 
 .co {
-    color: #707070;
+    color: #545454;
 }
 
 .footer {
@@ -131,7 +150,7 @@ footer li {
 }
 
 h2 a {
-    text-decoration: underline !important;
+    text-decoration: underline 6px !important;
     text-decoration-color: #ffe66b !important;
     transition: .2s ease;
 }
@@ -166,11 +185,9 @@ article aside {
 
 aside[role="note"],
 aside[role="note"] p {
-    font-family: 'space mono', monospace;
+    font-family: 'Atkinson Hyperlegible',  sans-serif;
     color: #545454;
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.7rem;
 }
 
 aside[role="note"] p {
@@ -252,7 +269,7 @@ aside[role="note"] p {
     font-weight: bold;
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    line-height: 2.4rem;
+    line-height: 2.3rem;
 }
 
 article h2 {
@@ -263,7 +280,7 @@ article h2 {
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    line-height: 2.4rem;
+    line-height: 2.3rem;
 }
 
 .content p,
@@ -295,7 +312,7 @@ article figure video {
 article figcaption {
     font-size: 1rem;
     line-height: 1.8rem;
-    color: #3c3c3c;
+    color: #545454;
     padding: 0rem 1rem;
 }
 
@@ -308,7 +325,7 @@ article blockquote {
 article blockquote + figcaption {
     padding: 0rem 1rem;
     font-style: italic;
-    border-left: solid 3px #3c3c3c;
+    border-left: solid 3px #545454;
 }
 
 .jk-grey {
@@ -341,9 +358,9 @@ blockquote p::after {
 }
 
 .big-list figcaption {
-    font-family: 'space mono', monospace;
+    font-family: 'Atkinson Hyperlegible',  sans-serif;
     font-size: 1rem;
-    color: #3c3c3c;
+    color: #545454;
 }
 
 .feature-img {
@@ -355,7 +372,6 @@ blockquote p::after {
     font-weight: 500;
     position: relative;
     text-align: center;
-    font-family: 'Space Mono';
     font-size: 1em;
     margin-right: .5rem;
 
@@ -365,7 +381,7 @@ blockquote p::after {
 
 .resume h3 {
     margin-top: 3rem;
-    font-family: 'Georgia', serif;
+    font-family: 'Libre Baskerville', serif;
     margin-bottom: .5rem;
     font-size: 1.6rem;
 }
@@ -383,9 +399,6 @@ blockquote p::after {
 }
 
 p[role="note"] {
-    font-size: 1rem;
-    font-family: 'Space mono', monospace;
-    font-weight: bolder;
     color: #545454;
 }
 
@@ -421,13 +434,12 @@ p[role="note"] {
     white-space: nowrap;
     padding-left: 0px;
     margin-bottom: 0px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Atkinson Hyperlegible',  sans-serif;
 }
 
 .jnav li {
     display: inline-block;
     line-height: 20px;
-    font-size: 1rem;
 }
 
 .header .container {
@@ -439,8 +451,7 @@ p[role="note"] {
 .header-logo {
     padding: 0px 0px;
     margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Atkinson Hyperlegible',  sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
     display: flex;
@@ -459,11 +470,6 @@ p[role="note"] {
 }
 
 .logo {
-    background-image: url(../img/logo/jkux-logo.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 2rem;
     margin-right: 12px;
 }
 
@@ -499,7 +505,6 @@ p[role="note"] {
 
 .header-logo a:last-child {
     text-decoration: none;
-    font-size: 1rem;
     border-bottom: solid 3px #ffe66b;
     /* text-decoration-color: #ffe66b; */
     color: #344333;
@@ -509,7 +514,6 @@ p[role="note"] {
 
 nav.breadcrumbs {
     font-size: 1rem;
-    font-family: 'space mono', monospace;
     line-height: 1.7rem;
 }
 
@@ -541,7 +545,7 @@ nav.breadcrumbs [aria-current="page"] {
 
 .card {
     border-radius: 0rem;
-    border-top: 4px solid #ffe66b !important;
+    border-top: 8px solid #ffe66b !important;
     border: 0px;
     background-color: inherit;
     margin-bottom: 1.5rem;
@@ -594,7 +598,6 @@ a > i {
 }
 
 .card footer {
-    font-family: 'Space Mono', monospace;
     color: #122611;
 }
 
@@ -603,8 +606,7 @@ a > i {
  */
 
 mark {
-    border-radius: 1em 0 1em 0;
-    background-image: linear-gradient(-100deg, rgba(255, 224, 0, 0.1), rgba(255, 224, 0, 0.3) 95%, rgba(255, 224, 0, 0.08));
+    background-color: #fff4c0;
 }
 
 mark::before,
@@ -640,8 +642,7 @@ a.skip-main {
 
 a.skip-main:focus,
 a.skip-main:active {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffe66b;
     left: auto;
     top: 0px;
     padding: 1rem;
@@ -651,7 +652,6 @@ a.skip-main:active {
     text-align: center;
     font-size: 2rem;
     z-index: 999;
-    font-family: 'Space Mono', monospace;
 }
 
 a {
@@ -781,7 +781,6 @@ a {
 }
 
 .heading-subtext {
-    font-family: 'Space mono', monospace;
     font-size: 1rem !important;
     line-height: 1.7rem !important;
 }
@@ -872,8 +871,8 @@ i {
 
     .project-link {
         display: inline-block;
-        width: 2.4rem;
-        height: 2.4rem;
+        width: 2.3rem;
+        height: 2.3rem;
         margin-left: 1rem;
     }
 
@@ -891,11 +890,6 @@ i {
     border-radius: 4px;
 }
 
-
-    aside[role="note"],
-    aside[role="note"] p {
-        font-size: 1.1rem;
-    }
 
     /*! Content */
 
@@ -918,7 +912,7 @@ i {
     .content li,
     .content h4 {
         font-size: 1.3rem;
-        line-height: 2.5rem;
+        line-height: 2.4rem;
     }
 
     article h3 {
@@ -927,7 +921,7 @@ i {
 
     article figcaption {
         padding: 1rem 2rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 2rem;
     }
 
@@ -949,17 +943,7 @@ i {
 
     .card footer {
         font-size: 1.1rem;
-        line-height: 2.1rem;
-    }
-
-    /*! utility */
-    .polaroid figcaption {
-        font-size: .9rem;
-    }
-
-    .polaroid img {
-        max-height: 320px;
-
+        line-height: 2rem;
     }
     
     /*! notes */
@@ -998,7 +982,7 @@ i {
 
     h1 {
         font-size: 4rem;
-        line-height: 5rem;
+        line-height: 5.2rem;
         margin-bottom: 3rem;
     }
 
@@ -1206,12 +1190,11 @@ i {
 @media only screen and (min-width: 1375px) {
     .d2-font {
         transform: rotate(90deg);
-        bottom: 6.75rem;
+        bottom: 4rem;
         right: -6.4rem;
         width: 19.25rem;
         position: fixed;
-        font-family: 'Space Mono', monospace;
-        text-transform: uppercase;
+        text-transform: lowercase;
         color: #d8d2d2;
         font-size: 1.2rem;
         overflow-x: hidden;
@@ -1221,11 +1204,10 @@ i {
         width: 19.25rem;
         position: fixed;
         transform: rotate(-90deg);
-        top: 11.25rem;
+        top: 12rem;
         left: -6.4rem;
         text-align: right;
-        font-family: 'Space Mono', monospace;
-        text-transform: uppercase;
+        text-transform: lowercase;
         color: #d8d2d2;
         font-size: 1.2rem;
         overflow-x: hidden;
