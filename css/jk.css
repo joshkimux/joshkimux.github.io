@@ -82,17 +82,18 @@ h4 {
     color: #545454;
 }
 
-.footer {
+.footer, .a11y-webring-club {
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-top: solid #eaeaea 2px;
 
 }
 
-.footer h3 {
+.footer h3, .a11y-webring-club h2 {
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    font-family: 'Atkinson Hyperlegible',  sans-serif;
 }
 
 .footer p,
@@ -1026,7 +1027,7 @@ i {
         transform: rotate(-1deg) scale(1.03);
     }
 
-    .footer {
+    .footer, .a11y-webring-club {
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
@@ -1036,7 +1037,7 @@ i {
     }
 
     .footer p,
-    footer li {
+    .footer li, .a11y-webring-club p, .a11y-webring-club li {
         font-size: 1.1rem;
         line-height: 2rem;
     }
