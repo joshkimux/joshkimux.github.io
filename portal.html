@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="In 3 weeks with a shoestring budget, I led a team unfamiliar with design, improvised lean research methods, and changed the fate of a service portal's redesign from downstream UI bandaids to upstream human-centered solutions.">
+    <meta name="author" content="Josh Kim">
+
+    <title>Rescuing a service portal through lean research | Josh Kim is a humanity centered accessibility strategist, educator, and design researcher</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jk.css" rel="stylesheet">
+
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-main" href="#main">Skip to main content</a>
+
+    <!-- Random shit that's invisible -->
+    <div class="d2-font xxl-only" aria-hidden="true">a11y = accessibility</div>
+    <div class="d-font xxl-only" aria-hidden="true">Nihil de nobis, sine nobis</div>
+
+    <!--Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <p>Josh Kim</p>
+                <a href="resume.html">Resume</a>
+            </div>
+            <div class="header-nav">
+                <nav class="jnav" aria-label="main">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a aria-current="true" href="work.html">Work</a></li>
+                        <li><a href="articles.html">Articles/Talks</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="resume-nav"><a href="resume.html">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <main role="main" id="main" tabindex="-1">
+        <article class="content">
+            <div class="container">
+
+                <!-- Intro -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-xl-8">
+                        <h1><span class="h-desc">GOV AGENCY</span> Rescuing a service portal through lean research</h1>
+                        <p>In 3 weeks with a shoestring budget, I led a team unfamiliar with design, improvised lean research methods, and changed the fate of a service portal's redesign from downstream UI bandaids to upstream human-centered solutions.</p>
+                        <aside role="note">
+                            <p><strong>Tags:</strong> Lean Research, IA, UI Design</p>
+                            <p><strong>Duration:</strong> 2018</p>
+                            <p><strong>Role: </strong>UX Lead</p>
+                        </aside>
+                    </div>
+                </div><!-- row -->
+
+                <!-- Feature img -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <figure>
+                            <img class="ft-img" src="img/portal/xyzportal.gif" style="width:100%;" alt="A service portal featuring tab navigation with a search bar, a section for popular services, and a section for recently used services." />
+                        </figure>
+                    </div>
+                </div><!-- row -->
+
+                <!-- Content -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-xl-8">
+                        <h2 id="situation">Challenge</h2>
+                        <p>As a design consultant within the government space, I often face people and project challenges more than interaction design ones. A particularly tricky scenario is being “marooned” on what Dr. Hartson calls a “priest in a parachute” assignment.</p>
+                        <figure>
+                            <blockquote>
+                                <p>In the early days of usability it was often assumed that a usability practitioner was needed only in small doses and only at certain crossroads within the project… they played a secondary role, something like a ‘priest in a parachute’: the human factors engineer dropped down into the middle of a project and stayed just long enough to give it a blessing.</p>
+                            </blockquote>
+                            <figcaption>The UX Book, pg. 75</figcaption>
+                        </figure>
+                        <p>Those “early days” of usability sometimes emerge as present day scenarios in government. In this instance, <strong>I was contracted out for only three weeks to conduct light user research on a service portal for an agency.</strong></p>
+                        <p>The primary expectation from the client was to deliver some "nice to have" recommendations for minor UI design changes as the product was already on track towards a second facelift release within two months.</p>
+
+                        <p>To make things more complicated, the existing team was entirely staffed by analysts in development roles. There were no user stories, no research-based decisions, and no clear leaders staffed on the project. Many of the analysts self-described design as a subjective, unnecessary step.</p>
+
+                        <h3 id="goal">Setting goals</h3>
+                        <p>Despite being a priest in a parachute, I believed I could take an extra leap towards long term change. I gave myself two goals for the end of my three weeks:</p>
+                        <ol>
+                            <li>Provide a research report to inform a list of minor design changes (the client's expectation).</li>
+                            <li>Use the research as a springboard to shift our focus upstream by creating buy in towards human-centered design, not just UI design (my personal expectation).</li>
+                        </ol>
+                        <h3 id="people">Team</h3>
+                        <ul>
+                            <li>1 primary client</li>
+                            <li>1 manager (mostly unavailable)</li>
+                            <li>1 analyst functioning as a product manager</li>
+                            <li>4 analysts functioning as developers</li>
+                        </ul>
+                        <figure>
+                            <img src="img/portal/team.png" style="max-width:100%;" alt="It me, a small designer parachuting down upon a bunch of analysts in suits." />
+                            <figcaption>A team of analysts, a disconnected client and manager, and a designer in a parachute. </figcaption>
+                        </figure>
+                        <h2 id="research">Conducting research</h2>
+                        <p>With only three weeks, accomplishing the client's goal would be difficult if I took a stringent best-practice approach. Furthermore, I knew if I wanted a shot at accomplishing my personal goal, I would need to first create buy in and establish trust within my own team.</p>
+                        <p>After an initial kick off meeting and some early conversations with the client and my team, I started by familiarizing myself with the product through a heuristic evaluation.</p>
+                        <h3 id="heuristic">Heuristic Evaluation </h3>
+                        <p>I have found heuristic evaluations and conversations with developers as a good way of getting to know a product more intimately. This fit nicely into my strategy as it could both demonstrate my competence and introduce developers to the value and language of design.</p>
+                        <p><strong>I took a calculated risk by using <a href="https://uitraps.com/">UI Tenets and Traps</a> instead of the oft-used Nielsen Norman heuristics.</strong> I reasoned that the deck of cards format, introductory language, brand recognition through Microsoft, and easy to understand visual examples would be more appropriate for the analyst-level team I was working with.</p>
+                        <p>By the end of the first week, I was able to prepare two reports. One was an extensive page-by-page evaluation which provided immediate recommendations for short-term fixes (addressing goal #1). The second was a client-tailored presentation that spotlighted high-level issues that were a result of more upstream concerns (addressing goal #2).</p>
+                        <figure>
+                            <img src="img/portal/he.png" style="width:100%;" alt="A powerpoint slide identifying an issue with repetitive icons." />
+                            <figcaption>
+                                My presentation began socializing the need for more research.
+                            </figcaption>
+                        </figure>
+                        <p>This evaluation was invaluable for my own purposes in informing my approach towards user research, which would be the next step.</p>
+                        <p>A note on this. I never like doing heuristic evaluations alone, as they're prone to bias without practitioner triangulation. In hindsight, I would have liked to spend extra time getting it reviewed by peers in my studio.</p>
+
+                        <h3 id="user-interviews">User Interviews </h3>
+                        <p>I needed to move fast to complete and generate findings from user research within a 2 week timespan. Through stakeholder interviews with the development team and client, I honed-in on two separate user roles:</p>
+                        <ul>
+                            <li>Requestors who are looking to request a service</li>
+                            <li>Approvers who approve those requests on the ServiceNow instance</li>
+                        </ul> 
+                        <p>I asked our client to provide a small list of names from both roles with the intent of using snowball sampling to further discover people to talk to and uncover hidden populations and relationships between employees at the agency.</p>
+                        <p>I worked closely with one of the analysts who functioned as the project’s product manager. I delegated the task of scheduling interviews to him as I completed the heuristic evaluation and began writing a user research guide and consent form.</p>
+                        <p>At the end of the first week when we were ready to start our first interview, I asked him to join me as a notetaker. <strong>I hoped by actively including him in the work, I would be able to demonstrate the value of research and build his cognitive empathy for the end user.</strong></p>
+                        
+                        <figure>
+                            <img src="img/portal/research_1.png" style="width:100%;" alt="An exmaple row in a spreadsheet featuring IDs representing interviewees, the question asked, and the participant's response."/>
+                            <figcaption>Raw notes were transcribed from a recording by the analyst who participated in the interview within excel. IDs are made of the interview number and the interviewers' combined first initials e.g. I-JA-1... I (Interview)-J (Josh) A (Alan)-1 (Interview #).</figcaption>
+                        </figure>
+
+                        <p>The first interview was a huge success. Our PM analyst became the first of the team to fully trust in human-centered design as an important step in development.</p><p>With his support, I was able to extend this process to include the other analysts on the project. By the end of our research, <strong>all of our developer analysts were beginning to speak in the voice of the user.</strong></p>
+                        
+                        <h3>A hidden population</h3>
+                        <p>Despite achieving a major win for goal #2, I hit an “aha” moment that we were only interviewing a small piece of the puzzle halfway into the second week.</p>
+                        <p>Our client selected the initial interviewees based off of their frequency of use of the portal, and as a result, we ended up talking mostly to liaisons who would submit hardware/software requests on behalf of other employees.</p>
+                        <p><strong>Because the team had always relied on <em>quantitative data</em> to identify who their end users were before by intensity of usage, we had missed an entire population of users who abandoned using the portal due to its difficulty of use.</strong></p>
+                        <p>I noticed this in our <em>qualitative research</em> because the liaisons often observed that the "average" employee would opt to call the helpdesk instead of submitting their own tickets. Those observations in tandem with receiving new names through snowball sampling allowed us to later confirm this when we interviewed our first beginner non-liasion user.</p>
+                        <p>This was bad. I was already running out of time by the end of the second week and was politely asked by the manager to wrap up our findings by the end of the third.</p>
+                        <p>How would we be able to cover potentially hundreds of unrepresented users without a time extension?</p>
+                        <p class="caption"><b>Area for improvement:</b> Had I known we had access to quantitative data earlier on portal usage, I would have sampled the interviews by extreme outliers. This would have netted the beginner users who quit the portal early into interviewing as opposed to later. In hindsight, I should have spent a bit more time collecting more context before diving into research.</p>
+                        
+                        <h2 id="analysis">Analysis and reporting</h2>
+                        <p>I knew I had to be pragmatic and complete a report in a timely manner, but I also didn’t want the manager to immediately hire a visual designer to create mockups without doing the needed additional research.</p>
+                        <p>Luckily, at this point in time, I knew I had full support from the analyst team who now had faith in my process after seeing it first-hand. The challenge would be convincing our manager and our client to approve extending time for more research through this initial report.</p>
+                        <h3 id="contextual-analysis">Contextual Analysis</h3>
+                        <p>I did not have the resources or time to coordinate an affinity map with my analyst team, but I still wanted to conduct a strong, data-driven analysis. I opted to use a digital WAAD (work activity affinity diagram) adapted from Lextant which I have used several times in the past during time-crunch situations.</p>
+                        <p>In an excel document, I converted the raw notes transcribed by our development team into work activity notes (WANs). I then started coding the work activity notes by key terms, topics, and behaviors on a separate column.</p>
+                        <p>Upon completion, I used this column to infer contextual stories and provisional personas. These would directly inform the findings highlighted in my report.</p>
+
+                        <figure>
+                            <img src="img/portal/contextualstories.png" style="width:100%;" alt="A spreadsheet page featuring user stories derived research. They are all backed by quotes followed by participant IDs."/>
+                            <figcaption class="row justify-content-center">
+                                I kept one master file to use as a source of truth for user interviews and analysis. All contextual stories were comprised of WANs (Work Activity Notes, ID'd as I-xx-x Wx ) which are cleaned up versions of the raw notes. Everything is linked to a qualitative source to ensure the voice of the user is retained and trackable.
+                            </figcaption>
+                        </figure>
+
+                        <h3>Provisional personas</h3>
+                        <p>I introduced three provisional personas to the client in the report:</p>
+                        <ul>
+                            <li>the Middle Man (liaisons)</li>
+                            <li>the Specialist (highly technical approvers)</li>
+                            <li>the Uninformed ("average" employees)</li>
+                        </ul>
+                        <p>They were provisional for two reasons I wanted to communicate to the client.</p>
+                        <ul>
+                            <li>There were not enough interviews (8) to fully uncover the width and depth of user frustrations and goals.</li>
+                            <li>Second, personas are only personas when there are enough observed behaviors to create a proper user model.</li>
+                        </ul>   
+                        <p>As we were not able to interview enough users, the team risked developing solutions that would address an incorrect audience.</p>
+                        <p>Despite these provisional personas being “incomplete,” they were still inferred off of real data. <strong>To instill a switch towards more research, I used quotes from the interviews to appeal to the emotional elephant of our client</strong> 
+                        <figure>
+                            <blockquote>
+                                <p>I wasn’t even aware that you had to go to the portal.</p>
+                            </blockquote>
+                            <figcaption>A quote for the Uninformed</figcaption>
+                        </figure>
+                        <p>I also used the Uninformed provisional persona as a means of theoretically representing employees who were unaccounted for in initial development. This was done by stitching together observations of said employees from liaisons along with the one interview we had conducted with a user of that type.</p> 
+                        <p>The opportunities I highlighted for them were focused on additional research as a tool to address upstream, long term solutions instead of rapid, dirty fixes. For example, I recommended them to conduct card sorting in order to better rearrange service categories.</p>
+                        <p>This gave me the leverage to make the following argument: we discovered a lot of symptoms of deeper systematic problems with just a little bit of research. With more research, we can confidently address those problems and design longer lasting solutions that can save you money and cover hundreds of users that were unaccounted for originally in development.</p>
+
+                        <figure>
+                            <img src="img/portal/personas.png" style="width:100%;" alt="Two pages from my personas report including The Uninformed and The Middle Man."/>
+                            <figcaption>I opted to use tag lines for the provisional personas instead of real life pictures to emphasize the need for more research. Large quotes with trackable WAN IDs summarized major concerns.</figcaption>
+                        </figure>
+    
+                        <h3 id="recommendations">Recommendations</h3>
+                        <p>I wrapped up the report with recommendations and immediate tasks. Recommendations would cover my greater goal of creating a paradigm shift towards human-centered design in development, while immediate tasks would address what I was originally tasked to do by the client.</p>
+                        <p>Throughout the recommendations, I kept to my strategy of appealing to my client’s emotions by keeping the user’s voice both transparent and prominent in the report. For example, <strong>I suggested conducting a larger IA and content audit by showing him artifacts I had procured from closed card sorts I facilitated.</strong> Our client was surprised to see that even expert users struggled to make sense of the portal's navigation and page titles.</p>
+                        <p>I also made sure to tie back all my insights to the data using my participate and note IDs. This allowed me to respond to questions from the client through the voice of the user as I was able to easily pull up quotes tied to my insights within seconds.</p>
+
+                        <figure class="img-caption-sm "><img src="img/portal/report.png" style="width:100%;" alt="Two pages from my research report: Additional research needs and IA & Content Audit."/>
+                            <figcaption>
+                                I used artifacts from user research to better champion the user's voice. I brought cards to the presentation with the end user's written comments on the back explaining their confusion towards the navigation of the portal.
+                            </figcaption>
+                        </figure>
+
+                        <h2 id="overtime">Overtime research and prototyping</h2>
+                        <p><strong>The report was successful in winning more time for research and encouraging the team to seek out a new full-time UX designer to replace me.</strong> Although I was already onboarding onto my next project, I stuck around for an extra week to help interview more beginner users and to rapidly prototype and test wires for the purpose of handing off a Zeplin document to the developers.</p>
+                        <p>As soon as we were given the greenlight to conduct more research, our PM analyst immediately began to schedule interviews with new hires and infrequent users on the portal. We hoped that by targeting these groups, we could fill in the beginner user gap caveated in our prior research.</p>
+                        <p>During this time, I also rapidly designed a new wireframe of the portal based on our earlier findings. I reasoned we could use the latter-half of our interviews to conduct in-situ prototyping a la John Whalen’s contextual interview method to uncover more rich findings and to test my design hypotheses.</p>
+                        
+                        <h3 id="prepare-insitu">Preparing for in-situ prototyping</h3>
+                        <p>There were several design hypotheses I wanted to test during this additional week of interviews. In order to do so within such a limited period of time, I opted to take inspiration from John Whalen’s recent book “Design for How People Think.”</p>
+                        <p>Dr. Whalen recommends presenting several versions of a prototype during early tests. This way, users can articulate which parts of a prototype they like. It can also reveal further unmet needs or nuances in the UI that might not have been brought out earlier.</p>
+                        <p>I created three prototypes of the portal to start, all in greyscale: the original portal design, a portal that the client liked (which was “pretty” but not necessarily functional), and a portal that was designed based off of findings in our initial research.</p>
+                        <p>In my first pass at the research-informed design I cleaned up language to be both less technical and more actionable. I also added unique icons to each of the cards.</p>
+                        <p>To follow the tenet of recognition over recall, I reduced the height of the search bar to provide more visibility to recommended services above the fold. Since even advanced users were confused between “Get Help” and “Find Answers” I folded the knowledge base below “Get Help” and added iconography. To cater to many of the user’s goals of saving time, I also introduced a favoriting functionality.</p>
+
+                        <figure>
+                            <img src="img/portal/firstpass.svg" style="width:100%;" alt="Low fidelity wireframes in greyscale depicting a before and after of the service portal." alt="The old design has a navigation, a search bar, three tabs, and a list of popular service cards. The new design removed the tabs as they were repetitive to the navigation and introduced larger cards with more descriptive iconography."/>
+                            <figcaption>
+                                The old design (left) featured a list of cards that contained "popular" services with confusing language. My first redesign (right) aimed to better anticipate user needs and use simpler language.
+                            </figcaption>
+                        </figure>
+
+                        <h3 id="contextual-interviews">Contextual interviews and in-situ prototyping findings</h3>
+                        <p>The first user we interviewed was excellent. From our conversations alone, they gave us incredibly rich information on why they quickly gave up using the existing portal.</p>
+                        <p>He said he struggled to understand the language of the portal and how to navigate it when he attempted to order a mobile phone. He also noted that he stopped using it in favor of calling/emailing the help desk directly.</p>
+                        <p><strong>I used our conversations to inform my approach to our comparative in-situ prototyping by giving him a task he had attempted to do earlier on the original portal: order a mobile phone.</strong></p>
+                        <p>Similar to before, he was unable to place the order on the original portal and the client’s suggested portal. He also, to my delight, was only “50%” confident on my first pass at an improved design. During the in-situ prototyping exercise, I realized that although I had made the technical jargon more understandable, it still was not in the user’s language.</p>
+                        <p>It seems obvious in hindsight, but “ordering hardware” is not nearly as clear as a simple “order a mobile phone.” </p>
+
+                        <figure>
+                            <img src="img/portal/prototyping.png" style="width:100%;" alt="Four sticky notes with scribbled suggestions are placed above printed versions of the wireframes."/>
+                            <figcaption>
+                                I asked users to think aloud and use sticky notes to add wanted features. This acted as a catalyst for follow up "why" questions during in-situ prototyping activities and made for valuable artifacts to take back to the client.
+                            </figcaption>
+                        </figure>
+
+                        <p>By the end of the week, I was able to make several new important recommendations based off of the 4 additional contextual interviews of beginner users. I packaged these up into a Zeplin document which I passed on to the development team for future reference.</p>
+                        <ol>
+                            <li><strong>I removed the icons from all of the cards and focused on improving content and categorization.</strong> As there were hundreds of services, I reasoned it would be better to have the team invest into mirroring the user’s language before introducing any graphics given the short timeline. The team would also be able to pivot faster as wording text is easier to test with users (icons can be a pretty nebulous and subjective space). In any case, good content writing is the heart of design, and the best MVP one can ask for.</li>
+                            <li>I recommended introducing “recently used services” as opposed to favoriting to better anticipate the needs of more advanced users without the extra clicks.</li>
+                            <li>I introduced “popular services for employees like you” to the portal as opposed to “popular services” (which spanned across all employee types) to reduce mismatched recommendations and to encourage more confident action.</li>
+                            <li>I re-introduced "Find Answers", but with minor visual tweaks to differentiate it from "Get Help." This would also help to address needs of both older users who wanted access to a phone call and technologically advanced users who wanted to view a knowledge base. I caveated this to the PM analyst as an opportunity for A/B testing.</li>
+                        </ol>
+                        <figure >
+                            <img src="img/portal/finalui.png" style="width:100%;" alt="Two pictures. The first is of my typographic scale and style guide. The second is a full high-fidelity mockup of the portal." />
+                            <figcaption>
+                                The final prototype I handed off.
+                            </figcaption>
+                        </figure>
+
+                        <h2 id="conclusion">Parting gifts and conclusion</h2>
+                        <p>Although my time on the project had come to an end, I wanted to keep the team on track for human-centered success. Before officially leaving, I arranged some parting gifts.</p>
+                        <p>I passed on my research documents and provided a user interview crash course to the PM analyst. This included a copy of Steve Portigal’s “Interviewing Users” and a practice interview with one of the internal team members. He did a fantastic job on his first try and was able to identify many of his own mistakes without my immediate feedback. He joked at the end that he finally had developed empathy for me as a researcher from the stress of the practice interview.</p>
+                        <p>I also handed off a basic style guide for the development team. <strong>This came out of an atomic UI inventory of the portal which I guided the team through in order to catch and correct UI deltas.</strong></p>
+                        <p>I did this with the intention of saving the team time by preventing rework of existing UI elements and to serve as a launchpad for the next designer to start work on creating a design system.</p>
+                        <p>Finally, I wrote parting notes to each of the team’s members along with recommended readings. I requested the manager to purchase a copy of Adam Silver’s “Form Design Patterns” for the team and have begun mentoring one of the analysts in the ways of UX (she’s already reading my copy of How to Make Sense of Any Mess as I write this).</p>
+    
+                        <figure>
+                            <img src="img/portal/library.png" style="width:100%;" alt="Two black bookshelves on top of a yellow rug with small grey chairs."/>
+                            <figcaption>I made full use of the library I curate at work as an educational space. Here, I was able to introduce members of the team to design and provide them recommended reads to checkout on the spot.</figcaption>
+                        </figure>
+    
+                        <h3 id="nice-emails">Kind Emails</h3>
+                        <figure>
+                            <blockquote>
+                                <p>We really appreciate all the help and dedication you brought to our team! Especially enabling us to be more self-sufficient in designing for the user in the future.</p>
+                            </blockquote>
+                            <figcaption>PM Analyst</figcaption>
+                        </figure>
+                        <figure>
+                            <blockquote>
+                                <p>Wow, this looks great! Exciting stuff. Please get started as soon as possible.</p>
+                            </blockquote>
+                            <figcaption>The client upon reviewing final suggestions</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                
+
+            </div>
+            <!--Container-->
+        </article>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="sr-only">Footer</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h3>About My Portfolio</h3>
+                    <p><a href="whythissucks.html">I update my trash portfolio every year</a> to match my growing values as a designer.</p>
+                    <p>My <a href="accessibility.html">accessibility statement</a> explains my commitment towards inclusion and how I plan to do better.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 col-lg-4">
+                    <h3>Let's Connect</h3>
+                    <ul role="list">
+                        <li><a href="mailto:joshkimux@gmail.com">Email me</a> at joshkimux@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/joshkimux/">Connect with me on LinkedIn</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="d-logo xl-only">
+                    <img aria-hidden="true" src="img/thumb/naito.svg" style="width:100%;" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="footer">
+                        <h3>Quick Links</h3>
+                        <ul role="list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="articles.html">Articles/Talks</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="https://github.com/joshkimux">Github</a></li>
+                            <li><a href="https://medium.com/@joshkimux">Medium</a></li>
+                            <li class="footer-right"><a href="#main">Back to Top <i aria-hidden="true" class="top-link"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
