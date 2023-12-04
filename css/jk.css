@@ -630,8 +630,16 @@ a {
     animation-timeline: view();
     right: 2rem;
     translate: rotate(0deg) translate(0px, -4rem);
-    opacity: .2;
-    
+    opacity: 1;
+}
+
+#d-logo-kanji {
+    fill:var(--light-grey);
+}
+
+#d-logo-circle {
+    stroke:var(--light-grey);
+    stroke-width:1.5px;
 }
 
 /*! Only animate if support exists */
@@ -642,15 +650,15 @@ a {
         animation: 
             scrollLogo auto linear;
         animation-timeline: view();
-        right: 10rem;
+        right: 9rem;
         translate: rotate(-20deg) translate(0px, -8rem);
-        opacity: 0;
+        opacity: 1;
         
     }
     @keyframes scrollLogo {
         to {
             transform:rotate(80deg) translate(0px, -8rem);
-            opacity: .6;
+            opacity: 1;
             right: 2rem;
         }
     }
