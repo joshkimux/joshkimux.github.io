@@ -16,11 +16,24 @@
     --light-yellow: #fff4c0;
     --light-grey: #f0eee7;
     --off-white: #fffefa;
-    --secondary-grey: #545454;
-    --primary-dark: #0a0900;
+    --secondary-grey: #404043;
+    --primary-dark: #1e1d20;
     --content-p: 1.1rem;
     --content-lh: 2rem;
   }
+
+
+@media (prefers-color-scheme: dark) {
+:root {
+    --accent-yellow: #ffe66b;
+    --light-yellow: #fff4c0;
+    --light-grey: #2f3148;
+    --off-white: #19182b;
+    --secondary-grey: #9c9ec3;
+    --primary-dark: #c8c9db;
+}
+
+}
 
 /*!
  * Mobile First
@@ -36,25 +49,6 @@ body {
     -webkit-font-smoothing: antialiased;
     color: var(--primary-dark);
     background-color: var(--off-white);
-}
-
-a:hover {
-    color: var(--primary-dark);
-    text-decoration: none;
-}
-
-a:focus {
-    box-shadow: 0 0 0 6px var(--accent-yellow), 0 0 0 8px var(--primary-dark);
-    outline: 3px solid transparent;
-    outline-offset: 3px;
-    background-color:var(--accent-yellow);
-    color:var(--primary-dark);
-}
-
-h2 a:focus {
-    border-bottom:solid 2px var(--primary-dark);
-    background-color:var(--accent-yellow);
-    color:var(--primary-dark);
 }
 
 /*! Heading */
@@ -186,7 +180,7 @@ footer li, header{
     box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0.02), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0.028), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0.035), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0.042), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0.05), 0 42px 243px -32px rgba(0, 0, 0, 0.07);
 }
 
-.project a {
+.project h2 {
     padding-bottom: 1rem;
     border-bottom: solid 1.5px var(--light-grey);
     margin-bottom: 1rem;
@@ -210,11 +204,6 @@ h2 a:hover {
 
 .project .row:nth-child(2) .col-lg-4 {
     margin-bottom: 1rem;
-}
-
-.project h2 {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
 }
 
 .project-client {
@@ -274,6 +263,7 @@ article h2 {
     font-weight: 400;
     line-height: var(--content-lh);
     margin-bottom: 1rem;
+    color:var(--secondary-grey);
 }
 
 .content li {
@@ -666,7 +656,6 @@ a {
     }
 }
 
-
 .highlight {
     border-radius: 1em 0 1em 0;
     background-image: linear-gradient(-100deg, rgba(255, 224, 0, 0.3), rgba(255, 224, 0, 0.7) 95%, rgba(255, 224, 0, 0.1));
@@ -797,6 +786,27 @@ a {
     text-wrap:balance;
 }
 
+/*! hover and focus */
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
+    box-shadow: 0 0 0 6px var(--accent-yellow), 0 0 0 8px #19182b;
+    outline: 3px solid transparent;
+    outline-offset: 3px;
+    background-color:var(--accent-yellow);
+    color:#19182b;
+}
+
+h2 a:focus {
+    background-color:var(--accent-yellow);
+    color:#19182b;
+}
+
+
+
 
 /*!
  * Tablet 768 Tablet 768 Tablet 768 Tablet 768 Tablet 768 Tablet 768 
@@ -847,7 +857,7 @@ a {
         justify-content: space-between;
     }
 
-    .project a {
+    .project h2 {
         padding-bottom: 1.5rem;
         margin-bottom: 1.5rem;
     }
@@ -1004,12 +1014,12 @@ a {
         margin-bottom: 0rem;
     }
     
-    .project:hover .row .col-lg-4 img {
+    .project:hover .row .col-lg-4 img, .project:focus-within .row .col-lg-4 img {
         transition: .2s;
         transform: rotate(1deg) scale(.97);
     }
 
-    .project:hover .row .col-lg-8 img {
+    .project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
         transition: .2s;
         transform: rotate(-1deg) scale(1.03);
     }
@@ -1114,7 +1124,7 @@ a {
         text-wrap:wrap;
     }
     
-    .writing li:hover img{
+    .writing li:hover img, .writing li:focus-within img {
         transition: .4s;
         opacity: 1;
         filter: grayscale(0%);
@@ -1179,11 +1189,11 @@ a {
         filter: grayscale(0%);
     }
 
-    .project:hover .row .col-lg-4 img {
+    .project:hover .row .col-lg-4 img, .project:focus-within .row .col-lg-4 img {
         transform: rotate(0deg) scale(1);
     }
 
-    .project:hover .row .col-lg-8 img {
+    .project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
         transform: rotate(0deg) scale(1);
     }
 
@@ -1201,8 +1211,5 @@ a {
         filter: grayscale(0%);
         transform: rotate(0deg) translateX(0px) scale(1);
     }
-
-    
-
     
 }
