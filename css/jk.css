@@ -12,7 +12,7 @@
 */
 
 :root {
-    --accent-yellow: #ffe66b;
+    --accent-yellow: #fcd53f;
     --light-yellow: #fff4c0;
     --light-grey: #f0eee7;
     --off-white: #fffefa;
@@ -25,7 +25,7 @@
 
 @media (prefers-color-scheme: dark) {
 :root {
-    --accent-yellow: #ffe66b;
+    --accent-yellow: #fcd53f;
     --light-yellow: #fff4c0;
     --light-grey: #2f3148;
     --off-white: #19182b;
