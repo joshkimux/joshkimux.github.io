@@ -16,8 +16,8 @@
     --light-yellow: #fff4c0;
     --light-grey: #f0eee7;
     --off-white: #fffefa;
-    --secondary-grey: #404043;
-    --primary-dark: #1e1d20;
+    --secondary-grey: #70707b;
+    --primary-dark: #333038;
     --content-p: 1.1rem;
     --content-lh: 2rem;
   }
@@ -188,12 +188,11 @@ footer li, header{
 }
 
 h2 a {
-    text-decoration: underline 6px !important;
+    text-decoration: underline .13em !important;
     text-decoration-color: var(--accent-yellow) !important;
     transition: .2s ease;
 }
-
-h2 a:hover {
+.jk-card:hover h2 a {
     text-decoration-color: var(--primary-dark) !important;
     transition: .2s ease;
 }
