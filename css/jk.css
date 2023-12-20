@@ -16,8 +16,8 @@
     --light-yellow: #fff4c0;
     --light-grey: #f0eee7;
     --off-white: #fffefa;
-    --secondary-grey: #70707b;
-    --primary-dark: #333038;
+    --secondary-grey: #747483;
+    --primary-dark: #1e1d20;
     --content-p: 1.1rem;
     --content-lh: 2rem;
   }
@@ -188,11 +188,12 @@ footer li, header{
 }
 
 h2 a {
-    text-decoration: underline .13em !important;
+    text-decoration: underline 6px !important;
     text-decoration-color: var(--accent-yellow) !important;
     transition: .2s ease;
 }
-.jk-card:hover h2 a {
+
+h2 a:hover {
     text-decoration-color: var(--primary-dark) !important;
     transition: .2s ease;
 }
@@ -217,9 +218,10 @@ article aside {
 
 aside[role="note"],
 aside[role="note"] p {
-    font-family: 'Atkinson Hyperlegible',  sans-serif;
     color: var(--secondary-grey);
-    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+
 }
 
 aside[role="note"] p {

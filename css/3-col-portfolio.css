@@ -1314,20 +1314,6 @@ nav.breadcrumbs [aria-current="page"] {
     color: #474f54;
 }
 
-/*!section animation */
-
-section {
-    opacity: 0;
-    transform: translate(0, 20px);
-    transition: all 1s;
-    position: relative;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
 /*! buttons */
 
 .btn-primary {
