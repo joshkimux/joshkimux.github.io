@@ -16,8 +16,8 @@
     --light-yellow: #fff4c0;
     --light-grey: #f0eee7;
     --off-white: #fffefa;
-    --secondary-grey: #747483;
-    --primary-dark: #1e1d20;
+    --secondary-grey: #727165;
+    --primary-dark: #1c1b17;
     --content-p: 1.1rem;
     --content-lh: 2rem;
   }
@@ -171,7 +171,7 @@ footer li, header{
 
 .project-heading {
     display: flex;
-    justify-content: space-between;
+    align-items:center;
 }
 
 .project img {
@@ -187,14 +187,27 @@ footer li, header{
     transition: .2s ease;
 }
 
-h2 a {
-    text-decoration: underline 6px !important;
-    text-decoration-color: var(--accent-yellow) !important;
-    transition: .2s ease;
+.project h2 a {
+    text-decoration:none;
 }
 
-h2 a:hover {
-    text-decoration-color: var(--primary-dark) !important;
+.project h2 a::after {
+    content: '';
+         background-image: url(../img/icons/arrow-up-right.svg);
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover;
+         display: inline-flex;
+         height: 1.5rem;
+         width: 1.5rem;
+         opacity:.4;
+         transition: .2s ease;
+         margin-left:1rem;
+}
+
+.project h2 a:hover:after {
+    transform:rotate(20deg);
+    opacity:1;
     transition: .2s ease;
 }
 
@@ -211,10 +224,6 @@ h2 a:hover {
     margin-bottom: 0px;
 }
 
-article aside {
-    padding-top: 1rem;
-    border-top: solid 1.5px var(--light-grey);
-}
 
 aside[role="note"],
 aside[role="note"] p {
@@ -235,6 +244,10 @@ aside[role="note"] p {
     padding-top: 2rem;
     padding-bottom: 2rem;
 
+}
+
+.before-after div:first-of-type {
+    color:var(--secondary-grey);
 }
 
 article h2 {
@@ -464,11 +477,14 @@ p[role="note"] {
 
 /*! Navigation */
 
+.jnav {
+    padding: 1rem 0rem;
+}
+
 .jnav ul {
     list-style: none;
     padding-left: 0px;
     margin-bottom: 0px;
-    font-family: 'Atkinson Hyperlegible',  sans-serif;
 }
 
 .jnav li {
@@ -507,14 +523,18 @@ p[role="note"] {
 
 .jnav a:link,
 .jnav a:visited {
-    display: block;
     color: var(--secondary-grey);
-    padding: 1rem 0rem;
 }
 
 .jnav a[aria-current=true] {
     color: var(--primary-dark);
     text-decoration:none;
+    transition: .2s ease;
+}
+
+.jnav a:hover {
+    color:var(--primary-dark);
+    transition: .2s ease;
 }
 
 .jnav li {
@@ -622,6 +642,8 @@ a.skip-main:active {
 
 a {
     color: inherit;
+    transition: ease .1s;
+    text-decoration-color:var(--secondary-grey);
 }
 
 #d-logo {
@@ -797,8 +819,9 @@ a {
 
 /*! hover and focus */
 a:hover {
-    color: var(--primary-dark);
-    text-decoration: none;
+    color:var(--primary-dark);
+    text-decoration-color: var(--accent-yellow);
+    transition: ease .1s;
 }
 
 a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
@@ -806,10 +829,11 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     outline: 3px solid transparent;
     outline-offset: 3px;
     background-color:var(--accent-yellow);
+    text-decoration-color:#19182b;
     color:#19182b;
 }
 
-h2 a:focus {
+.project h2 a:focus {
     background-color:var(--accent-yellow);
     color:#19182b;
 }
@@ -825,7 +849,7 @@ h2 a:focus {
 
     :root {
         --content-p: 1.3rem;
-        --content-lh: 2.3rem;
+        --content-lh: 2.2rem;
       }
 
     /*! Heading */
@@ -861,22 +885,19 @@ h2 a:focus {
         margin-bottom: 6rem;
     }
 
-    .project-heading {
-        display: flex;
-        justify-content: space-between;
-    }
-
     .project h2 {
         padding-bottom: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
-    .project .row:nth-child(2) {
-        margin-bottom: 1.5rem;
+    .project h2 a::after {
+        margin-left:1rem;
+        height:2rem;
+        width:2rem;
     }
 
-    .project a {
-        text-decoration: none;
+    .project .row:nth-child(2) {
+        margin-bottom: 1.5rem;
     }
 
     .project-client {
@@ -997,7 +1018,6 @@ h2 a:focus {
     h1 {
         font-size: 3.5rem;
         line-height: 4.2rem;
-        margin-bottom: 3rem;
     }
 
     h2 {

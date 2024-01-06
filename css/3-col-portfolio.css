@@ -1150,9 +1150,6 @@ h4 {
     border-bottom: solid 2px #162430;
 }
 
-
-}
-
 .article-title:first-child {
     margin-top: 0px;
 }
@@ -1985,7 +1982,7 @@ footer li {
     }
     
     .polaroid {
-        padding: 
+        padding: .5rem;
     }
     .booknote-textbox {
     padding: 1.5rem;
