@@ -67,7 +67,7 @@ h1 {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.8rem;
-    margin-bottom: 2rem;
+    margin-bottom:1.5rem;
 }
 
 h2 {
@@ -192,23 +192,17 @@ footer li, header{
 }
 
 .project h2 a::after {
-    content: '';
-         background-image: url(../img/icons/arrow-up-right.svg);
-         background-repeat: no-repeat;
-         background-position: center center;
-         background-size: cover;
-         display: inline-flex;
-         height: 1.5rem;
-         width: 1.5rem;
-         opacity:.4;
-         transition: .2s ease;
-         margin-left:1rem;
+    content: "»";
+    transition: .2s ease;
+    margin-left:.8rem;
+    transform:rotate(0);
+    opacity:.7;
 }
 
-.project h2 a:hover:after {
-    transform:rotate(20deg);
+.project:hover h2 a:after {
+    transition: .2s ease-in-out;
+    margin-left:1.2rem;
     opacity:1;
-    transition: .2s ease;
 }
 
 .project .row:nth-child(2) {
@@ -651,9 +645,10 @@ a {
     animation: 
         scrollLogo auto linear;
     animation-timeline: view();
-    right: 2rem;
-    translate: rotate(0deg) translate(0px, -4rem);
-    opacity: 1;
+    bottom:6rem;
+    transform:rotate(0deg);
+    right:6rem;
+    transform-origin:center;
 }
 
 #d-logo-kanji {
@@ -669,20 +664,15 @@ a {
 @supports (animation-timeline:view()) {
 
     #d-logo {
-        position: absolute;
         animation: 
-            scrollLogo auto linear;
+            scrollLogo auto ease-out;
         animation-timeline: view();
-        right: 9rem;
-        translate: rotate(-20deg) translate(0px, -8rem);
-        opacity: 1;
+        transform: rotate(180deg);
         
     }
     @keyframes scrollLogo {
         to {
-            transform:rotate(80deg) translate(0px, -8rem);
-            opacity: 1;
-            right: 2rem;
+            transform:rotate(500deg);
         }
     }
 }
@@ -811,7 +801,7 @@ a {
 }
 
 .copyright p {
-    font-size: .9rem;
+    font-size: .9rem !important;
     font-family: monospace;
     color:var(--secondary-grey);
     text-wrap:balance;
@@ -888,12 +878,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     .project h2 {
         padding-bottom: 1.5rem;
         margin-bottom: 1.5rem;
-    }
-
-    .project h2 a::after {
-        margin-left:1rem;
-        height:2rem;
-        width:2rem;
     }
 
     .project .row:nth-child(2) {
@@ -982,9 +966,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     span[role="note"] {
     margin-left: .5rem;
 
-    .copyright p {
-        font-size: .9rem;
-    }
 }
 
 
@@ -1020,12 +1001,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         line-height: 4.2rem;
     }
 
-    h2 {
-        font-size: 2.6rem;
-        margin-bottom: 1.5rem;
-        line-height: 3.6rem;
-    }
-
     .heading {
         padding-top: 8rem;
         padding-bottom: 7rem;
@@ -1045,12 +1020,14 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     
     .project:hover .row .col-lg-4 img, .project:focus-within .row .col-lg-4 img {
         transition: .2s;
-        transform: rotate(1deg) scale(.97);
+        transform: rotate(1deg) scale(.98);
+        border:solid 4px var(--accent-yellow);
     }
 
     .project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
         transition: .2s;
-        transform: rotate(-1deg) scale(1.03);
+        transform: rotate(-1deg) scale(1.02);
+        border:solid 4px var(--accent-yellow);
     }
 
     .footer, .a11y-webring-club {
@@ -1168,10 +1145,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     /*! resume */
     .r-side {
         padding-left: 2rem;
-    }
-
-    .copyright p {
-        font-size: .9rem;
     }
 
 
