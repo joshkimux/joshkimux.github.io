@@ -1184,20 +1184,31 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     
     .sun {
-    display: block;
+        display: block;
+    width: 50px;
     position: absolute;
-    bottom: 172px;
-    left: 362px;
-    height: 19px;
+    bottom: 170px;
+    left: 380px;
+    height: 10px;
     overflow: hidden;
     z-index: -99;
     transition: .3s ease-in-out;
-    background-image: url(../img/icons/sunflower.png);
+    }
+
+    .sun img {
+        width:100%;
+        transform:rotate(0deg);
+        transition: .3s ease-in-out;
     }
 
     .heading:hover .sun {
-        height:30px;
+        height:35px;
         transition:.3s ease-in-out;
+    }
+
+    .heading:hover .sun img {
+        transform:rotate(90deg);
+        transition: .3s ease-in-out;
     }
 
 
