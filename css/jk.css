@@ -13,11 +13,11 @@
 
 :root {
     --accent: #F6BA5B;
-    --secondary-bg: #dfedeb;
-    --primary-bg: #f4fffd;
+    --secondary-bg: #ebe7de;
+    --primary-bg: #fffefc;
     --tertiary-bg: #B88393;
     --quart-bg: #4f8388;
-    --secondary-font: #41696C;
+    --secondary-font: #706a67;
     --primary-font: #323832;
     --content-p: 1.1rem;
     --content-lh: 1.8rem;
