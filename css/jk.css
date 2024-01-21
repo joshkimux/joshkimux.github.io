@@ -58,10 +58,10 @@
 :root {
     --accent: #F6BA5B;
     --tertiary-bg: #fff4c0;
-    --secondary-bg: #4c564f;
-    --primary-bg: #3f4541;
-    --secondary-font: #e3f0e7;
-    --primary-font: #fff7f4;
+    --secondary-bg: #213b3b;
+    --primary-bg: #192c2c;
+    --secondary-font: #c9efe1;
+    --primary-font: #ecfafa;
 }
 
 }
@@ -111,10 +111,9 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
-    font-weight: 700;
     margin-bottom: .75rem;
     line-height: 2.2rem;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Libre Baskerville', sans-serif;
     color:var(--secondary-font);
 }
 
@@ -123,8 +122,8 @@ h4 {
 }
 
 .heading {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .heading h1 {
@@ -254,8 +253,8 @@ aside[role="note"] p {
 /*! Content */
 
 .content {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
 }
 
@@ -458,6 +457,7 @@ blockquote p::after {
 .resume h3 {
     margin-top: 3rem;
     margin-bottom: .5rem;
+    color:var(--primary-font);
 }
 
 .resume h3:first-of-type {
@@ -756,6 +756,11 @@ a {
     padding-inline-start: 0px;
 }
 
+.big-list li:first-child {
+    border-top:solid 1.5px var(--secondary-bg);
+    padding-top:2rem;
+}
+
 .big-list li:last-child {
     border-bottom: none;
     padding-bottom: 0rem;
@@ -945,6 +950,11 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     .writing img {
         width:100%;
         transition:.4s;
+    }
+
+    .big-list li:first-child {
+        border-top:solid 0px var(--secondary-bg);
+        padding-top:0rem;
     }
 
 
@@ -1193,8 +1203,8 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         display: block;
     width: 50px;
     position: absolute;
-    bottom: 170px;
-    left: 380px;
+    bottom: 175px;
+    left: 172px;
     height: 10px;
     overflow: hidden;
     z-index: -99;
@@ -1208,12 +1218,12 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     }
 
     .heading:hover .sun {
-        height:35px;
+        height:55px;
         transition:.3s ease-in-out;
     }
 
     .heading:hover .sun img {
-        transform:rotate(90deg);
+        transform:rotate(380deg);
         transition: .3s ease-in-out;
     }
 
@@ -1281,6 +1291,10 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         opacity: 1;
         filter: grayscale(0%);
         transform: rotate(0deg) translateX(0px) scale(1);
+    }
+
+    .heading .sun {
+        height: 10px;
     }
     
 }
