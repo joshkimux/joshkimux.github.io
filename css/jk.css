@@ -1017,6 +1017,7 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
             transform: rotate(180deg);
             border-radius: 50%;
         }
+        
     }
 
     /*! Heading */
@@ -1257,8 +1258,20 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         transform: rotate(0deg) translateX(0px) scale(1);
     }
 
-    .heading .sun {
+    .heading:hover .sun {
         height: 10px;
+    }
+
+    .heading:hover .sun img {
+        transform:rotate(0deg);
+    }
+
+    .jnav:hover .divider {
+        margin: 0rem 1rem;
+    }
+
+    .footer .container:hover {
+        transition: .1s ease-in;
     }
     
 }
