@@ -1,28 +1,49 @@
 /*!
- * A newer, cleaner stylesheet for Josh Kim UX
+ * A newer, cleaner stylesheet for my portfolio
+ * Pls don't judge I know this looks like shit I'm working on it
+ * LET ME COOK
  */
 
 /*!
- * font-family: 'Atkinson Hyperlegible', sans-serif;
- * font-family: 'Libre Baskerville', serif;
- */
-
- /*!
-  * Variables
+*-----------------------------------------------------------------------------------------------------------------*  
+*-----------------------------------------------------------------------------------------------------------------*
+* VARIABLES
+*-----------------------------------------------------------------------------------------------------------------*
+*-----------------------------------------------------------------------------------------------------------------*
 */
 
 :root {
+    /*! COLORS */
     --accent: #F6BA5B;
     --primary-bg: #fff8f6;
     --secondary-bg: #f4e9e2;
     --tertiary-bg: #f6f1ef;
-    --quart-bg:#81B1A9;
+    --quart-bg:#F7D9B9;
     --primary-font: #323832;
     --secondary-font: #706a67;
+    --dark:#323832;
+    /*! FONT TBD*/
     --content-p: 1.1rem;
     --content-lh: 1.8rem;
-    --dark:#323832;
+    /*! SPACING TBD*/
   }
+
+/*! DARK MODE 
+*-----------------------------------------------------------------------------------------------------------------*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent: #F6BA5B;
+        --primary-bg: #192c2c;
+        --secondary-bg: #213b3b;
+        --tertiary-bg: #243939;
+        --quart-bg: #81B1A9;
+        --primary-font: #ecfafa;
+        --secondary-font: #c9efe1;
+    }
+}
+    
+/*! UNUSED VARIABLES
+*-----------------------------------------------------------------------------------------------------------------*/
 
 /*! Classroom
 :root {
@@ -38,7 +59,6 @@
   }
 */
 
-
   /*! Sunflower 
     :root {
      --accent: #fcd53f;
@@ -53,23 +73,13 @@
   */
 
 
-
-@media (prefers-color-scheme: dark) {
-:root {
-    --accent: #F6BA5B;
-    --primary-bg: #192c2c;
-    --secondary-bg: #213b3b;
-    --tertiary-bg: #243939;
-    --quart-bg: #81B1A9;
-    --primary-font: #ecfafa;
-    --secondary-font: #c9efe1;
-}
-
-}
-
 /*!
- * Mobile First
- */
+*-----------------------------------------------------------------------------------------------------------------*  
+*-----------------------------------------------------------------------------------------------------------------*
+* MOBILE-FIRST YA FEEL
+*-----------------------------------------------------------------------------------------------------------------*
+*-----------------------------------------------------------------------------------------------------------------*
+*/
 
 html {
     font-size: 100%;
@@ -83,7 +93,8 @@ body {
     background-color: var(--primary-bg);
 }
 
-/*! Headings */
+/*! HEADINGS
+*-----------------------------------------------------------------------------------------------------------------*/
 
 h1,h2,h3{
     text-wrap:balance;
@@ -119,6 +130,18 @@ h4 {
 }
 
 .heading {
+    text-wrap:balance;
+}
+
+.heading-subtext {
+    font-size: 1rem !important;
+    line-height: 1.7rem !important;
+}
+
+/*! ROOT PAGE HEADINGS
+*-----------------------------------------------------------------------------------------------------------------*/
+
+.heading {
     padding-top: 3rem;
 }
 
@@ -135,13 +158,9 @@ h4 {
     display:none;
 }
 
-.action {
-    background-color: var(--accent);
-    padding: .5rem 1.5rem;
-    border-radius: 4px;
-    margin-top: .5rem;
-    display: inline-block;
-}
+
+/*! FOOTER
+*-----------------------------------------------------------------------------------------------------------------*/
 
 .footer .container {
     border-top: solid 1.5px var(--secondary-bg);
@@ -187,7 +206,8 @@ h4 {
 }
 
 
-/*! Projects */
+/*! PROJECTS
+*-----------------------------------------------------------------------------------------------------------------*/
 
 .project {
     margin-bottom: 4rem;
@@ -218,8 +238,6 @@ h4 {
     text-decoration:underline;
 }
 
-
-
 .project .row:nth-child(2) {
     margin-bottom: 0rem;
 }
@@ -234,20 +252,8 @@ h4 {
 }
 
 
-aside[role="note"],
-aside[role="note"] p {
-    color: var(--secondary-font);
-    font-size: 1rem;
-    line-height: 1.6rem;
-
-}
-
-aside[role="note"] p {
-    margin-bottom: 0rem;
-}
-
-
-/*! Content */
+/*! CONTENT 
+*-----------------------------------------------------------------------------------------------------------------*/
 
 .content {
     padding-top: 3rem;
@@ -277,8 +283,15 @@ article h2:first-of-type {
     border: 1.5px solid var(--secondary-bg);
 }
 
-.no-border {
-    border:none !important;
+aside[role="note"],
+aside[role="note"] p {
+    color: var(--secondary-font);
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+aside[role="note"] p {
+    margin-bottom: 0rem;
 }
 
 .h-desc {
@@ -340,6 +353,23 @@ article blockquote + figcaption {
     transition:.3s;
 }
 
+.feature-img {
+    margin: 2rem;
+}
+
+.h-anchor:link,
+.h-anchor:visited {
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    font-size: 1em;
+    margin-right: .5rem;
+
+}
+
+/*! Root page lists 
+*-----------------------------------------------------------------------------------------------------------------*/
+
 .big-list {
     margin-top: 1rem;
 }
@@ -364,21 +394,9 @@ article blockquote + figcaption {
     color: var(--secondary-font);
 }
 
-.feature-img {
-    margin: 2rem;
-}
+/*! Speaking page
+*-----------------------------------------------------------------------------------------------------------------*/
 
-.h-anchor:link,
-.h-anchor:visited {
-    font-weight: 500;
-    position: relative;
-    text-align: center;
-    font-size: 1em;
-    margin-right: .5rem;
-
-}
-
-/*! writing */
 .writing {
     list-style: none;
     padding-left: 0rem;
@@ -439,14 +457,9 @@ article blockquote + figcaption {
     border-radius: 4px;
 }
 
-.writing i {
-    width: 1.7rem;
-    height: 1.7rem;
-    opacity: .6;
-}
 
-
-/*! resume css */
+/*! Resume CSS
+*-----------------------------------------------------------------------------------------------------------------*/
 
 .resume h3 {
     margin-top: 3rem;
@@ -495,7 +508,8 @@ p[role="note"] {
     padding-inline-start: 0px;
 }
 
-/*! Navigation */
+/*! Navigation
+*-----------------------------------------------------------------------------------------------------------------*/
 
 .jnav {
     padding: 1.5rem 0rem;
@@ -552,10 +566,6 @@ p[role="note"] {
     padding-right:0rem;
 }
 
-.resume-nav {
-    display: none !important;
-}
-
 .header-logo a:last-child {
     text-decoration: none;
     border-bottom: solid 1.5px var(--accent);
@@ -563,16 +573,13 @@ p[role="note"] {
     color: var(--primary-font);
 }
 
-/*! new breadcrumbs */
+/*! Breadcrumbs
+*-----------------------------------------------------------------------------------------------------------------*/
 
 nav.breadcrumbs {
     font-size: 1rem;
     line-height: 1.7rem;
-}
-
-nav.breadcrumbs .container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    color:var(--secondary-font);
 }
 
 nav.breadcrumbs ol {
@@ -594,34 +601,44 @@ nav.breadcrumbs [aria-current="page"] {
     text-decoration: none;
 }
 
-/*!
- * Utility
- */
+/*! UTILITY 
+*-----------------------------------------------------------------------------------------------------------------*/
 
-mark {
-    background-color: var(--tertiary-bg);
-}
-
-mark::before,
-mark::after {
-    content: " [highlight start] ";
-    clip-path: inset(100%);
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-}
-
-mark::after {
-    content: " [highlight end] ";
+.no-border {
+    border:none !important;
 }
 
 .sr-only {
     left: -200vw;
     position: absolute;
 }
+
+.no-list {
+    list-style-type: none;
+}
+
+.ht {
+    border-top: solid var(--secondary-bg) 1.5px;
+}
+
+.mt {
+    margin-top: 2rem;
+}
+
+.m-mt {
+    margin-top: 1.5rem;
+}
+
+.xxl-only {
+    display: none;
+}
+
+.xl-only {
+    display: none;
+}
+
+/*! SKIP Links
+*-----------------------------------------------------------------------------------------------------------------*/
 
 a.skip-main {
     left: -999px;
@@ -653,86 +670,8 @@ a {
     text-decoration-color:var(--secondary-font);
 }
 
-#d-logo {
-    position: absolute;
-    animation: 
-        scrollLogo auto linear;
-    animation-timeline: view();
-    bottom:-4rem;
-    transform:rotate(0deg);
-    right:6rem;
-    transform-origin:center;
-}
-
-#d-logo-petals {
-    fill:var(--secondary-font);
-}
-
-#d-logo-petal-outline {
-    fill:var(--primary-bg);
-}
-
-#d-logo-circle {
-    stroke:var(--secondary-font);
-    stroke-width:1px;
-}
-
-/*! Only animate if support exists */
-@supports (animation-timeline:view()) {
-
-    #d-logo {
-        animation: 
-            scrollLogo auto ease-out;
-        animation-timeline: view();
-        transform: rotate(90deg);
-        
-    }
-    @keyframes scrollLogo {
-        to {
-            transform:rotate(500deg);
-        }
-    }
-}
-
-.highlight {
-    border-radius: 1em 0 1em 0;
-    background-image: linear-gradient(-100deg, rgba(255, 224, 0, 0.3), rgba(255, 224, 0, 0.7) 95%, rgba(255, 224, 0, 0.1));
-}
-
-.no-list {
-    list-style-type: none;
-}
-
-.ht {
-    border-top: solid var(--secondary-bg) 1.5px;
-}
-
-.mt {
-    margin-top: 2rem;
-}
-
-.m-mt {
-    margin-top: 1.5rem;
-}
-
-.ft-img {
-    box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0.02), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0.028), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0.035), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0.042), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0.05), 0 42px 243px -32px rgba(0, 0, 0, 0.07);
-    border: solid 2px var(--secondary-bg);
-    border-radius: 4px;
-}
-
-.xxl-only {
-    display: none;
-}
-
-.xl-only {
-    display: none;
-}
-
-.sublist li {
-    margin-bottom: 0rem !important;
-    border-bottom: none !important;
-}
+/*! Root page lists 
+*-----------------------------------------------------------------------------------------------------------------*/
 
 .big-list {
     list-style: none;
@@ -763,65 +702,6 @@ a {
     display: inline-block;
 }
 
-.project-link {
-    background-image: url(../img/icons/arrow-right.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: none;
-    opacity: .5;
-}
-
-.internal-link {
-    background-image: url(../img/icons/arrow-right.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-.pg-link {
-    background-image: url(../img/icons/arrow-down.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-.was {
-    background-image: url(../img/icons/was.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-.calendar-link {
-    background-image: url(../img/icons/calendar.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-.top-link {
-    background-image: url(../img/icons/arrow-up.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-.resume-link {
-    background-image: url(../img/icons/clipboard.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-.heading {
-    text-wrap:balance;
-}
-
-.heading-subtext {
-    font-size: 1rem !important;
-    line-height: 1.7rem !important;
-}
-
 .copyright p {
     font-size: .9rem !important;
     font-family: monospace;
@@ -829,7 +709,8 @@ a {
     text-wrap:balance;
 }
 
-/*! hover and focus */
+/*! Hover and Focus
+*-----------------------------------------------------------------------------------------------------------------*/
 a:hover {
     color:var(--primary-font);
     text-decoration-color: var(--accent);
@@ -847,8 +728,12 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 }
 
 /*!
- * Tablet 768 Tablet 768 Tablet 768 Tablet 768 Tablet 768 Tablet 768 
- */
+*-----------------------------------------------------------------------------------------------------------------*  
+*-----------------------------------------------------------------------------------------------------------------*
+* TABLET AT 768
+*-----------------------------------------------------------------------------------------------------------------*
+*-----------------------------------------------------------------------------------------------------------------*
+*/
 
 @media only screen and (min-width: 768px) {
 
@@ -865,7 +750,7 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     h1 {
         font-size: 3rem;
-        line-height: 3.6rem;
+        line-height: 4rem;
     }
 
     .heading {
@@ -880,7 +765,14 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     .footer .offset-lg-2 {
         text-align:right;
+    }
+
+    .footer .espresso {
         cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>☕</text></svg>") 16 0,auto; 
+    }
+
+    .footer .depresso {
+        cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥲</text></svg>") 16 0,auto; 
     }
 
     .footer .offset-0 {
@@ -892,15 +784,17 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         margin-bottom: 4rem;
         border-radius: 4px;
         border: solid 1.5px var(--secondary-bg);
-        transition:.2s ease-in;
+        transition:.1s ease-in;
     }
     
     .footer .container:hover {
-        border:solid 4px var(--quart-bg);
-        transition: .2s ease-out;
+        border:solid 3px var(--quart-bg);
+        transition: .1s ease-in-out;
+        background-color:var(--tertiary-bg);
     }
 
-    /*! Projects */
+    /*! CONTENT
+    *-----------------------------------------------------------------------------------------------------------------*/
     .project {
         margin-bottom: 6rem;
     }
@@ -945,12 +839,9 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         transition:.4s;
     }
 
-
-    /*! Content */
-
     h2 {
-        font-size: 2.6rem;
-        line-height: 3.4rem;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
     }
 
     h3 {
@@ -979,29 +870,17 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         margin: 3rem 0rem;
     }
 
-
-    /*! Feature */
-
-    .feature h2 {
-        font-size: 1.6rem;
-    }
-    
-    /*! notes */
-    
-    span[role="note"] {
-    margin-left: .5rem;
-
-}
-
-
-
-
 }
 
 
 /*!
- * Web 992 Web 992 Web 992 Web 992 Web 992 Web 992 Web 992
- */
+*-----------------------------------------------------------------------------------------------------------------*  
+*-----------------------------------------------------------------------------------------------------------------*
+* DESKTOP AT 992
+*-----------------------------------------------------------------------------------------------------------------*
+*-----------------------------------------------------------------------------------------------------------------*
+*/
+
 @media only screen and (min-width: 992px) {
 
     @media screen and (prefers-reduced-motion: no-preference) {
@@ -1020,7 +899,8 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         
     }
 
-    /*! Heading */
+    /*! HEADINGS
+    *-----------------------------------------------------------------------------------------------------------------*/
 
     h1 {
         font-size: 4rem;
@@ -1046,19 +926,20 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     .project:hover .row .col-lg-4 img, .project:focus-within .row .col-lg-4 img {
         transition: .2s;
         transform: rotate(1deg) scale(.98);
-        border:solid 4px var(--quart-bg);
+        border:solid 4px var(--accent);
         box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0.02), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0.028), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0.035), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0.042), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0.05), 0 42px 243px -32px rgba(0, 0, 0, 0.07);
     }
 
     .project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
         transition: .2s;
         transform: rotate(-1deg) scale(1.02);
-        border:solid 4px var(--quart-bg);
+        border:solid 4px var(--accent);
         box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0.02), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0.028), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0.035), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0.042), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0.05), 0 42px 243px -32px rgba(0, 0, 0, 0.07);
     }
 
 
-    /*! Content */
+    /*! CONTENT
+    *-----------------------------------------------------------------------------------------------------------------*/
 
     .content {
         padding-top: 5rem;
@@ -1076,38 +957,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         line-height: 1;
         background-color: var(--accent);
         text-decoration-color: var(--primary-font);
-    }
-
-
-    /*! Feature */
-
-    .feature h2 {
-        font-size: 1.6rem;
-    }
-
-
-    /*! Navigation */
-    .header .container {
-        align-items: center;
-        justify-content: space-between;
-        flex-flow: row;
-    }
-
-    .header-logo a:last-child {
-        display: none;
-    }
-
-    .jnav ul {
-        white-space: normal;
-        overflow-x: initial;
-    }
-
-    nav.breadcrumbs {
-        border-bottom: 1.5px solid var(--secondary-bg);
-    }
-
-    .resume-nav {
-        display: inline-block !important;
     }
 
     /*! Utility */
@@ -1163,18 +1012,17 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     .r-side {
         padding-left: 2rem;
     }
-
     
     .sun {
         display: block;
-    width: 50px;
-    position: absolute;
-    bottom: 175px;
-    left: 172px;
-    height: 10px;
-    overflow: hidden;
-    z-index: -99;
-    transition: .3s ease-in-out;
+        width: 50px;
+        position: absolute;
+        bottom: 175px;
+        left: 172px;
+        height: 10px;
+        overflow: hidden;
+        z-index: -99;
+        transition: .3s ease-in-out;
     }
 
     .sun img {
@@ -1193,42 +1041,30 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         transition: .3s ease-in-out;
     }
 
-
 }
 
 /*!
- * Web 1375
- */
-@media only screen and (min-width: 1375px) {
-    .d2-font {
-        transform: rotate(90deg);
-        bottom: 4rem;
-        right: -6.4rem;
-        width: 19.25rem;
-        position: fixed;
-        text-transform: lowercase;
-        color: #d8d2d2;
-        font-size: 1.2rem;
-        overflow-x: hidden;
-    }
+*-----------------------------------------------------------------------------------------------------------------*  
+*-----------------------------------------------------------------------------------------------------------------*
+* BIG BOI AT 1375
+*-----------------------------------------------------------------------------------------------------------------*
+*-----------------------------------------------------------------------------------------------------------------*
+*/
 
-    .d-font {
-        width: 19.25rem;
-        position: fixed;
-        transform: rotate(-90deg);
-        top: 12rem;
-        left: -6.4rem;
-        text-align: right;
-        text-transform: lowercase;
-        color: #d8d2d2;
-        font-size: 1.2rem;
-        overflow-x: hidden;
-    }
+@media only screen and (min-width: 1375px) {
 
     .xxl-only {
         display: block;
     }
 }
+
+/*!
+*-----------------------------------------------------------------------------------------------------------------*  
+*-----------------------------------------------------------------------------------------------------------------*
+* REDUCE MOTION
+*-----------------------------------------------------------------------------------------------------------------*
+*-----------------------------------------------------------------------------------------------------------------*
+*/
 
 @media (prefers-reduced-motion: reduce) {
     
@@ -1242,13 +1078,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     .project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
         transform: rotate(0deg) scale(1);
-    }
-
-    #d-logo {
-        position: absolute;
-        right: 2rem;
-        translate: translate(0px, -2rem);
-        animation:none;
     }
 
     .writing li:hover img{
