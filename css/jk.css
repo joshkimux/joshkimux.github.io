@@ -709,6 +709,13 @@ a {
     text-wrap:balance;
 }
 
+/*! Receipt effect
+*-----------------------------------------------------------------------------------------------------------------*/
+
+.receipt img, .receipt p {
+    display:none;
+}
+
 /*! Hover and Focus
 *-----------------------------------------------------------------------------------------------------------------*/
 a:hover {
@@ -1046,6 +1053,80 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 /*!
 *-----------------------------------------------------------------------------------------------------------------*  
 *-----------------------------------------------------------------------------------------------------------------*
+* CHONKY BOI AT 1100
+*-----------------------------------------------------------------------------------------------------------------*
+*-----------------------------------------------------------------------------------------------------------------*
+*/
+
+@media only screen and (min-width: 1200px) {
+
+    .xxl-only {
+        display: block;
+    }
+    
+    /*! Delight 
+    *-----------------------------------------------------------------------------------------------------------------*/
+
+    .receipt img {
+        position: absolute;
+        width: 140%;
+        left: -13rem;
+        bottom: -4rem;
+        z-index: 99;
+        display: block;
+        transition:.2s ease-in-out;
+        filter:saturate(.5);
+    }
+
+    .receipt p {
+        position:absolute;
+        z-index:100;
+        display:block;
+        opacity:0;
+        font-size:1rem;
+        color:var(--secondary-font);
+        bottom:-60px;
+        right:2rem;
+        transform: rotate(-3deg);
+    }
+
+    .receipt img:first-child {
+        opacity:0;
+    }
+
+    .heading:hover .receipt img:nth-child(2) {
+        opacity:0;
+    }
+
+    .heading:hover .receipt img:first-child {
+        opacity:1;
+    }
+
+    .heading:hover .receipt p {
+        opacity:1;
+        bottom:-100px;
+        transition:.2s;
+    }
+
+    .heading:hover .receipt img {
+        transform:rotate(3deg) scale(1.05);
+        filter:saturate(1);
+    }
+
+    .kress:hover:after {
+        content:"";
+        display:block;
+        height:400px;
+        background:url("../img/thumb/artifacts/kress.png") no-repeat;
+        transition:.2s;
+        position:relative;
+    }
+
+}
+
+/*!
+*-----------------------------------------------------------------------------------------------------------------*  
+*-----------------------------------------------------------------------------------------------------------------*
 * BIG BOI AT 1375
 *-----------------------------------------------------------------------------------------------------------------*
 *-----------------------------------------------------------------------------------------------------------------*
@@ -1056,6 +1137,7 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     .xxl-only {
         display: block;
     }
+
 }
 
 /*!
@@ -1101,6 +1183,10 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     .footer .container:hover {
         transition: .1s ease-in;
+    }
+
+    .heading:hover .receipt img {
+        transform:rotate(0deg);
     }
     
 }
