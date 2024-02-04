@@ -873,6 +873,10 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         font-size: 1rem;
     }
 
+    article .col-lg-3 figcaption {
+        padding: 1rem 0rem;
+    }
+
     article figure {
         margin: 3rem 0rem;
     }
@@ -932,16 +936,14 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     
     .project:hover .row .col-lg-4 img, .project:focus-within .row .col-lg-4 img {
         transition: .2s;
-        transform: rotate(1deg) scale(.98);
+        transform: rotate(1deg) scale(.97);
         border:solid 4px var(--accent);
-        box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0.02), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0.028), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0.035), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0.042), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0.05), 0 42px 243px -32px rgba(0, 0, 0, 0.07);
     }
 
     .project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
         transition: .2s;
-        transform: rotate(-1deg) scale(1.02);
+        transform: rotate(-1deg) scale(1.03);
         border:solid 4px var(--accent);
-        box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0.02), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0.028), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0.035), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0.042), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0.05), 0 42px 243px -32px rgba(0, 0, 0, 0.07);
     }
 
 
@@ -1103,10 +1105,16 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     .heading:hover .receipt p {
         opacity:1;
-        bottom:-135px;
+        bottom:-130px;
+        transform:rotate(3deg);
         transition:.2s;
         right:0;
         line-height:1.5rem;
+        padding:1rem;
+        background-color:var(--secondary-bg);
+        border-radius:4px;
+        border:solid 1px var(--quart-bg);
+        text-wrap:wrap;
     }
 
     .heading:hover .receipt img {
