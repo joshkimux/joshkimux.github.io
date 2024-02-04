@@ -1069,13 +1069,12 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     .receipt img {
         position: absolute;
-        width: 140%;
-        left: -13rem;
-        bottom: -4rem;
+        width: 170%;
+        left: -10rem;
+        bottom: -6rem;
         z-index: 99;
         display: block;
         transition:.2s ease-in-out;
-        filter:saturate(.5);
     }
 
     .receipt p {
@@ -1104,13 +1103,14 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     .heading:hover .receipt p {
         opacity:1;
-        bottom:-100px;
+        bottom:-135px;
         transition:.2s;
+        right:0;
+        line-height:1.5rem;
     }
 
     .heading:hover .receipt img {
-        transform:rotate(3deg) scale(1.05);
-        filter:saturate(1);
+        transform:rotate(1deg) scale(1.01);
     }
 
     .kress:hover:after {
