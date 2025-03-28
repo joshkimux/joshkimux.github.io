@@ -14,14 +14,14 @@
 
 :root {
     /*! COLORS */
-    --accent: #F6BA5B;
+    --accent: #275963ff;
+    --accent-light: #c0e0e6;
     --primary-bg: #fff8f6;
-    --secondary-bg: #f4e9e2;
+    --secondary-bg: #e8d6c9;
     --tertiary-bg: #f6f1ef;
-    --quart-bg:#F7D9B9;
-    --primary-font: #323832;
-    --secondary-font: #706a67;
-    --dark:#323832;
+    --primary-font: #5a5453;
+    --secondary-font: #84807d;
+    --dark:#333130;
     /*! FONT TBD*/
     --content-p: 1.1rem;
     --content-lh: 1.8rem;
@@ -32,13 +32,14 @@
 *-----------------------------------------------------------------------------------------------------------------*/
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent: #F6BA5B;
-        --primary-bg: #192c2c;
-        --secondary-bg: #213b3b;
-        --tertiary-bg: #243939;
-        --quart-bg: #81B1A9;
-        --primary-font: #ecfafa;
-        --secondary-font: #c9efe1;
+        --accent: #FFF3E0;
+        --accent-light:#4d463c;
+        --primary-bg: #1e3f47;
+        --secondary-bg: #204d59;
+        --tertiary-bg: #29525d; 
+        --primary-font: #d7f2f7;
+        --secondary-font: #92c5cc;
+        --dark:#f7ead7;
     }
 }
     
@@ -86,7 +87,7 @@ html {
 }
 
 body {
-    font-family: 'Atkinson Hyperlegible',  sans-serif;
+    font-family: 'Work Sans',  sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: var(--primary-font);
@@ -102,7 +103,7 @@ h1,h2,h3{
 }
 
 h1 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Young Serif', serif;
     font-weight: 400;
     font-size: 2.5rem;
     line-height: 3rem;
@@ -110,7 +111,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Young Serif', serif;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -121,7 +122,7 @@ h3 {
     font-size: 1.2rem;
     margin-bottom: .75rem;
     line-height: 2.2rem;
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: 'Young Serif', sans-serif;
     color:var(--secondary-font);
 }
 
@@ -136,6 +137,13 @@ h4 {
 .heading-subtext {
     font-size: 1rem !important;
     line-height: 1.7rem !important;
+}
+
+.hero h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 800;
 }
 
 /*! ROOT PAGE HEADINGS
@@ -166,14 +174,13 @@ h4 {
     border-top: solid 1.5px var(--secondary-bg);
     padding: 1.5rem;
     line-height: var(--content-lh);
-    background-color: var(--tertiary-bg);
     margin-top: 3rem;
 }
 
 .footer h3 {
     font-size: .9rem;
     margin-bottom: .5rem;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight:400;
 }
 
@@ -224,14 +231,14 @@ h4 {
 
 .project img {
     width: 100%;
-    transition: .3s;
+    transition: .2s ease-out;
     box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0), 0 42px 243px -32px rgba(0, 0, 0, 0);
     border:solid .5px var(--secondary-bg);
 }
 
 .project h2 {
     margin-bottom: 1rem;
-    transition: .2s ease;
+    transition: .2s ease-out;
 }
 
 .project h2 a {
@@ -296,7 +303,7 @@ aside[role="note"] p {
 
 .h-desc {
     display:block;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: var(--content-p);
     font-weight: 400;
     line-height: var(--content-lh);
@@ -332,25 +339,25 @@ article figcaption {
 }
 
 article blockquote {
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
     margin-bottom: 0rem;
-    border-left: solid 1.5px var(--secondary-bg);
+    border-left: solid 2px var(--secondary-bg);
 }
 
 article blockquote + figcaption {
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
     font-style: italic;
-    border-left: solid 1.5px var(--secondary-bg);
+    border-left: solid 2px var(--secondary-bg);
 }
 
 .jk-grey {
-    background-color: var(--secondary-bg);
+    background-color: var(--tertiary-bg);
     border-radius: 4px;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .jk-card {
-    transition:.3s;
+    transition: .2s ease-out;
 }
 
 .feature-img {
@@ -380,7 +387,7 @@ article blockquote + figcaption {
 
 .big-list li:not(:last-child),
 .big-list li:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .big-list ol,
@@ -388,10 +395,13 @@ article blockquote + figcaption {
     margin-top: 1rem;
 }
 
-.big-list figcaption {
-    font-family: 'Atkinson Hyperlegible',  sans-serif;
+.big-list small {
     font-size: 1rem;
     color: var(--secondary-font);
+}
+
+.big-list li {
+    padding:1.5rem;
 }
 
 /*! Speaking page
@@ -425,7 +435,7 @@ article blockquote + figcaption {
     object-fit: cover;
     border: solid 1.5px var(--secondary-bg);
     margin-top: 1.5rem;
-    transition:.4s;
+    transition: .2s ease-out;
 }
 
 .writing li:last-child {
@@ -443,7 +453,7 @@ article blockquote + figcaption {
 
 .writing-heading a h2 {
     margin-left: 0rem;
-    transition: .2s ease;
+    transition: .2s ease-out;
     margin-bottom: 1rem;
 }
 
@@ -532,13 +542,12 @@ p[role="note"] {
     flex-grow: 1;
     border-bottom: 1.5px solid var(--secondary-bg);
     margin: 0rem 1rem;
-    transition:.2s;
+    transition: .2s ease-out;
 }
 
 .jnav:hover .divider {
-    border-bottom: 1px solid var(--accent);
-    margin: 0rem 1.5rem;
-    transition:.2s;
+    margin: 0rem 2rem;
+    transition: .2s ease-out;
 }
 
 .jnav a:link,
@@ -549,12 +558,12 @@ p[role="note"] {
 .jnav a[aria-current=true] {
     color: var(--primary-font);
     text-decoration:none;
-    transition: .2s ease;
+    transition: .2s ease-out;
 }
 
 .jnav a:hover {
     color:var(--primary-font);
-    transition: .2s ease;
+    transition: .2s ease-out;
 }
 
 
@@ -637,6 +646,10 @@ nav.breadcrumbs [aria-current="page"] {
     display: none;
 }
 
+.co {
+    color:var(--accent);
+}
+
 /*! SKIP Links
 *-----------------------------------------------------------------------------------------------------------------*/
 
@@ -652,7 +665,7 @@ a.skip-main {
 
 a.skip-main:focus,
 a.skip-main:active {
-    background-color: var(--accent);
+    background-color: var(--accent-light);
     left: auto;
     top: 0px;
     padding: 1rem;
@@ -666,7 +679,7 @@ a.skip-main:active {
 
 a {
     color: inherit;
-    transition: ease .1s;
+    transition: .2s ease-out;
     text-decoration-color:var(--secondary-font);
 }
 
@@ -681,18 +694,16 @@ a {
 }
 
 .big-list li:first-child {
-    border-top:solid 1.5px var(--secondary-bg);
-    padding-top:2rem;
 }
 
 .big-list li:last-child {
-    border-bottom: none;
-    padding-bottom: 0rem;
 }
 
 .big-list li {
-    padding-bottom: 1rem;
-    border-bottom: 1.5px solid var(--secondary-bg);
+    border: 1.5px solid var(--secondary-bg);
+    background-color: var(--tertiary-bg);
+    border-radius: 4px;
+    transition: .2s ease-out;
 }
 
 .external-link {
@@ -719,19 +730,19 @@ a {
 /*! Hover and Focus
 *-----------------------------------------------------------------------------------------------------------------*/
 a:hover {
-    color:var(--primary-font);
+    color:var(--accent);
     text-decoration-color: var(--accent);
-    transition: ease .1s;
+    transition: .2s ease-out;
 }
 
 a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
-    box-shadow: 0 0 0 6px var(--accent), 0 0 0 8px var(--dark);
     outline: 3px solid transparent;
     outline-offset: 3px;
-    background-color:var(--accent);
-    text-decoration-color:var(--dark);
-    color:var(--dark);
-    border-radius:.5px;
+    background-color:var(--accent-light);
+    text-decoration:none;
+    color:var(--accent);
+    border-bottom:2px solid var(--accent);
+    border-radius:2px;
 }
 
 /*!
@@ -765,6 +776,11 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         padding-bottom: 4rem;
     }
 
+    .hero h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
     .heading p {
         font-size: 1.6rem;
         line-height: 2.6rem;
@@ -789,14 +805,12 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     .footer .container {
         padding:2rem 3rem;
         margin-bottom: 4rem;
-        border-radius: 4px;
-        border: solid 1.5px var(--secondary-bg);
-        transition:.1s ease-in;
+        transition: .2s ease-out;
     }
     
     .footer .container:hover {
-        border:solid 3px var(--quart-bg);
-        transition: .1s ease-in-out;
+        border-top:solid 6px var(--secondary-bg);
+        transition: .2s ease-out;
         background-color:var(--tertiary-bg);
     }
 
@@ -810,10 +824,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         padding-bottom: 1.5rem;
         margin-bottom: 1.5rem;
         border-bottom: solid 1.5px var(--secondary-bg);
-    }
-
-    .project h2 a {
-        text-decoration:none;
     }
 
     .project .row:nth-child(2) {
@@ -843,7 +853,7 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     
     .writing img {
         width:100%;
-        transition:.4s;
+        transition: .2s ease-out;
     }
 
     h2 {
@@ -881,6 +891,21 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         margin: 3rem 0rem;
     }
 
+    .big-list li:not(:last-child),.big-list li:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    .big-list li:hover {
+        transform: rotate(.5deg) scale(1.07) translate(.5rem);
+        transition: .2s ease-out;
+        border:var(--primary-bg) solid 4px;
+        box-shadow: 0 0 0px 4px var(--secondary-bg);
+    }
+
+    .big-list li:hover h3, .big-list li:hover small {
+        color:var(--dark);
+    }
+
 }
 
 
@@ -893,22 +918,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 */
 
 @media only screen and (min-width: 992px) {
-
-    @media screen and (prefers-reduced-motion: no-preference) {
-
-        .h-anchor:link,
-        .h-anchor:visited {
-            transition: ease .2s;
-        }
-
-        .h-anchor:hover {
-            transition: ease .2s;
-            text-decoration: none;
-            transform: rotate(180deg);
-            border-radius: 50%;
-        }
-        
-    }
 
     /*! HEADINGS
     *-----------------------------------------------------------------------------------------------------------------*/
@@ -933,17 +942,22 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     .project .row:nth-child(2) .col-lg-4 {
         margin-bottom: 0rem;
     }
+
+    .project:hover h2 {
+        color:var(--accent);    
+    }
+
     
     .project:hover .row .col-lg-4 img, .project:focus-within .row .col-lg-4 img {
-        transition: .2s;
-        transform: rotate(1deg) scale(.97);
+        transition: .2s ease-out;
         border:solid 4px var(--accent);
+        box-shadow: 0 0 0px 4px var(--accent-light);
     }
 
     .project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
-        transition: .2s;
-        transform: rotate(-1deg) scale(1.03);
+        transition: .2s ease-out;
         border:solid 4px var(--accent);
+        box-shadow: 0 0 0px 4px var(--accent-light);
     }
 
 
@@ -954,18 +968,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         padding-top: 5rem;
         padding-bottom: 5rem;
 
-    }
-
-    .h-anchor:link,
-    .h-anchor:visited {
-        position: absolute;
-        margin-left: -3rem;
-        margin-right: 0;
-        width: 1em;
-        height: 1em;
-        line-height: 1;
-        background-color: var(--accent);
-        text-decoration-color: var(--primary-font);
     }
 
     /*! Utility */
@@ -986,7 +988,7 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         height: 250px;
         border-radius: 4px;
         margin-top: 0rem;
-        transition: .3s;
+        transition: .2s ease-out;
         opacity: .8;
         filter: grayscale(100%);
     }
@@ -1005,11 +1007,16 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     }
     
     .writing li:hover img, .writing li:focus-within img {
-        transition: .4s;
+        transition: .2s ease-out;
         opacity: 1;
         filter: grayscale(0%);
-        transform: rotate(-1deg) translate(-1rem) scale(1.1);
+        transform: rotate(-.5deg) translate(-1rem) scale(1.1);
         border:solid 4px var(--accent);
+        box-shadow: 0 0 0px 4px var(--accent-light);
+    }
+
+    .writing  li:hover h2{
+        color:var(--accent);
     }
     
     .writing-feature iframe {
@@ -1022,32 +1029,14 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         padding-left: 2rem;
     }
     
-    .sun {
-        display: block;
-        width: 50px;
-        position: absolute;
-        bottom: 175px;
-        left: 172px;
-        height: 10px;
-        overflow: hidden;
-        z-index: -99;
-        transition: .3s ease-in-out;
+    /*! big list */
+
+    .big-list li {
+        padding:2rem;
     }
 
-    .sun img {
-        width:100%;
-        transform:rotate(0deg);
-        transition: .3s ease-in-out;
-    }
-
-    .heading:hover .sun {
-        height:55px;
-        transition:.3s ease-in-out;
-    }
-
-    .heading:hover .sun img {
-        transform:rotate(380deg);
-        transition: .3s ease-in-out;
+    .big-list li:not(:last-child),.big-list li:not(:last-child) {
+        margin-bottom: 2rem;
     }
 
 }
@@ -1071,24 +1060,12 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     .receipt img {
         position: absolute;
-        width: 170%;
-        left: -10rem;
-        bottom: -6rem;
+        width: 150%;
+        left: -8.5rem;
+        bottom: -4rem;
         z-index: 99;
         display: block;
-        transition:.2s ease-in-out;
-    }
-
-    .receipt p {
-        position:absolute;
-        z-index:100;
-        display:block;
-        opacity:0;
-        font-size:1rem;
-        color:var(--secondary-font);
-        bottom:-60px;
-        right:2rem;
-        transform: rotate(-3deg);
+        transition: .2s ease-out;
     }
 
     .receipt img:first-child {
@@ -1103,31 +1080,19 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
         opacity:1;
     }
 
-    .heading:hover .receipt p {
-        opacity:1;
-        bottom:-130px;
-        transform:rotate(3deg);
-        transition:.2s;
-        right:0;
-        line-height:1.5rem;
-        padding:1rem;
-        background-color:var(--secondary-bg);
-        border-radius:4px;
-        border:solid 1px var(--quart-bg);
-        text-wrap:wrap;
+    .heading:hover .receipt img {
+        transform:rotate(.5deg) scale(1.02);
     }
 
-    .heading:hover .receipt img {
-        transform:rotate(1deg) scale(1.01);
-    }
 
     .kress:hover:after {
         content:"";
         display:block;
         height:400px;
         background:url("../img/thumb/artifacts/kress.png") no-repeat;
-        transition:.2s;
+        transition: .2s ease-out;
         position:relative;
+        transition:.2s ease-in-out;
     }
 
 }
@@ -1171,18 +1136,10 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     }
 
     .writing li:hover img{
-        transition: .2s;
+        transition: .2s ease-out;
         opacity: 1;
         filter: grayscale(0%);
         transform: rotate(0deg) translateX(0px) scale(1);
-    }
-
-    .heading:hover .sun {
-        height: 10px;
-    }
-
-    .heading:hover .sun img {
-        transform:rotate(0deg);
     }
 
     .jnav:hover .divider {
@@ -1190,11 +1147,19 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     }
 
     .footer .container:hover {
-        transition: .1s ease-in;
+        transition: .2s ease-out;
     }
 
     .heading:hover .receipt img {
         transform:rotate(0deg);
     }
+
+    .big-list li:hover {
+        transform: rotate(0deg) scale(1) translate(0rem);
+        transition: .2s ease-out;
+        border:var(--accent) solid 1.5px;
+        border-radius:0px;
+    }
+    
     
 }
