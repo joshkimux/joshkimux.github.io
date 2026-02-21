@@ -234,6 +234,27 @@ h4 {
     transition: .2s ease-out;
     box-shadow: 0 1.2px 6.7px -32px rgba(0, 0, 0, 0), 0 2.8px 16.2px -32px rgba(0, 0, 0, 0), 0 5.3px 30.4px -32px rgba(0, 0, 0, 0), 0 9.4px 54.3px -32px rgba(0, 0, 0, 0), 0 17.5px 101.5px -32px rgba(0, 0, 0, 0), 0 42px 243px -32px rgba(0, 0, 0, 0);
     border:solid .5px var(--secondary-bg);
+    filter: saturate(0);
+}
+
+.blend {
+    position:relative;
+    width:100%;
+}
+
+.blend::after {
+    position:absolute;
+    content:'';
+    background:#29525d;
+    inset:0;
+    mix-blend-mode:overlay;
+    opacity:1;
+    transition: .2s ease-out;
+}
+
+.project:hover .blend::after {
+    opacity:0;
+    transition: .2s ease-out;
 }
 
 .project h2 {
@@ -257,6 +278,27 @@ h4 {
     margin-bottom: 0px;
     font-weight:700;
 }
+
+.project:hover h2 {
+    color:var(--accent);    
+}
+
+.project:hover .row .col-lg-4 img, .project:focus-within .row .col-lg-4 img {
+    transition: .2s ease-out;
+    border:solid 4px var(--accent);
+    box-shadow: 0 0 0px 4px var(--accent-light);
+    transform:rotate(-1deg);
+    filter: saturate(1);
+}
+
+.project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
+    transition: .2s ease-out;
+    border:solid 4px var(--accent);
+    box-shadow: 0 0 0px 4px var(--accent-light);
+    filter: saturate(1);
+    transform:rotate(1deg);
+}
+
 
 
 /*! CONTENT 
@@ -941,23 +983,6 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
 
     .project .row:nth-child(2) .col-lg-4 {
         margin-bottom: 0rem;
-    }
-
-    .project:hover h2 {
-        color:var(--accent);    
-    }
-
-    
-    .project:hover .row .col-lg-4 img, .project:focus-within .row .col-lg-4 img {
-        transition: .2s ease-out;
-        border:solid 4px var(--accent);
-        box-shadow: 0 0 0px 4px var(--accent-light);
-    }
-
-    .project:hover .row .col-lg-8 img, .project:focus-within .row .col-lg-8 img {
-        transition: .2s ease-out;
-        border:solid 4px var(--accent);
-        box-shadow: 0 0 0px 4px var(--accent-light);
     }
 
 
