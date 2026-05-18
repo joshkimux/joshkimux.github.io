@@ -23,7 +23,7 @@
     --secondary-font: #84807d;
     --dark:#333130;
     /*! FONT TBD*/
-    --content-p: 1.1rem;
+    --content-p: 1rem;
     --content-lh: 1.8rem;
     /*! SPACING TBD*/
   }
@@ -875,6 +875,11 @@ a:focus, a:link:focus, a:visited:focus, a[aria-current=true]:focus {
     .project-client {
         margin-bottom: 0px;
     }
+
+    .project h2 a {
+        text-decoration:none;
+    }
+
 
     .project .internal-link {
         height: 2rem;
